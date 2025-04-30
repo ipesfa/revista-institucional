@@ -33,18 +33,14 @@ export default function Home() {
                 </div>
               </div>
               <div className="flex items-center justify-center">
-                <div className="relative h-[350px] w-[300px] overflow-hidden rounded-lg shadow-lg">
+                <div className="relative h-[450px] w-[320px] overflow-hidden rounded-lg shadow-lg">
                   <Image
-                    src="/placeholder.svg?height=500&width=400"
+                    src="/portada-koulana.png"
                     alt="Portada del último número de Koulana"
                     fill
-                    className="object-cover"
+                    className="object-contain"
                     priority
                   />
-                  <div className="absolute bottom-0 w-full bg-gradient-to-t from-blue-800/80 to-transparent p-4">
-                    <p className="text-sm font-medium text-white">Volumen 5, Número 2</p>
-                    <p className="text-xs text-white/80">Julio - Diciembre 2023</p>
-                  </div>
                 </div>
               </div>
             </div>
