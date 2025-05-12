@@ -92,7 +92,7 @@ export default function AcercaDePage() {
     {
       title: "Tipos de contribuciones",
       content:
-        "Koulana acepta artículos de investigación originales (6000-8000 palabras), ensayos teóricos (4000-6000 palabras), reseñas de libros (1500-2000 palabras) y entrevistas (3000-4000 palabras). Todos los trabajos deben ser inéditos y no estar sometidos simultáneamente a evaluación en otras revistas.",
+        "Revista FA acepta artículos de investigación originales (6000-8000 palabras), ensayos teóricos (4000-6000 palabras), reseñas de libros (1500-2000 palabras) y entrevistas (3000-4000 palabras). Todos los trabajos deben ser inéditos y no estar sometidos simultáneamente a evaluación en otras revistas.",
     },
     {
       title: "Formato de presentación",
@@ -127,7 +127,7 @@ export default function AcercaDePage() {
       <div className="mb-8 md:mb-12">
         <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl md:text-5xl">Acerca de</h1>
         <p className="mt-4 text-lg text-gray-600 max-w-3xl">
-          Conoce más sobre la revista académica Koulana, nuestro equipo editorial, políticas y directrices para autores.
+          Conoce más sobre la revista académica FA, nuestro equipo editorial, políticas y directrices para autores.
         </p>
         <Separator className="my-6" />
       </div>
@@ -178,7 +178,7 @@ export default function AcercaDePage() {
                 <div className="grid md:grid-cols-2 gap-8 items-start">
                   <div className="space-y-4">
                     <p className="text-gray-700 leading-relaxed">
-                      <span className="font-semibold">Koulana</span> es una revista académica semestral publicada por el
+                      <span className="font-semibold">Revista FA</span> es una revista académica semestral publicada por el
                       Instituto de Profesores de Educación Superior (IPES FA), dedicada a la difusión de investigaciones
                       originales y reflexiones críticas en el ámbito de la educación y la cultura.
                     </p>
@@ -229,7 +229,7 @@ export default function AcercaDePage() {
                           <span className="font-medium">ISSN:</span> 2023-YYYY (versión digital)
                         </p>
                         <p className="text-sm text-gray-700">
-                          <span className="font-medium">Institución editora:</span> Instituto de Profesores de Educación
+                          <span className="font-medium">Institución editora:</span> Instituto Provincial de Educación
                           Superior (IPES FA)
                         </p>
                         <p className="text-sm text-gray-700">
@@ -295,7 +295,7 @@ export default function AcercaDePage() {
               <div className="space-y-6">
                 <h2 className="text-2xl font-bold text-gray-900">Políticas de secciones</h2>
                 <p className="text-gray-700">
-                  La revista Koulana organiza su contenido en secciones temáticas que reflejan las principales áreas de
+                  La revista FA organiza su contenido en secciones temáticas que reflejan las principales áreas de
                   interés en el campo de la educación y la cultura. Cada sección cuenta con criterios específicos para
                   la evaluación y selección de trabajos.
                 </p>
@@ -344,7 +344,7 @@ export default function AcercaDePage() {
                 <h2 className="text-2xl font-bold text-gray-900">Directrices para autores</h2>
                 <p className="text-gray-700">
                   A continuación se presentan las normas y directrices que deben seguir los autores interesados en
-                  publicar en la revista Koulana. El cumplimiento de estas normas es indispensable para iniciar el
+                  publicar en la revista FA. El cumplimiento de estas normas es indispensable para iniciar el
                   proceso de evaluación.
                 </p>
 
@@ -396,7 +396,7 @@ export default function AcercaDePage() {
               <div className="space-y-6">
                 <h2 className="text-2xl font-bold text-gray-900">Contacto</h2>
                 <p className="text-gray-700">
-                  Para cualquier consulta relacionada con la revista Koulana, no dude en ponerse en contacto con nuestro
+                  Para cualquier consulta relacionada con la revista FA, no dude en ponerse en contacto con nuestro
                   equipo editorial a través de los siguientes medios:
                 </p>
 
@@ -407,7 +407,7 @@ export default function AcercaDePage() {
                         <Mail className="h-5 w-5 text-blue-800 mr-3 mt-0.5" />
                         <div>
                           <h3 className="font-medium text-gray-900">Correo electrónico</h3>
-                          <p className="text-gray-700">revista.koulana@ipes.edu</p>
+                          <p className="text-gray-700">revistafa@ipesfa-ushuaia.edu.ar</p>
                           <p className="text-sm text-gray-500 mt-1">Tiempo de respuesta: 2-3 días hábiles</p>
                         </div>
                       </div>
@@ -428,9 +428,9 @@ export default function AcercaDePage() {
                           <p className="text-gray-700">
                             Instituto de Profesores de Educación Superior (IPES FA)
                             <br />
-                            Av. Principal 1234, Ciudad
+                            Deloqui 237, Ushuaia TDF
                             <br />
-                            Código Postal 12345
+                            Código Postal 9410
                           </p>
                         </div>
                       </div>
@@ -440,13 +440,13 @@ export default function AcercaDePage() {
                       <h3 className="text-lg font-semibold text-gray-900 mb-3">Consultas específicas</h3>
                       <div className="space-y-2">
                         <p className="text-sm text-gray-700">
-                          <span className="font-medium">Envío de artículos:</span> articulos.koulana@ipes.edu
+                          <span className="font-medium">Envío de artículos:</span> revistafa@ipesfa-ushuaia.edu.ar
                         </p>
                         <p className="text-sm text-gray-700">
-                          <span className="font-medium">Suscripciones:</span> suscripciones.koulana@ipes.edu
+                          <span className="font-medium">Suscripciones:</span> revistafa@ipesfa-ushuaia.edu.ar
                         </p>
                         <p className="text-sm text-gray-700">
-                          <span className="font-medium">Dirección editorial:</span> direccion.koulana@ipes.edu
+                          <span className="font-medium">Dirección editorial:</span> revistafa@ipesfa-ushuaia.edu.ar
                         </p>
                       </div>
                     </div>

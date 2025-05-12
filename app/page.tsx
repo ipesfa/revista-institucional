@@ -182,7 +182,7 @@ export default function Home() {
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter text-white sm:text-4xl">Convocatoria Abierta</h2>
                 <p className="mx-auto max-w-[700px] text-blue-100 md:text-xl">
-                  Invitamos a investigadores y académicos a enviar sus artículos para el próximo número de Koulana.
+                  Invitamos a investigadores y académicos a enviar sus artículos para el próximo número de Revista FA.
                 </p>
               </div>
               <Link
