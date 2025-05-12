@@ -83,7 +83,7 @@ export default function ArchivosPage() {
       <div className="mb-8 md:mb-12">
         <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl md:text-5xl">Archivos</h1>
         <p className="mt-4 text-lg text-gray-600 max-w-3xl">
-          Explora los números anteriores de la revista académica Koulana. Cada edición ofrece investigaciones, análisis
+          Explora los números anteriores de la revista académica FA. Cada edición ofrece investigaciones, análisis
           y reflexiones sobre temas relevantes en educación y cultura.
         </p>
         <Separator className="my-6" />

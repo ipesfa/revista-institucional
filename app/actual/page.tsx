@@ -13,8 +13,8 @@ export default function ActualPage() {
     date: "Julio 2025",
     volume: "Volumen 7, Número 1",
     introduction:
-      "Este número de Koulana explora las transformaciones educativas post-pandemia y los nuevos paradigmas en la enseñanza superior. Incluye investigaciones sobre metodologías híbridas, el impacto de la inteligencia artificial en la educación, y estudios culturales sobre la adaptación de instituciones educativas a los desafíos contemporáneos.",
-    pdfUrl: "/downloads/koulana-vol7-num1.pdf",
+      "Este número de Revisfa FA explora las transformaciones educativas post-pandemia y los nuevos paradigmas en la enseñanza superior. Incluye investigaciones sobre metodologías híbridas, el impacto de la inteligencia artificial en la educación, y estudios culturales sobre la adaptación de instituciones educativas a los desafíos contemporáneos.",
+    pdfUrl: "/downloads/revistafa-vol7-num1.pdf",
     coverImage: "/placeholder.svg?height=600&width=400",
     articles: [
       {

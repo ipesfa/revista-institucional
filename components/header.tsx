@@ -38,7 +38,7 @@ export function Header() {
               <div className="relative h-12 w-12 mr-4">
                 <Image src="/logo-ipesfa.png" alt="Logo IPES FA" fill className="object-contain" />
               </div>
-              <span className="font-sans text-3xl md:text-4xl font-semibold text-blue-800">Koulana</span>
+              <span className="font-sans text-3xl md:text-4xl font-semibold text-blue-800">Revista FA</span>
             </Link>
           </div>
 

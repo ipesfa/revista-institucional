@@ -6,7 +6,7 @@ export function Footer() {
       <div className="container flex flex-col items-center justify-between gap-4 px-4 md:flex-row md:px-6">
         <div className="flex flex-col items-center gap-2 md:items-start">
           <Link href="/" className="flex items-center">
-            <span className="text-xl font-bold text-blue-800">Koulana</span>
+            <span className="text-xl font-bold text-blue-800">Revista FA</span>
           </Link>
           <p className="text-center text-sm text-gray-500 md:text-left">
             Revista Académica del IPES FA. Publicación semestral de temas de educación y cultura.
@@ -22,7 +22,7 @@ export function Footer() {
             </Link>
           </nav>
           <p className="text-center text-xs text-gray-400 md:text-right">
-            © {new Date().getFullYear()} Koulana. Todos los derechos reservados.
+            © {new Date().getFullYear()} Revista FA. Todos los derechos reservados.
           </p>
         </div>
       </div>
