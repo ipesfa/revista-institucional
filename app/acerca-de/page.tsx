@@ -179,7 +179,7 @@ export default function AcercaDePage() {
                   <div className="space-y-4">
                     <p className="text-gray-700 leading-relaxed">
                       <span className="font-semibold">Revista FA</span> es una revista académica semestral publicada por el
-                      Instituto de Profesores de Educación Superior (IPES FA), dedicada a la difusión de investigaciones
+                      Instituto de Educación Superior (IPES FA), dedicada a la difusión de investigaciones
                       originales y reflexiones críticas en el ámbito de la educación y la cultura.
                     </p>
                     <p className="text-gray-700 leading-relaxed">
@@ -416,7 +416,7 @@ export default function AcercaDePage() {
                         <Phone className="h-5 w-5 text-blue-800 mr-3 mt-0.5" />
                         <div>
                           <h3 className="font-medium text-gray-900">Teléfono</h3>
-                          <p className="text-gray-700">+598 2345 6789</p>
+                          <p className="text-gray-700">+54 2345 6789</p>
                           <p className="text-sm text-gray-500 mt-1">Lunes a viernes de 9:00 a 17:00 horas</p>
                         </div>
                       </div>
@@ -426,7 +426,7 @@ export default function AcercaDePage() {
                         <div>
                           <h3 className="font-medium text-gray-900">Dirección</h3>
                           <p className="text-gray-700">
-                            Instituto de Profesores de Educación Superior (IPES FA)
+                            Instituto de Educación Superior (IPES FA)
                             <br />
                             Deloqui 237, Ushuaia TDF
                             <br />

@@ -244,14 +244,14 @@ export default function ConvocatoriaPage() {
 
           {/* Contact Section */}
           <section className="bg-gray-50 p-6 rounded-lg">
-            <h2 className="text-xl font-bold text-gray-900 mb-4">¿Necesita ayuda?</h2>
+            <h2 className="text-xl font-bold text-gray-900 mb-4">¿Necesitas ayuda?</h2>
             <p className="text-gray-700 mb-4">
               Si tiene alguna duda o consulta sobre la convocatoria, no dude en ponerse en contacto con nosotros:
             </p>
             <div className="flex items-center">
               <Mail className="h-5 w-5 text-blue-800 mr-2" />
               <a href="mailto:articulos.koulana@ipes.edu" className="text-blue-800 hover:underline">
-                articulos.koulana@ipes.edu
+                articulosrevistafa@ipesfa-ushuaia.edu.ar
               </a>
             </div>
             <div className="mt-4">
