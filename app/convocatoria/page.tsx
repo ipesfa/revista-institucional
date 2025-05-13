@@ -14,7 +14,7 @@ export default function ConvocatoriaPage() {
     titulo: "Convocatoria Abierta",
     subtitulo: "Volumen 8, Número 1 - Enero 2026",
     descripcion:
-      "La revista académica Koulana invita a investigadores, docentes y especialistas a enviar sus contribuciones para el próximo número. Buscamos artículos originales e inéditos que aborden temas relevantes en el ámbito de la educación y la cultura, con especial énfasis en innovaciones pedagógicas, transformaciones educativas y análisis culturales contemporáneos.",
+      "La revista académica FA invita a investigadores, docentes y especialistas a enviar sus contribuciones para el próximo número. Buscamos artículos originales e inéditos que aborden temas relevantes en el ámbito de la educación y la cultura, con especial énfasis en innovaciones pedagógicas, transformaciones educativas y análisis culturales contemporáneos.",
     tematica: "Innovación educativa y transformaciones culturales en la era digital",
     fechaLimite: "30 de septiembre de 2025",
     fechaPublicacion: "Enero 2026",

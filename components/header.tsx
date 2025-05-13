@@ -100,7 +100,7 @@ export function Header() {
           <div className="container mx-auto px-4">
             <div className="flex flex-col md:flex-row items-center gap-4">
               {/* Journal Cover Image - perfectly centered in the blue strip */}
-              <div className="flex items-center justify-center h-[140px] flex-shrink-0">
+              <div className="flex items-center justify-center h-[160px] flex-shrink-0">
                 <div className="relative w-[100px] h-[140px]">
                   <Image
                     src="/portada-koulana.png"
