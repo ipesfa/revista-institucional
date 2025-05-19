@@ -11,7 +11,7 @@ export default function Home() {
             <div className="grid gap-6 lg:grid-cols-2 lg:gap-12">
               <div className="flex flex-col justify-center space-y-4">
                 <div className="space-y-2">
-                  <h1 className="text-4xl font-bold tracking-tighter text-blue-800 sm:text-5xl md:text-6xl">1ra Edición</h1>
+                  <h1 className="text-4xl font-bold tracking-tighter text-blue-800 sm:text-5xl md:text-6xl">Año 1 Volumen 1</h1>
                   <h2 className="text-xl font-medium text-gray-600 sm:text-2xl">Revista Académica del IPES FA</h2>
                   <p className="max-w-[600px] text-gray-500 md:text-xl">
                     Publicación semestral de temas de educación y cultura.
@@ -47,129 +47,326 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Latest Issue Section */}
-        <section className="py-12 md:py-16">
+        {/* Main Content Section */}
+        <section className="py-16 md:py-24 bg-gradient-to-b from-white to-gray-50">
           <div className="container px-4 md:px-6">
-            <div className="mb-8 flex flex-col items-start gap-4">
-              <h2 className="text-2xl font-bold text-gray-900 sm:text-3xl">Número Actual</h2>
-              <div className="h-1 w-20 bg-blue-800"></div>
+            <div className="mb-12 flex flex-col items-start gap-4">
+              <h2 className="text-2xl font-bold text-gray-900 sm:text-3xl md:text-4xl">Contenido del Último Número</h2>
+              <div className="h-1.5 w-24 bg-blue-800 rounded-full"></div>
             </div>
-            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-              <div className="group relative overflow-hidden rounded-lg border bg-white shadow transition-all hover:shadow-md">
-                <div className="aspect-[3/4] w-full overflow-hidden">
-                  <Image
-                    src="/placeholder.svg?height=400&width=300"
-                    alt="Artículo destacado"
-                    width={300}
-                    height={400}
-                    className="h-full w-full object-cover transition-transform group-hover:scale-105"
-                  />
-                </div>
-                <div className="p-4">
-                  <p className="mb-2 text-sm font-medium text-blue-800">Educación</p>
-                  <h3 className="mb-2 text-lg font-bold leading-tight text-gray-900">
-                    Nuevas perspectivas en la educación contemporánea
-                  </h3>
-                  <p className="mb-3 text-sm text-gray-600">Por María González y Juan Pérez</p>
-                  <Link href="/articulo/1" className="text-sm font-medium text-blue-800 hover:underline">
-                    Leer artículo →
-                  </Link>
-                </div>
-              </div>
-              <div className="group relative overflow-hidden rounded-lg border bg-white shadow transition-all hover:shadow-md">
-                <div className="aspect-[3/4] w-full overflow-hidden">
-                  <Image
-                    src="/placeholder.svg?height=400&width=300"
-                    alt="Artículo destacado"
-                    width={300}
-                    height={400}
-                    className="h-full w-full object-cover transition-transform group-hover:scale-105"
-                  />
-                </div>
-                <div className="p-4">
-                  <p className="mb-2 text-sm font-medium text-blue-800">Cultura</p>
-                  <h3 className="mb-2 text-lg font-bold leading-tight text-gray-900">
-                    El impacto cultural de las nuevas tecnologías
-                  </h3>
-                  <p className="mb-3 text-sm text-gray-600">Por Carlos Rodríguez</p>
-                  <Link href="/articulo/2" className="text-sm font-medium text-blue-800 hover:underline">
-                    Leer artículo →
-                  </Link>
-                </div>
-              </div>
-              <div className="group relative overflow-hidden rounded-lg border bg-white shadow transition-all hover:shadow-md">
-                <div className="aspect-[3/4] w-full overflow-hidden">
-                  <Image
-                    src="/placeholder.svg?height=400&width=300"
-                    alt="Artículo destacado"
-                    width={300}
-                    height={400}
-                    className="h-full w-full object-cover transition-transform group-hover:scale-105"
-                  />
-                </div>
-                <div className="p-4">
-                  <p className="mb-2 text-sm font-medium text-blue-800">Investigación</p>
-                  <h3 className="mb-2 text-lg font-bold leading-tight text-gray-900">
-                    Metodologías de investigación en ciencias sociales
-                  </h3>
-                  <p className="mb-3 text-sm text-gray-600">Por Ana Martínez y Luis Sánchez</p>
-                  <Link href="/articulo/3" className="text-sm font-medium text-blue-800 hover:underline">
-                    Leer artículo →
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className="mt-8 flex justify-center">
-              <Link
-                href="/actual"
-                className="inline-flex h-10 items-center justify-center rounded-md border border-gray-300 bg-white px-8 text-sm font-medium text-gray-700 shadow-sm transition-colors hover:bg-gray-50 hover:text-blue-800 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-300"
-              >
-                Ver todos los artículos
-              </Link>
-            </div>
-          </div>
-        </section>
 
-        {/* Archive Section */}
-        <section className="bg-gray-50 py-12 md:py-16">
-          <div className="container px-4 md:px-6">
-            <div className="mb-8 flex flex-col items-start gap-4">
-              <h2 className="text-2xl font-bold text-gray-900 sm:text-3xl">Números Anteriores</h2>
-              <div className="h-1 w-20 bg-blue-800"></div>
+            {/* Presentación Section */}
+            <div className="mb-16">
+              <h3 className="mb-6 text-xl font-bold text-gray-900 flex items-center gap-3">
+                <span className="text-blue-800">01</span>
+                Presentación
+              </h3>
+              <div className="rounded-xl border bg-white p-8 shadow-lg hover:shadow-xl transition-all duration-300">
+                <h4 className="mb-3 text-lg font-semibold text-blue-800">Presentación: Cartografías de la formación docente en el sur del sur</h4>
+                <p className="mb-6 text-gray-600">Lic. Paula Moyano y Mg. Javier Contreras</p>
+                <div className="flex gap-6">
+                  <Link href="/pdf/presentacion" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-50 text-blue-800 hover:bg-blue-100 transition-colors">
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                    </svg>
+                    PDF
+                  </Link>
+                  <Link href="/html/presentacion" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-gray-50 text-gray-800 hover:bg-gray-100 transition-colors">
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                    </svg>
+                    HTML
+                  </Link>
+                </div>
+              </div>
             </div>
-            <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-              {[1, 2, 3, 4].map((item) => (
-                <Link
-                  key={item}
-                  href={`/archivos/${item}`}
-                  className="group flex flex-col overflow-hidden rounded-lg border bg-white shadow transition-all hover:shadow-md"
-                >
-                  <div className="aspect-[3/4] w-full overflow-hidden">
-                    <Image
-                      src={`/placeholder.svg?height=400&width=300&text=Vol.${5 - item}`}
-                      alt={`Volumen ${5 - item}`}
-                      width={300}
-                      height={400}
-                      className="h-full w-full object-cover transition-transform group-hover:scale-105"
-                    />
+
+            {/* Dossier Temático Section */}
+            <div className="mb-16">
+              <h3 className="mb-6 text-xl font-bold text-gray-900 flex items-center gap-3">
+                <span className="text-blue-800">02</span>
+                Dossier Temático
+              </h3>
+              <div className="grid gap-8 sm:grid-cols-2">
+                <div className="rounded-xl border bg-white p-8 shadow-lg hover:shadow-xl transition-all duration-300">
+                  <h4 className="mb-3 text-lg font-semibold text-blue-800">Pedagogías territoriales y clima escolar en contextos extremos</h4>
+                  <p className="mb-6 text-gray-600">Dra. Mariana Velázquez</p>
+                  <div className="flex gap-6">
+                    <Link href="/pdf/dossier-1" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-50 text-blue-800 hover:bg-blue-100 transition-colors">
+                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                      </svg>
+                      PDF
+                    </Link>
+                    <Link href="/html/dossier-1" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-gray-50 text-gray-800 hover:bg-gray-100 transition-colors">
+                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                      </svg>
+                      HTML
+                    </Link>
                   </div>
-                  <div className="flex flex-1 flex-col justify-between p-4">
-                    <div>
-                      <h3 className="font-bold text-gray-900">Volumen {5 - item}</h3>
-                      <p className="text-sm text-gray-600">
-                        {item % 2 === 0 ? "Enero - Junio" : "Julio - Diciembre"} {2023 - Math.floor(item / 2)}
-                      </p>
-                    </div>
+                </div>
+                <div className="rounded-xl border bg-white p-8 shadow-lg hover:shadow-xl transition-all duration-300">
+                  <h4 className="mb-3 text-lg font-semibold text-blue-800">La formación docente ante los desafíos de la inteligencia artificial</h4>
+                  <p className="mb-6 text-gray-600">Prof. Tomás Benítez</p>
+                  <div className="flex gap-6">
+                    <Link href="/pdf/dossier-2" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-50 text-blue-800 hover:bg-blue-100 transition-colors">
+                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                      </svg>
+                      PDF
+                    </Link>
+                    <Link href="/html/dossier-2" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-gray-50 text-gray-800 hover:bg-gray-100 transition-colors">
+                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                      </svg>
+                      HTML
+                    </Link>
                   </div>
-                </Link>
-              ))}
+                </div>
+              </div>
             </div>
-            <div className="mt-8 flex justify-center">
+
+            {/* Artículos Científicos Section */}
+            <div className="mb-16">
+              <h3 className="mb-6 text-xl font-bold text-gray-900 flex items-center gap-3">
+                <span className="text-blue-800">03</span>
+                Artículos Científicos
+              </h3>
+              <div className="grid gap-8 sm:grid-cols-2">
+                <div className="rounded-xl border bg-white p-8 shadow-lg hover:shadow-xl transition-all duration-300">
+                  <h4 className="mb-3 text-lg font-semibold text-blue-800">La enseñanza de la biología en entornos rurales: estudio de caso en Tolhuin</h4>
+                  <p className="mb-6 text-gray-600">Dr. Gustavo Ilari</p>
+                  <div className="flex gap-6">
+                    <Link href="/pdf/articulo-1" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-50 text-blue-800 hover:bg-blue-100 transition-colors">
+                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                      </svg>
+                      PDF
+                    </Link>
+                    <Link href="/html/articulo-1" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-gray-50 text-gray-800 hover:bg-gray-100 transition-colors">
+                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                      </svg>
+                      HTML
+                    </Link>
+                  </div>
+                </div>
+                <div className="rounded-xl border bg-white p-8 shadow-lg hover:shadow-xl transition-all duration-300">
+                  <h4 className="mb-3 text-lg font-semibold text-blue-800">Procesos de alfabetización científica en la escuela secundaria fueguina</h4>
+                  <p className="mb-6 text-gray-600">Mg. Paula Sosa</p>
+                  <div className="flex gap-6">
+                    <Link href="/pdf/articulo-2" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-50 text-blue-800 hover:bg-blue-100 transition-colors">
+                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                      </svg>
+                      PDF
+                    </Link>
+                    <Link href="/html/articulo-2" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-gray-50 text-gray-800 hover:bg-gray-100 transition-colors">
+                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                      </svg>
+                      HTML
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Ensayos Académicos Section */}
+            <div className="mb-16">
+              <h3 className="mb-6 text-xl font-bold text-gray-900 flex items-center gap-3">
+                <span className="text-blue-800">04</span>
+                Ensayos Académicos
+              </h3>
+              <div className="grid gap-8 sm:grid-cols-2">
+                <div className="rounded-xl border bg-white p-8 shadow-lg hover:shadow-xl transition-all duration-300">
+                  <h4 className="mb-3 text-lg font-semibold text-blue-800">Docencia y subjetividad: el rol de la emocionalidad en el aula</h4>
+                  <p className="mb-6 text-gray-600">Prof. Malena Figueroa</p>
+                  <div className="flex gap-6">
+                    <Link href="/pdf/ensayo-1" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-50 text-blue-800 hover:bg-blue-100 transition-colors">
+                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                      </svg>
+                      PDF
+                    </Link>
+                    <Link href="/html/ensayo-1" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-gray-50 text-gray-800 hover:bg-gray-100 transition-colors">
+                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                      </svg>
+                      HTML
+                    </Link>
+                  </div>
+                </div>
+                <div className="rounded-xl border bg-white p-8 shadow-lg hover:shadow-xl transition-all duration-300">
+                  <h4 className="mb-3 text-lg font-semibold text-blue-800">Descolonizar el currículo: una mirada desde el sur</h4>
+                  <p className="mb-6 text-gray-600">Lic. Julián Cáceres</p>
+                  <div className="flex gap-6">
+                    <Link href="/pdf/ensayo-2" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-50 text-blue-800 hover:bg-blue-100 transition-colors">
+                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                      </svg>
+                      PDF
+                    </Link>
+                    <Link href="/html/ensayo-2" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-gray-50 text-gray-800 hover:bg-gray-100 transition-colors">
+                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                      </svg>
+                      HTML
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Prácticas y Experiencias Section */}
+            <div className="mb-16">
+              <h3 className="mb-6 text-xl font-bold text-gray-900 flex items-center gap-3">
+                <span className="text-blue-800">05</span>
+                Prácticas y Experiencias Educativas
+              </h3>
+              <div className="grid gap-8 sm:grid-cols-2">
+                <div className="rounded-xl border bg-white p-8 shadow-lg hover:shadow-xl transition-all duration-300">
+                  <h4 className="mb-3 text-lg font-semibold text-blue-800">Aula taller en contextos de plurigrado: experiencias desde Almanza</h4>
+                  <p className="mb-6 text-gray-600">Equipo Docente Escuela 38</p>
+                  <div className="flex gap-6">
+                    <Link href="/pdf/practica-1" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-50 text-blue-800 hover:bg-blue-100 transition-colors">
+                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                      </svg>
+                      PDF
+                    </Link>
+                    <Link href="/html/practica-1" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-gray-50 text-gray-800 hover:bg-gray-100 transition-colors">
+                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                      </svg>
+                      HTML
+                    </Link>
+                  </div>
+                </div>
+                <div className="rounded-xl border bg-white p-8 shadow-lg hover:shadow-xl transition-all duration-300">
+                  <h4 className="mb-3 text-lg font-semibold text-blue-800">Uso de podcasts como recurso didáctico en ESI</h4>
+                  <p className="mb-6 text-gray-600">Prof. Carla Iriarte</p>
+                  <div className="flex gap-6">
+                    <Link href="/pdf/practica-2" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-50 text-blue-800 hover:bg-blue-100 transition-colors">
+                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                      </svg>
+                      PDF
+                    </Link>
+                    <Link href="/html/practica-2" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-gray-50 text-gray-800 hover:bg-gray-100 transition-colors">
+                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                      </svg>
+                      HTML
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Dilemas y Coyunturas Section */}
+            <div className="mb-16">
+              <h3 className="mb-6 text-xl font-bold text-gray-900 flex items-center gap-3">
+                <span className="text-blue-800">06</span>
+                Dilemas y Coyunturas
+              </h3>
+              <p className="mb-6 text-gray-600">Coordinador: Lic. Martín Araya</p>
+              <div className="grid gap-8 sm:grid-cols-2">
+                <div className="rounded-xl border bg-white p-8 shadow-lg hover:shadow-xl transition-all duration-300">
+                  <h4 className="mb-3 text-lg font-semibold text-blue-800">Educación y meritocracia: tensiones en el discurso institucional</h4>
+                  <p className="mb-6 text-gray-600">Lic. Ana Caprile</p>
+                  <div className="flex gap-6">
+                    <Link href="/pdf/dilema-1" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-50 text-blue-800 hover:bg-blue-100 transition-colors">
+                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                      </svg>
+                      PDF
+                    </Link>
+                    <Link href="/html/dilema-1" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-gray-50 text-gray-800 hover:bg-gray-100 transition-colors">
+                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                      </svg>
+                      HTML
+                    </Link>
+                  </div>
+                </div>
+                <div className="rounded-xl border bg-white p-8 shadow-lg hover:shadow-xl transition-all duration-300">
+                  <h4 className="mb-3 text-lg font-semibold text-blue-800">Infraestructura escolar y políticas públicas en el sur argentino</h4>
+                  <p className="mb-6 text-gray-600">Mg. Héctor Lapido</p>
+                  <div className="flex gap-6">
+                    <Link href="/pdf/dilema-2" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-50 text-blue-800 hover:bg-blue-100 transition-colors">
+                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                      </svg>
+                      PDF
+                    </Link>
+                    <Link href="/html/dilema-2" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-gray-50 text-gray-800 hover:bg-gray-100 transition-colors">
+                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                      </svg>
+                      HTML
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Reseñas Section */}
+            <div className="mb-16">
+              <h3 className="mb-6 text-xl font-bold text-gray-900 flex items-center gap-3">
+                <span className="text-blue-800">07</span>
+                Reseñas
+              </h3>
+              <div className="grid gap-8 sm:grid-cols-2">
+                <div className="rounded-xl border bg-white p-8 shadow-lg hover:shadow-xl transition-all duration-300">
+                  <h4 className="mb-3 text-lg font-semibold text-blue-800">Reseña de Pedagogías del sur de N. Ferreyra</h4>
+                  <p className="mb-6 text-gray-600">Prof. Julieta Massi</p>
+                  <div className="flex gap-6">
+                    <Link href="/pdf/resena-1" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-50 text-blue-800 hover:bg-blue-100 transition-colors">
+                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                      </svg>
+                      PDF
+                    </Link>
+                    <Link href="/html/resena-1" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-gray-50 text-gray-800 hover:bg-gray-100 transition-colors">
+                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                      </svg>
+                      HTML
+                    </Link>
+                  </div>
+                </div>
+                <div className="rounded-xl border bg-white p-8 shadow-lg hover:shadow-xl transition-all duration-300">
+                  <h4 className="mb-3 text-lg font-semibold text-blue-800">Lectura crítica de Cuerpos que educan de L. Melgarejo</h4>
+                  <p className="mb-6 text-gray-600">Lic. Germán Ruiz</p>
+                  <div className="flex gap-6">
+                    <Link href="/pdf/resena-2" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-50 text-blue-800 hover:bg-blue-100 transition-colors">
+                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                      </svg>
+                      PDF
+                    </Link>
+                    <Link href="/html/resena-2" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-gray-50 text-gray-800 hover:bg-gray-100 transition-colors">
+                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                      </svg>
+                      HTML
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-12 flex justify-center">
               <Link
                 href="/archivos"
-                className="inline-flex h-10 items-center justify-center rounded-md border border-gray-300 bg-white px-8 text-sm font-medium text-gray-700 shadow-sm transition-colors hover:bg-gray-50 hover:text-blue-800 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-300"
+                className="inline-flex items-center gap-2 px-8 py-3 rounded-lg bg-blue-800 text-white hover:bg-blue-700 transition-colors shadow-lg hover:shadow-xl"
               >
-                Ver archivo completo
+                <span>Ver todos los números</span>
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                </svg>
               </Link>
             </div>
           </div>
