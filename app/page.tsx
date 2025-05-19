@@ -13,7 +13,7 @@ export default function Home() {
                 <div className="space-y-2">
                   <h1 className="text-4xl font-bold tracking-tighter text-blue-800 sm:text-5xl md:text-6xl">Año 1 Volumen 1</h1>
                   <h2 className="text-xl font-medium text-gray-600 sm:text-2xl">Revista Académica del IPES FA</h2>
-                  <p className="max-w-[600px] text-gray-500 md:text-xl">
+                  <p className="max-w-[600px] text-gray-500 md:text-xl text-justify">
                     Publicación semestral de temas de educación y cultura.
                   </p>
                 </div>
@@ -58,12 +58,11 @@ export default function Home() {
             {/* Presentación Section */}
             <div className="mb-16">
               <h3 className="mb-6 text-xl font-bold text-gray-900 flex items-center gap-3">
-                <span className="text-blue-800">01</span>
                 Presentación
               </h3>
               <div className="rounded-xl border bg-white p-8 shadow-lg hover:shadow-xl transition-all duration-300">
                 <h4 className="mb-3 text-lg font-semibold text-blue-800">Presentación: Cartografías de la formación docente en el sur del sur</h4>
-                <p className="mb-6 text-gray-600">Lic. Paula Moyano y Mg. Javier Contreras</p>
+                <p className="mb-6 text-gray-600 text-justify">Lic. Paula Moyano y Mg. Javier Contreras</p>
                 <div className="flex gap-6">
                   <Link href="/pdf/presentacion" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-50 text-blue-800 hover:bg-blue-100 transition-colors">
                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -84,13 +83,12 @@ export default function Home() {
             {/* Dossier Temático Section */}
             <div className="mb-16">
               <h3 className="mb-6 text-xl font-bold text-gray-900 flex items-center gap-3">
-                <span className="text-blue-800">02</span>
                 Dossier Temático
               </h3>
               <div className="grid gap-8 sm:grid-cols-2">
                 <div className="rounded-xl border bg-white p-8 shadow-lg hover:shadow-xl transition-all duration-300">
                   <h4 className="mb-3 text-lg font-semibold text-blue-800">Pedagogías territoriales y clima escolar en contextos extremos</h4>
-                  <p className="mb-6 text-gray-600">Dra. Mariana Velázquez</p>
+                  <p className="mb-6 text-gray-600 text-justify">Dra. Mariana Velázquez</p>
                   <div className="flex gap-6">
                     <Link href="/pdf/dossier-1" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-50 text-blue-800 hover:bg-blue-100 transition-colors">
                       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -108,7 +106,7 @@ export default function Home() {
                 </div>
                 <div className="rounded-xl border bg-white p-8 shadow-lg hover:shadow-xl transition-all duration-300">
                   <h4 className="mb-3 text-lg font-semibold text-blue-800">La formación docente ante los desafíos de la inteligencia artificial</h4>
-                  <p className="mb-6 text-gray-600">Prof. Tomás Benítez</p>
+                  <p className="mb-6 text-gray-600 text-justify">Prof. Tomás Benítez</p>
                   <div className="flex gap-6">
                     <Link href="/pdf/dossier-2" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-50 text-blue-800 hover:bg-blue-100 transition-colors">
                       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -130,13 +128,12 @@ export default function Home() {
             {/* Artículos Científicos Section */}
             <div className="mb-16">
               <h3 className="mb-6 text-xl font-bold text-gray-900 flex items-center gap-3">
-                <span className="text-blue-800">03</span>
                 Artículos Científicos
               </h3>
               <div className="grid gap-8 sm:grid-cols-2">
                 <div className="rounded-xl border bg-white p-8 shadow-lg hover:shadow-xl transition-all duration-300">
                   <h4 className="mb-3 text-lg font-semibold text-blue-800">La enseñanza de la biología en entornos rurales: estudio de caso en Tolhuin</h4>
-                  <p className="mb-6 text-gray-600">Dr. Gustavo Ilari</p>
+                  <p className="mb-6 text-gray-600 text-justify">Dr. Gustavo Ilari</p>
                   <div className="flex gap-6">
                     <Link href="/pdf/articulo-1" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-50 text-blue-800 hover:bg-blue-100 transition-colors">
                       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -154,7 +151,7 @@ export default function Home() {
                 </div>
                 <div className="rounded-xl border bg-white p-8 shadow-lg hover:shadow-xl transition-all duration-300">
                   <h4 className="mb-3 text-lg font-semibold text-blue-800">Procesos de alfabetización científica en la escuela secundaria fueguina</h4>
-                  <p className="mb-6 text-gray-600">Mg. Paula Sosa</p>
+                  <p className="mb-6 text-gray-600 text-justify">Mg. Paula Sosa</p>
                   <div className="flex gap-6">
                     <Link href="/pdf/articulo-2" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-50 text-blue-800 hover:bg-blue-100 transition-colors">
                       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -176,13 +173,12 @@ export default function Home() {
             {/* Ensayos Académicos Section */}
             <div className="mb-16">
               <h3 className="mb-6 text-xl font-bold text-gray-900 flex items-center gap-3">
-                <span className="text-blue-800">04</span>
                 Ensayos Académicos
               </h3>
               <div className="grid gap-8 sm:grid-cols-2">
                 <div className="rounded-xl border bg-white p-8 shadow-lg hover:shadow-xl transition-all duration-300">
                   <h4 className="mb-3 text-lg font-semibold text-blue-800">Docencia y subjetividad: el rol de la emocionalidad en el aula</h4>
-                  <p className="mb-6 text-gray-600">Prof. Malena Figueroa</p>
+                  <p className="mb-6 text-gray-600 text-justify">Prof. Malena Figueroa</p>
                   <div className="flex gap-6">
                     <Link href="/pdf/ensayo-1" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-50 text-blue-800 hover:bg-blue-100 transition-colors">
                       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -200,7 +196,7 @@ export default function Home() {
                 </div>
                 <div className="rounded-xl border bg-white p-8 shadow-lg hover:shadow-xl transition-all duration-300">
                   <h4 className="mb-3 text-lg font-semibold text-blue-800">Descolonizar el currículo: una mirada desde el sur</h4>
-                  <p className="mb-6 text-gray-600">Lic. Julián Cáceres</p>
+                  <p className="mb-6 text-gray-600 text-justify">Lic. Julián Cáceres</p>
                   <div className="flex gap-6">
                     <Link href="/pdf/ensayo-2" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-50 text-blue-800 hover:bg-blue-100 transition-colors">
                       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -222,13 +218,12 @@ export default function Home() {
             {/* Prácticas y Experiencias Section */}
             <div className="mb-16">
               <h3 className="mb-6 text-xl font-bold text-gray-900 flex items-center gap-3">
-                <span className="text-blue-800">05</span>
                 Prácticas y Experiencias Educativas
               </h3>
               <div className="grid gap-8 sm:grid-cols-2">
                 <div className="rounded-xl border bg-white p-8 shadow-lg hover:shadow-xl transition-all duration-300">
                   <h4 className="mb-3 text-lg font-semibold text-blue-800">Aula taller en contextos de plurigrado: experiencias desde Almanza</h4>
-                  <p className="mb-6 text-gray-600">Equipo Docente Escuela 38</p>
+                  <p className="mb-6 text-gray-600 text-justify">Equipo Docente Escuela 38</p>
                   <div className="flex gap-6">
                     <Link href="/pdf/practica-1" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-50 text-blue-800 hover:bg-blue-100 transition-colors">
                       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -246,7 +241,7 @@ export default function Home() {
                 </div>
                 <div className="rounded-xl border bg-white p-8 shadow-lg hover:shadow-xl transition-all duration-300">
                   <h4 className="mb-3 text-lg font-semibold text-blue-800">Uso de podcasts como recurso didáctico en ESI</h4>
-                  <p className="mb-6 text-gray-600">Prof. Carla Iriarte</p>
+                  <p className="mb-6 text-gray-600 text-justify">Prof. Carla Iriarte</p>
                   <div className="flex gap-6">
                     <Link href="/pdf/practica-2" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-50 text-blue-800 hover:bg-blue-100 transition-colors">
                       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -268,14 +263,13 @@ export default function Home() {
             {/* Dilemas y Coyunturas Section */}
             <div className="mb-16">
               <h3 className="mb-6 text-xl font-bold text-gray-900 flex items-center gap-3">
-                <span className="text-blue-800">06</span>
                 Dilemas y Coyunturas
               </h3>
-              <p className="mb-6 text-gray-600">Coordinador: Lic. Martín Araya</p>
+              <p className="mb-6 text-gray-600 text-justify">Coordinador: Lic. Martín Araya</p>
               <div className="grid gap-8 sm:grid-cols-2">
                 <div className="rounded-xl border bg-white p-8 shadow-lg hover:shadow-xl transition-all duration-300">
                   <h4 className="mb-3 text-lg font-semibold text-blue-800">Educación y meritocracia: tensiones en el discurso institucional</h4>
-                  <p className="mb-6 text-gray-600">Lic. Ana Caprile</p>
+                  <p className="mb-6 text-gray-600 text-justify">Lic. Ana Caprile</p>
                   <div className="flex gap-6">
                     <Link href="/pdf/dilema-1" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-50 text-blue-800 hover:bg-blue-100 transition-colors">
                       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -293,7 +287,7 @@ export default function Home() {
                 </div>
                 <div className="rounded-xl border bg-white p-8 shadow-lg hover:shadow-xl transition-all duration-300">
                   <h4 className="mb-3 text-lg font-semibold text-blue-800">Infraestructura escolar y políticas públicas en el sur argentino</h4>
-                  <p className="mb-6 text-gray-600">Mg. Héctor Lapido</p>
+                  <p className="mb-6 text-gray-600 text-justify">Mg. Héctor Lapido</p>
                   <div className="flex gap-6">
                     <Link href="/pdf/dilema-2" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-50 text-blue-800 hover:bg-blue-100 transition-colors">
                       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -315,13 +309,12 @@ export default function Home() {
             {/* Reseñas Section */}
             <div className="mb-16">
               <h3 className="mb-6 text-xl font-bold text-gray-900 flex items-center gap-3">
-                <span className="text-blue-800">07</span>
                 Reseñas
               </h3>
               <div className="grid gap-8 sm:grid-cols-2">
                 <div className="rounded-xl border bg-white p-8 shadow-lg hover:shadow-xl transition-all duration-300">
                   <h4 className="mb-3 text-lg font-semibold text-blue-800">Reseña de Pedagogías del sur de N. Ferreyra</h4>
-                  <p className="mb-6 text-gray-600">Prof. Julieta Massi</p>
+                  <p className="mb-6 text-gray-600 text-justify">Prof. Julieta Massi</p>
                   <div className="flex gap-6">
                     <Link href="/pdf/resena-1" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-50 text-blue-800 hover:bg-blue-100 transition-colors">
                       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -339,7 +332,7 @@ export default function Home() {
                 </div>
                 <div className="rounded-xl border bg-white p-8 shadow-lg hover:shadow-xl transition-all duration-300">
                   <h4 className="mb-3 text-lg font-semibold text-blue-800">Lectura crítica de Cuerpos que educan de L. Melgarejo</h4>
-                  <p className="mb-6 text-gray-600">Lic. Germán Ruiz</p>
+                  <p className="mb-6 text-gray-600 text-justify">Lic. Germán Ruiz</p>
                   <div className="flex gap-6">
                     <Link href="/pdf/resena-2" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-50 text-blue-800 hover:bg-blue-100 transition-colors">
                       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -378,7 +371,7 @@ export default function Home() {
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter text-white sm:text-4xl">Convocatoria Abierta</h2>
-                <p className="mx-auto max-w-[700px] text-blue-100 md:text-xl">
+                <p className="mx-auto max-w-[700px] text-blue-100 md:text-xl text-justify">
                   Invitamos a investigadores y académicos a enviar sus artículos para el próximo número de Revista FA.
                 </p>
               </div>

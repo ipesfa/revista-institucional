@@ -17,73 +17,123 @@ export default function AcercaDePage() {
   // Datos del equipo editorial
   const editorialTeam = [
     {
-      name: "Dra. María González",
-      role: "Directora",
+      name: "Dr. Emiliano Sánchez Narvarte",
+      role: "Dirección general",
       image: "/placeholder.svg?height=200&width=200",
-      bio: "Doctora en Ciencias de la Educación con especialización en políticas educativas. Ha publicado numerosos artículos sobre transformaciones en sistemas educativos latinoamericanos.",
+      bio: "Doctor en Comunicación (UNLP) y Maestrando en Historia del Arte Argentino y Latinoamericano (UNSAM). Docente e investigador del Instituto Provincial de Enseñanza Superior \"Florentino Ameghino\" y de la Universidad Nacional de Tierra del Fuego. Coordinó y compiló el libro de Néstor García Canclini Innovaciones artísticas y rebeliones sociales (EDULP, Argentina, 2023), del cual escribió el estudio introductorio. Entre otros libros, publicó Antonio Pasquali, un itinerario intelectual transnacional (UCAB, Caracas, 2022) e Intelectuales y políticas de comunicación en América Latina (UNLP, Argentina, 2020). Realizó estancias de investigación en Venezuela, Bolivia, Brasil y México.",
     },
     {
-      name: "Dr. Juan Pérez",
-      role: "Editor en Jefe",
+      name: "Mg. Julián Ghisio",
+      role: "Dirección general",
       image: "/placeholder.svg?height=200&width=200",
-      bio: "Doctor en Filosofía y Letras. Especialista en teoría educativa y epistemología. Autor de varios libros sobre fundamentos filosóficos de la educación contemporánea.",
+      bio: "Magíster en Ciencias Sociales (FLACSO) y Licenciado en Sociología (UBA). Docente del Instituto Superior de Formación Docente \"Florentino Ameghino\" y profesor invitado en la Universidad Nacional de Quilmes. Ha investigado sobre juventudes, políticas educativas y tecnologías digitales. Compilador del libro Educación, desigualdad y pandemia en el sur global (CLACSO, 2022). Participó en congresos internacionales en Argentina, Uruguay y Colombia.",
     },
     {
-      name: "Dra. Ana Martínez",
-      role: "Editora Asociada - Sección Educación",
+      name: "Lic. Luciano Loupias",
+      role: "Artículos científicos",
       image: "/placeholder.svg?height=200&width=200",
-      bio: "Doctora en Pedagogía. Investigadora en metodologías innovadoras y tecnología educativa. Ha coordinado proyectos internacionales sobre transformación digital en educación.",
+      bio: "Licenciado en Filosofía (UNR) y Especialista en Políticas Públicas y Derechos Humanos (CLACSO). Se desempeña como docente en el Instituto \"Florentino Ameghino\" y como asesor pedagógico en proyectos de educación popular. Publicó artículos en revistas como Nómadas y Pensamiento Crítico Latinoamericano. Investiga temas vinculados al pensamiento decolonial y la filosofía política contemporánea.",
     },
     {
-      name: "Dr. Carlos Rodríguez",
-      role: "Editor Asociado - Sección Cultura",
+      name: "Dra. Paola Vega",
+      role: "Ensayos académicos",
       image: "/placeholder.svg?height=200&width=200",
-      bio: "Doctor en Estudios Culturales. Especialista en análisis de fenómenos culturales contemporáneos y su impacto en instituciones educativas.",
+      bio: "Doctora en Educación (UBA) y Magíster en Políticas Educativas (UNIPE). Actualmente es docente e investigadora del Instituto \"Florentino Ameghino\" y coordina proyectos de formación docente continua. Ha publicado trabajos sobre formación docente inicial y evaluación educativa. Su último artículo apareció en la revista Educación y Sociedad (UNER, 2024).",
     },
     {
-      name: "Mg. Luis Sánchez",
-      role: "Coordinador Editorial",
+      name: "Lic. Noelia Lobo",
+      role: "Ensayos académicos",
       image: "/placeholder.svg?height=200&width=200",
-      bio: "Magíster en Edición y Gestión Editorial. Responsable de los procesos editoriales y de la calidad de las publicaciones.",
+      bio: "Licenciada en Letras (UNMdP) y Diplomada en Escritura Académica (UNGS). Se desempeña como docente en el nivel superior y secundario en Tierra del Fuego. Sus líneas de interés se centran en la enseñanza de la lengua y la literatura en contextos de diversidad. Participa en proyectos de lectura y escritura crítica con jóvenes. Colabora con publicaciones educativas y culturales de la región.",
     },
     {
-      name: "Lic. Elena Torres",
-      role: "Asistente Editorial",
+      name: "Lic. Luciana Larrondo",
+      role: "Prácticas y experiencias educativas",
       image: "/placeholder.svg?height=200&width=200",
-      bio: "Licenciada en Comunicación. Gestiona el proceso de revisión por pares y la comunicación con autores y evaluadores.",
+      bio: "Licenciada en Psicología (UBA) y Maestranda en Educación y Sociedad (UNGS). Trabaja como orientadora escolar y docente en el nivel superior. Integra equipos interdisciplinarios de acompañamiento a trayectorias educativas. Ha dictado talleres de salud mental y educación afectiva en instituciones de Tierra del Fuego. Publicó artículos breves en boletines educativos sobre adolescencia y subjetividad.",
+    },
+    {
+      name: "Lic. Laura Buedo",
+      role: "Prácticas y experiencias educativas",
+      image: "/placeholder.svg?height=200&width=200",
+      bio: "Licenciada en Ciencias de la Educación (UNQ) y Especialista en Gestión Educativa. Es profesora titular en el Instituto \"Florentino Ameghino\" y capacitadora en programas de formación continua. Desarrolla investigaciones sobre inclusión, currículum y enfoques pedagógicos alternativos. Coautora del libro Prácticas docentes en territorios extremos (Ediciones Sur, 2023).",
+    },
+    {
+      name: "Mg. Mario Hernández",
+      role: "Dilemas y coyunturas",
+      image: "/placeholder.svg?height=200&width=200",
+      bio: "Magíster en Historia Contemporánea (UNSAM) y Profesor de Historia (UNLP). Docente en el nivel secundario y superior. Investiga procesos históricos del Cono Sur y memorias del terrorismo de Estado en la región patagónica. Colabora con espacios de memoria y derechos humanos. Es autor del libro Relatos del silencio. Memoria y dictadura en el sur argentino (Editorial Patagónica, 2022).",
+    },
+    {
+      name: "Lic. Miguel Fanchovich",
+      role: "Reseñas",
+      image: "/placeholder.svg?height=200&width=200",
+      bio: "Licenciado en Comunicación Social (UNC) y Diplomado en Pedagogías Críticas. Es docente en el Instituto \"Florentino Ameghino\" y realiza producciones audiovisuales vinculadas a la educación y el territorio. Coordina talleres de medios en escuelas rurales. Participó en festivales educativos de cine y comunicación comunitaria. Publicó materiales didácticos sobre educomunicación.",
+    },
+    {
+      name: "Lic. Shion Cenatiempo",
+      role: "Recepción y distribución interna",
+      image: "/placeholder.svg?height=200&width=200",
+      bio: "Licenciada en Antropología Social (UNSa) y Maestranda en Estudios Culturales (UNGS). Es docente-investigadora en el nivel superior y participa en proyectos sobre interculturalidad, género y derechos indígenas. Ha realizado trabajos de campo en comunidades originarias del norte argentino y Tierra del Fuego. Su artículo más reciente fue publicado en Revista Argumentos (IDES, 2023).",
     },
   ]
 
   // Datos de las secciones temáticas
   const thematicSections = [
     {
-      title: "Educación y Pedagogía",
-      description:
-        "Artículos sobre teorías educativas, metodologías de enseñanza-aprendizaje, evaluación educativa, formación docente y gestión institucional.",
-      types: ["Artículos de investigación", "Ensayos teóricos", "Estudios de caso", "Experiencias innovadoras"],
+      title: "Dirección general",
+      description: "Seguimiento y acompañamiento integral del conjunto de las acciones referentes a la organización de la revista",
+      types: ["Coordinadores: Emiliano Sánchez Narvarte y Julián Ghisio"],
     },
     {
-      title: "Cultura y Sociedad",
-      description:
-        "Trabajos que abordan la relación entre fenómenos culturales, transformaciones sociales y procesos educativos, incluyendo análisis de políticas culturales y su impacto en la educación.",
-      types: ["Artículos de investigación", "Ensayos críticos", "Análisis de políticas", "Estudios comparativos"],
+      title: "Organización del dossier",
+      description: "Establecer diálogos entre las propuestas recibidas por los distintos profesorados en relación con el perfil general de la revista. Colaborar, guiar y establecer un nexo entre el equipo de la revista y las propuestas de dossier",
+      types: ["Coordinador: Mariano Malizia"],
     },
     {
-      title: "Tecnología Educativa",
-      description:
-        "Investigaciones sobre implementación, uso y evaluación de tecnologías en contextos educativos, incluyendo estudios sobre plataformas digitales, recursos educativos abiertos y metodologías mediadas por tecnología.",
-      types: [
-        "Artículos de investigación",
-        "Informes técnicos",
-        "Estudios de implementación",
-        "Análisis de tendencias",
-      ],
+      title: "Artículos científicos",
+      description: "Trabajos vinculados a investigaciones en curso o ya finalizadas pero inéditas, a partir de estudios de caso, trabajo de campo, estrategias teóricas y metodológicas definidas, análisis y conclusiones. (Evaluados por el sistema de dobles ciegos.)",
+      types: ["Coordinadores: Julián Ghisio y Luciano Loupias"],
     },
     {
-      title: "Políticas Educativas",
-      description:
-        "Análisis de políticas públicas en educación, reformas educativas, legislación, financiamiento y gobernanza de sistemas educativos a nivel local, nacional e internacional.",
-      types: ["Artículos de investigación", "Análisis de políticas", "Estudios comparativos", "Documentos de posición"],
+      title: "Ensayos académicos",
+      description: "Un ensayo académico procura abordar un tema de manera más amplia que un artículo científica, en la que quien lo presenta, elabora su propio punto de vista, aportando una visión novedosa y original –en tensión y discusión con otros puntos de vista- por lo que se pretende que se trate de un trabajo propositivo. A través del ensayo, quien lo produce podría elaborar un aspecto específico de su campo de conocimiento o formular una reflexión crítica sobre la realidad. (Evaluados por el sistema de dobles ciego).",
+      types: ["Coordinadoras: Paola Vega y Noelia Lobo"],
+    },
+    {
+      title: "Prácticas y experiencias educativas",
+      description: "Busca ser una sección analítica y reflexiva de la práctica del equipo docente del IPES FA como también puede convertirse en un espacio en el cual lxs estudiantes de los distintos profesorados presenten avances de sus reflexiones en torno a la práctica docente que llevan a cabo. Puede ser de utilidad para el inicio en el ejercicio de la práctica académica de lxs estudiantes como también un espacio para difundir los análisis de sus propias experiencias.",
+      types: ["Coordinadoras: Luciana Larrondo y Laura Buedo"],
+    },
+    {
+      title: "Dilemas y coyunturas",
+      description: "Promover el debate y el pensamiento crítico en torno a distintos problemas sociales. Específicamente, busca recibir trabajos de interpretación y de intervención en las polémicas vinculadas a la relación entre Estado, cultura, partidos y políticas educativas. Estos dilemas pueden estar localizados a escala local, como también a escala provincial y nacional.",
+      types: ["Coordinador: Mario Hernández"],
+    },
+    {
+      title: "Reseñas",
+      description: "Esta sección procura publicar reseñas originales e inéditas de libros publicados en los últimos dos o tres años. Puede ser un espacio no sólo de presentación descriptiva del contenido de una obra sino una instancia para docentes como estudiantes de escribir reseñas que incorporen un análisis crítico de la obra.",
+      types: ["Coordinador: Miguel Fanchovich"],
+    },
+    {
+      title: "Entrevistas",
+      description: "Esta sección reúne entrevistas o semblanzas originales e inéditas de autorxs, teóricxs y/o referentes de las culturas destacadxs.",
+      types: ["Decisión colectiva"],
+    },
+    {
+      title: "Maquetación y revisión editorial",
+      description: "Coordinación de la maquetación y revisión editorial de todos los contenidos de la revista.",
+      types: ["Coordinación: Emiliano Sánchez Narvarte"],
+    },
+    {
+      title: "Recepción y distribución interna",
+      description: "Gestión de la recepción y distribución interna de los envíos a la revista.",
+      types: ["Coordinación: Shion Cenatiempo"],
+    },
+    {
+      title: "Diseño y programación",
+      description: "Desarrollo y mantenimiento del diseño y la programación de la revista.",
+      types: ["Coordinación: Leonardo Nausan"],
     },
   ]
 
@@ -177,35 +227,31 @@ export default function AcercaDePage() {
                 <h2 className="text-2xl font-bold text-gray-900">Sobre la revista</h2>
                 <div className="grid md:grid-cols-2 gap-8 items-start">
                   <div className="space-y-4">
-                    <p className="text-gray-700 leading-relaxed">
-                      <span className="font-semibold">Revista FA</span> es una revista académica semestral publicada por el
-                      Instituto de Educación Superior (IPES FA), dedicada a la difusión de investigaciones
-                      originales y reflexiones críticas en el ámbito de la educación y la cultura.
+                    <p className="text-gray-700 text-justify">
+                      El proyecto de "reactivar" una publicación periódica en el IPES FA, se inscribe en una larga tradición de la institución que ha publicado revistas a lo largo de varios años de manera discontinua y atravesando múltiples dificultades tanto presupuestarias como técnicas. Retomando ese espíritu y vocación por generar las condiciones de abrir canales de participación a la producción de conocimientos, es que comenzamos a pensar en este boceto que aquí compartimos.
                     </p>
-                    <p className="text-gray-700 leading-relaxed">
-                      Fundada en 2020, la revista surge como un espacio para el diálogo interdisciplinario y la
-                      construcción colectiva de conocimiento, con especial énfasis en las transformaciones educativas
-                      contemporáneas y su relación con los procesos culturales y sociales.
+                    <p className="text-gray-700 text-justify">
+                      Las revistas académico-científicas son espacios estratégicos de visibilización de la producción de conocimientos especializado y es, al mismo tiempo, una plataforma desde la cual lxs docentes, estudiantes e investigadorxs intervienen en los debates teóricos, culturales, epistemológicos y metodológicos de los campos generales en los cuales se inscriben.
                     </p>
-                    <p className="text-gray-700 leading-relaxed">
-                      Nuestra misión es contribuir al desarrollo del pensamiento crítico y la innovación en el campo
-                      educativo, promoviendo la difusión de investigaciones rigurosas y propuestas transformadoras que
-                      respondan a los desafíos actuales de la educación en sus diversos contextos y niveles.
+                    <p className="text-gray-700 text-justify">
+                      Al mismo tiempo, dado el carácter online de las revistas académicas, se convierten en un agente clave de las instituciones para establecer vínculos con espacios análogos, fomentar procesos de desarrollo e intercambio de conocimientos, producciones conjuntas, proyectos de investigación y expansión de las áreas de conocimiento a las que cada una de las instituciones está habitualmente a responder.
                     </p>
-                    <h3 className="text-xl font-semibold text-gray-900 mt-6">Objetivos</h3>
-                    <ul className="list-disc pl-5 space-y-2 text-gray-700">
-                      <li>
-                        Difundir investigaciones originales y de calidad en el ámbito de la educación y la cultura.
-                      </li>
-                      <li>
-                        Promover el diálogo interdisciplinario entre educadores, investigadores y gestores educativos.
-                      </li>
-                      <li>Contribuir a la reflexión crítica sobre prácticas educativas y políticas públicas.</li>
-                      <li>Visibilizar experiencias innovadoras y transformadoras en contextos educativos diversos.</li>
-                      <li>
-                        Fortalecer la comunidad académica a través del intercambio de conocimientos y perspectivas.
-                      </li>
-                    </ul>
+                    <p className="text-gray-700 text-justify">
+                      En términos teóricos y desde una mirada histórica, François Dosse sostiene que las revistas constituyen "uno de los soportes esenciales del campo intelectual" y pueden ser consideradas como una estructura elemental de sociabilidad, como espacios que indican la evolución de las ideas en tanto lugares de fermentación intelectual y de relaciones afectivas (Dosse, 2007, p. 51). Las revistas culturales son espacios privilegiados para elaborar diálogos con los movimientos culturales, intelectuales y políticos de la región. Al igual que Dosse, Altamirano (2010, pp. 19-20) entiende a las revistas como espacios que permiten inscribirse en "las direcciones y las batallas del pensamiento en las sociedades modernas". Además —sigue Altamirano— las revistas pueden comprenderse como "una forma de agrupamiento y de organización de la intelligentzia" que, por lo general, incorporan la actividad cooperativa de una serie de personas para un fin colectivo.
+                    </p>
+                    <p className="text-gray-700 text-justify">
+                      La investigadora Fernanda Beigel (2003) plantea que las publicaciones periódicas nos conectan de modo ejemplar no sólo con las principales discusiones del campo intelectual de una época, sino también con los modos de legitimación de nuevas prácticas políticas y culturales. Las revistas, en este sentido, son espacios claves para la actualización teórica, la producción de recursos educativos y la formación permanente.
+                    </p>
+                    <h3 className="text-xl font-semibold text-gray-900 mt-6">Acerca de la organización de la revista y la periodicidad de la publicación</h3>
+                    <p className="text-gray-700 text-justify">
+                      El proyecto de la revista académica contempla organizar una política de publicación semestral, es decir, dos números por año, con fechas aproximadas de enero y junio. Dada la pluralidad de Profesorados que se articulan al interior del IPES FA, se propone que cada número sea coordinado por cada uno de los profesorados a modo de dossier temático. Ello garantizaría una participación democrática y equitativa de cada uno de los equipos de trabajo de cada profesorado, garantizando, al mismo tiempo, la decisión de considerar qué problemática académica entienden que es más pertinente tratar en el número que les corresponda coordinar.
+                    </p>
+                    <p className="text-gray-700 text-justify">
+                      Al mismo tiempo, dependiendo de la temática específica que se proponga, siempre es oportuno generar convocatorias abiertas, invitar a referentes no solo locales sino también nacionales o internacionales en las temáticas que puedan estar interesados en participar del proyecto. Ello le daría potencia de circulación al número y validación académica entre la comunidad educativa y académica en general.
+                    </p>
+                    <p className="text-gray-700 text-justify">
+                      Dado el carácter semestral y la cantidad de Profesorados, la carga de trabajo de coordinación de cada número se haría cada un tiempo prudencial, que le permitiría a cada equipo pensar con tiempo distintos temas, invitados y posibles ejes que estructuren el dossier.
+                    </p>
                   </div>
                   <div className="space-y-6">
                     <div className="relative h-[300px] overflow-hidden rounded-lg shadow-md">
@@ -246,7 +292,7 @@ export default function AcercaDePage() {
             <TabsContent value="equipo-editorial" className="mt-0">
               <div className="space-y-6">
                 <h2 className="text-2xl font-bold text-gray-900">Equipo editorial</h2>
-                <p className="text-gray-700">
+                <p className="text-gray-700 text-justify">
                   Nuestro equipo editorial está compuesto por académicos e investigadores con amplia trayectoria en el
                   campo de la educación y la cultura, comprometidos con la calidad y el rigor científico.
                 </p>
@@ -294,7 +340,7 @@ export default function AcercaDePage() {
             <TabsContent value="politicas-de-secciones" className="mt-0">
               <div className="space-y-6">
                 <h2 className="text-2xl font-bold text-gray-900">Políticas de secciones</h2>
-                <p className="text-gray-700">
+                <p className="text-gray-700 text-justify">
                   La revista FA organiza su contenido en secciones temáticas que reflejan las principales áreas de
                   interés en el campo de la educación y la cultura. Cada sección cuenta con criterios específicos para
                   la evaluación y selección de trabajos.
@@ -304,11 +350,11 @@ export default function AcercaDePage() {
                   {thematicSections.map((section, index) => (
                     <div key={index} className="bg-white border rounded-lg p-6">
                       <h3 className="text-xl font-semibold text-gray-900 mb-3">{section.title}</h3>
-                      <p className="text-gray-700 mb-4">{section.description}</p>
+                      <p className="text-gray-700 mb-4 text-justify">{section.description}</p>
                       <h4 className="text-base font-medium text-gray-900 mb-2">Tipos de trabajos aceptados:</h4>
                       <ul className="list-disc pl-5 space-y-1 text-gray-700">
                         {section.types.map((type, idx) => (
-                          <li key={idx}>{type}</li>
+                          <li key={idx} className="text-justify">{type}</li>
                         ))}
                       </ul>
                     </div>
@@ -317,22 +363,19 @@ export default function AcercaDePage() {
 
                 <div className="bg-blue-50 p-6 rounded-lg mt-4">
                   <h3 className="text-lg font-semibold text-gray-900 mb-3">Proceso de evaluación</h3>
-                  <p className="text-gray-700 mb-2">
-                    Todos los trabajos recibidos son sometidos a un proceso de evaluación que consta de las siguientes
-                    etapas:
+                  <p className="text-gray-700 mb-4 text-justify">
+                    La revisión de los artículos académicos por pares según el principio doble ciego (el evaluador no conoce a lxs autorxs y lxs autorxs no conocen a sus evaluadorxs), garantiza un abordaje imparcial del trabajo enviado a la publicación. Hoy en día, dada la complejización y jerarquización del sistema académico y científico nacional e internacional, las publicaciones que no son evaluadas prácticamente carecen de validez académica en términos de evaluación de antecedentes y gran parte de quienes se dedican al trabajo académico tienden a publicar trabajos en revistas que garanticen una evaluación segura y rigurosa, que no es lo mismo que excluyente.
+                  </p>
+                  <p className="text-gray-700 mb-4 text-justify">
+                    Para que un artículo sea evaluado, se tienden a considerar los siguientes puntos:
                   </p>
                   <ol className="list-decimal pl-5 space-y-2 text-gray-700">
-                    <li>
-                      Evaluación preliminar por el Comité Editorial para verificar la adecuación a la temática y normas
-                      de la revista.
-                    </li>
-                    <li>
-                      Evaluación por pares mediante sistema de doble ciego (dos evaluadores externos especialistas en la
-                      temática).
-                    </li>
-                    <li>Decisión editorial basada en los informes de los evaluadores.</li>
-                    <li>Comunicación a los autores y proceso de revisión (si corresponde).</li>
-                    <li>Edición y publicación del trabajo aceptado.</li>
+                    <li>La originalidad del trabajo de investigación o manuscrito;</li>
+                    <li>Relevancia para el conocimiento sobre el tema y clara presentación del problema que se pretende abordar;</li>
+                    <li>Marco de referencia: respaldo teórico adecuado. Determinación clara del objetivo del trabajo y de la(s) hipótesis. Referencias bibliográficas actualizadas y adecuadas al ámbito de investigación;</li>
+                    <li>Metodología: uso apropiado y buena descripción de materiales y métodos;</li>
+                    <li>Resultados: elaboración de conclusiones –parciales o no- que den cuenta del análisis realizado.</li>
+                    <li>Aspectos formales: corrección en el lenguaje, citación y referencias según normalización de la revista.</li>
                   </ol>
                 </div>
               </div>
@@ -342,7 +385,7 @@ export default function AcercaDePage() {
             <TabsContent value="directrices-para-autores" className="mt-0">
               <div className="space-y-6">
                 <h2 className="text-2xl font-bold text-gray-900">Directrices para autores</h2>
-                <p className="text-gray-700">
+                <p className="text-gray-700 text-justify">
                   A continuación se presentan las normas y directrices que deben seguir los autores interesados en
                   publicar en la revista FA. El cumplimiento de estas normas es indispensable para iniciar el
                   proceso de evaluación.
@@ -354,7 +397,7 @@ export default function AcercaDePage() {
                       <AccordionTrigger className="text-left font-medium text-gray-900">
                         {guideline.title}
                       </AccordionTrigger>
-                      <AccordionContent className="text-gray-700">{guideline.content}</AccordionContent>
+                      <AccordionContent className="text-gray-700 text-justify">{guideline.content}</AccordionContent>
                     </AccordionItem>
                   ))}
                 </Accordion>
@@ -395,7 +438,7 @@ export default function AcercaDePage() {
             <TabsContent value="contacto" className="mt-0">
               <div className="space-y-6">
                 <h2 className="text-2xl font-bold text-gray-900">Contacto</h2>
-                <p className="text-gray-700">
+                <p className="text-gray-700 text-justify">
                   Para cualquier consulta relacionada con la revista FA, no dude en ponerse en contacto con nuestro
                   equipo editorial a través de los siguientes medios:
                 </p>
@@ -407,7 +450,7 @@ export default function AcercaDePage() {
                         <Mail className="h-5 w-5 text-blue-800 mr-3 mt-0.5" />
                         <div>
                           <h3 className="font-medium text-gray-900">Correo electrónico</h3>
-                          <p className="text-gray-700">revistafa@ipesfa-ushuaia.edu.ar</p>
+                          <p className="text-gray-700">farevista@ipesfa-ushuaia.edu.ar</p>
                           <p className="text-sm text-gray-500 mt-1">Tiempo de respuesta: 2-3 días hábiles</p>
                         </div>
                       </div>

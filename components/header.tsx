@@ -32,52 +32,60 @@ export function Header() {
       {/* Upper section with logos and navigation */}
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between py-4">
-          {/* Left: Institutional logo */}
-          <div className="flex items-center">
+          {/* Center: FA Revista logo */}
+          <div className="w-full flex justify-center">
             <Link href="/" className="flex items-center">
-              <div className="relative h-12 w-12 mr-4">
-                <Image src="/logo-ipesfa.png" alt="Logo IPES FA" fill className="object-contain" />
+              <div className="relative h-16 w-48">
+                <Image src="/falogo.png" alt="Logo FA Revista" fill className="object-contain" />
               </div>
-              <span className="font-sans text-3xl md:text-4xl font-semibold text-blue-800">FA Revista </span>
             </Link>
           </div>
 
           {/* Right: Navigation menu (desktop) */}
-          <nav className="hidden md:flex items-center space-x-6">
-            <Link href="/actual" className="text-sm font-medium text-gray-700 hover:text-blue-800 transition-colors">
+          <nav className="hidden md:flex items-center space-x-8">
+            <Link 
+              href="/actual" 
+              className="text-sm font-medium text-gray-700 hover:text-blue-800 transition-colors tracking-wide relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-800 after:transition-all hover:after:w-full"
+            >
               Actual
             </Link>
-            <Link href="/archivos" className="text-sm font-medium text-gray-700 hover:text-blue-800 transition-colors">
+            <Link 
+              href="/archivos" 
+              className="text-sm font-medium text-gray-700 hover:text-blue-800 transition-colors tracking-wide relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-800 after:transition-all hover:after:w-full"
+            >
               Archivos
             </Link>
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <Button variant="ghost" className="flex items-center gap-1 px-2">
-                  <span className="text-sm font-medium text-gray-700">Acerca de</span>
+                <Button 
+                  variant="ghost" 
+                  className="flex items-center gap-1 px-2 text-sm font-medium text-gray-700 hover:text-blue-800 transition-colors tracking-wide relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-800 after:transition-all hover:after:w-full"
+                >
+                  <span>Acerca de</span>
                   <ChevronDown className="h-4 w-4 text-gray-700" />
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent align="end" className="w-56">
                 <DropdownMenuItem asChild>
-                  <Link href="/acerca-de">Sobre la revista</Link>
+                  <Link href="/acerca-de" className="text-sm font-medium tracking-wide">Sobre la revista</Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
-                  <Link href="/acerca-de?tab=equipo-editorial">Equipo editorial</Link>
+                  <Link href="/acerca-de?tab=equipo-editorial" className="text-sm font-medium tracking-wide">Equipo editorial</Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
-                  <Link href="/acerca-de?tab=politicas-de-secciones">Políticas de secciones</Link>
+                  <Link href="/acerca-de?tab=politicas-de-secciones" className="text-sm font-medium tracking-wide">Políticas de secciones</Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
-                  <Link href="/acerca-de?tab=directrices-para-autores">Directrices para autores</Link>
+                  <Link href="/acerca-de?tab=directrices-para-autores" className="text-sm font-medium tracking-wide">Directrices para autores</Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
-                  <Link href="/acerca-de?tab=contacto">Contacto</Link>
+                  <Link href="/acerca-de?tab=contacto" className="text-sm font-medium tracking-wide">Contacto</Link>
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
             <Link
               href="/convocatoria"
-              className="text-sm font-medium text-gray-700 hover:text-blue-800 transition-colors"
+              className="text-sm font-medium text-gray-700 hover:text-blue-800 transition-colors tracking-wide relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-800 after:transition-all hover:after:w-full"
             >
               Convocatoria
             </Link>
@@ -114,9 +122,12 @@ export function Header() {
 
               {/* Journal Title */}
               <div className="flex-grow">
-                <h1 className="text-xl md:text-2xl lg:text-3xl font-sans font-normal text-white leading-tight">
-                  Revista Académica del IPES FA
+                <h1 className="text-2xl md:text-3xl lg:text-4xl font-sans font-normal text-white leading-tight">
+                  FA revista
                 </h1>
+                <p className="text-sm md:text-base text-white/90 mt-1">
+                  Revista académica del IPES Florentino Ameghino
+                </p>
 
                 {/* Submit Article Link - Desktop */}
                 <div className="hidden md:block mt-2">
@@ -181,28 +192,28 @@ function MobileMenu() {
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end" className="w-[200px]">
         <DropdownMenuItem asChild>
-          <Link href="/actual">Actual</Link>
+          <Link href="/actual" className="text-sm font-medium tracking-wide">Actual</Link>
         </DropdownMenuItem>
         <DropdownMenuItem asChild>
-          <Link href="/archivos">Archivos</Link>
+          <Link href="/archivos" className="text-sm font-medium tracking-wide">Archivos</Link>
         </DropdownMenuItem>
         <DropdownMenuItem asChild>
-          <Link href="/acerca-de">Sobre la revista</Link>
+          <Link href="/acerca-de" className="text-sm font-medium tracking-wide">Sobre la revista</Link>
         </DropdownMenuItem>
         <DropdownMenuItem asChild>
-          <Link href="/acerca-de?tab=equipo-editorial">Equipo editorial</Link>
+          <Link href="/acerca-de?tab=equipo-editorial" className="text-sm font-medium tracking-wide">Equipo editorial</Link>
         </DropdownMenuItem>
         <DropdownMenuItem asChild>
-          <Link href="/acerca-de?tab=politicas-de-secciones">Políticas de secciones</Link>
+          <Link href="/acerca-de?tab=politicas-de-secciones" className="text-sm font-medium tracking-wide">Políticas de secciones</Link>
         </DropdownMenuItem>
         <DropdownMenuItem asChild>
-          <Link href="/acerca-de?tab=directrices-para-autores">Directrices para autores</Link>
+          <Link href="/acerca-de?tab=directrices-para-autores" className="text-sm font-medium tracking-wide">Directrices para autores</Link>
         </DropdownMenuItem>
         <DropdownMenuItem asChild>
-          <Link href="/acerca-de?tab=contacto">Contacto</Link>
+          <Link href="/acerca-de?tab=contacto" className="text-sm font-medium tracking-wide">Contacto</Link>
         </DropdownMenuItem>
         <DropdownMenuItem asChild>
-          <Link href="/convocatoria">Convocatoria</Link>
+          <Link href="/convocatoria" className="text-sm font-medium tracking-wide">Convocatoria</Link>
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
