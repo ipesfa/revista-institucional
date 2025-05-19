@@ -254,12 +254,13 @@ export default function AcercaDePage() {
                     </p>
                   </div>
                   <div className="space-y-6">
-                    <div className="relative h-[300px] overflow-hidden rounded-lg shadow-md">
+                    <div className="relative h-[400px] w-full overflow-hidden rounded-lg">
                       <Image
-                        src="/placeholder.svg?height=600&width=400"
-                        alt="Revista Koulana"
+                        src="/portada1.png"
+                        alt="Portada de la revista Koulana"
                         fill
-                        className="object-cover"
+                        className="object-contain"
+                        priority
                       />
                     </div>
                     <div className="bg-gray-50 p-6 rounded-lg">

@@ -33,10 +33,10 @@ export default function Home() {
                 </div>
               </div>
               <div className="flex items-center justify-center">
-                <div className="relative h-[450px] w-[320px] overflow-hidden rounded-lg shadow-lg">
+                <div className="relative w-full h-[400px] md:h-[500px]">
                   <Image
-                    src="/portada-koulana.png"
-                    alt="Portada del último número de Koulana"
+                    src="/portada1.png"
+                    alt="Portada de la revista Koulana"
                     fill
                     className="object-contain"
                     priority

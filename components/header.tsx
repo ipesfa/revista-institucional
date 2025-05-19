@@ -111,7 +111,7 @@ export function Header() {
               <div className="flex items-center justify-center h-[160px] flex-shrink-0">
                 <div className="relative w-[100px] h-[140px]">
                   <Image
-                    src="/portada-koulana.png"
+                    src="/portada1.png"
                     alt="Portada de la revista Koulana"
                     width={100}
                     height={140}
