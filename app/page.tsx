@@ -6,9 +6,9 @@ export default function Home() {
     <div className="flex min-h-screen flex-col">
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="bg-gradient-to-b from-gray-50 to-white py-12 md:py-16 lg:py-20">
-          <div className="container px-4 md:px-6">
-            <div className="grid gap-6 lg:grid-cols-2 lg:gap-12">
+        <section className="bg-blue-50 py-12 md:py-16 lg:py-20">
+          <div className="container mx-auto px-4 md:px-6">
+            <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
               <div className="flex flex-col justify-center space-y-4">
                 <div className="space-y-2">
                   <h1 className="text-4xl font-bold tracking-tighter text-blue-800 sm:text-5xl md:text-6xl">Año 1 Volumen 1</h1>
