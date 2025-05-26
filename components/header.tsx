@@ -28,7 +28,7 @@ export function Header() {
   }, [scrolled])
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-blue-800 shadow-sm">
+    <header className="sticky top-0 z-50 w-full bg-blue-800">
       {/* Upper section with logos and navigation */}
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between py-4">
@@ -39,7 +39,7 @@ export function Header() {
                 <Image src="/falogo.png" alt="Logo FA Revista" fill className="object-contain" />
               </div>
             </Link>
-          </div>
+          </div> 
 
           {/* Right: Navigation menu (desktop) */}
           <nav className="hidden md:flex items-center space-x-8">
