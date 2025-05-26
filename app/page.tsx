@@ -4,6 +4,76 @@ import Link from "next/link"
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col">
+      {/* Journal Title and Submit Article Link - static on main page */}
+      <section className="bg-blue-800 py-3">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col md:flex-row items-center gap-4">
+            {/* Journal Cover Image - perfectly centered in the blue strip */}
+            <div className="flex items-center justify-center h-[160px] flex-shrink-0">
+              <div className="relative w-[100px] h-[140px]">
+                <Image
+                  src="/portada1.png"
+                  alt="Portada de la revista Koulana"
+                  width={100}
+                  height={140}
+                  className="object-contain shadow-md"
+                />
+              </div>
+            </div>
+            {/* Journal Title */}
+            <div className="flex-grow">
+              <h1 className="text-2xl md:text-3xl lg:text-4xl font-sans font-normal text-white leading-tight">
+                FA revista
+              </h1>
+              <p className="text-sm md:text-base text-white/90 mt-1">
+                Revista académica del IPES Florentino Ameghino
+              </p>
+              {/* Submit Article Link - Desktop */}
+              <div className="hidden md:block mt-2">
+                <Link href="/convocatoria" className="inline-flex items-center text-sm text-white hover:underline">
+                  Enviar artículo
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="ml-1 h-4 w-4"
+                  >
+                    <path d="M7 7h10v10" />
+                    <path d="M7 17 17 7" />
+                  </svg>
+                </Link>
+              </div>
+            </div>
+            {/* Submit Article Link - Mobile */}
+            <div className="md:hidden w-full">
+              <Link href="/convocatoria" className="inline-flex items-center text-sm text-white hover:underline">
+                Enviar artículo
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="ml-1 h-4 w-4"
+                >
+                  <path d="M7 7h10v10" />
+                  <path d="M7 17 17 7" />
+                </svg>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
       <main className="flex-1">
         {/* Hero Section */}
         <section className="bg-blue-50 py-12 md:py-16 lg:py-20">
