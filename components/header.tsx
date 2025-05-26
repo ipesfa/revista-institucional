@@ -59,7 +59,7 @@ export function Header() {
               <DropdownMenuTrigger asChild>
                 <Button 
                   variant="ghost" 
-                  className="flex items-center gap-1 px-2 text-sm font-medium text-gray-700 hover:text-blue-800 transition-colors tracking-wide relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-800 after:transition-all hover:after:w-full"
+                  className="flex items-center gap-1 px-2 text-sm font-medium text-gray-700 hover:text-blue-800 transition-colors tracking-wide relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-800 after:transition-all hover:after:w-full focus-visible:outline-none"
                 >
                   <span>Acerca de</span>
                   <ChevronDown className="h-4 w-4 text-gray-700" />
