@@ -62,7 +62,7 @@ export default function Home() {
                 <div>
                   <h3 className="mb-4 text-xl font-bold text-gray-900">Presentación</h3>
                   <p className="mb-6 text-gray-700 text-justify text-lg">
-                    Este número de Revisfa explora las transformaciones educativas post-pandemia y los nuevos paradigmas en la enseñanza superior. Incluye investigaciones sobre metodologías híbridas, el impacto de la inteligencia artificial en la educación, y estudios culturales sobre la adaptación de instituciones educativas a los desafíos contemporáneos.
+                    Este número de FA revista explora las transformaciones educativas post-pandemia y los nuevos paradigmas en la enseñanza superior. Incluye investigaciones sobre metodologías híbridas, el impacto de la inteligencia artificial en la educación, y estudios culturales sobre la adaptación de instituciones educativas a los desafíos contemporáneos.
                   </p>
                   <div className="flex flex-wrap gap-3">
                     <span className="px-4 py-1 rounded-full bg-blue-50 text-blue-800 text-sm font-medium">Educación</span>
@@ -271,7 +271,6 @@ export default function Home() {
               <h3 className="mb-6 text-xl font-bold text-gray-900 flex items-center gap-3">
                 Dilemas y Coyunturas
               </h3>
-              <p className="mb-6 text-gray-600 text-justify">Coordinador: Lic. Martín Araya</p>
               <div className="grid gap-8 sm:grid-cols-2">
                 <div className="rounded-xl border bg-white p-8 shadow-lg hover:shadow-xl transition-all duration-300">
                   <h4 className="mb-3 text-lg font-semibold text-blue-800">Educación y meritocracia: tensiones en el discurso institucional</h4>
