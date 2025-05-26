@@ -94,7 +94,7 @@ export default function Home() {
               <div className="grid gap-8 sm:grid-cols-2">
                 <div className="rounded-xl border bg-white p-8 shadow-lg hover:shadow-xl transition-all duration-300">
                   <h4 className="mb-3 text-lg font-semibold text-blue-800">Pedagogías territoriales y clima escolar en contextos extremos</h4>
-                  <p className="mb-6 text-gray-600 text-justify">Dra. Mariana Velázquez</p>
+                  <p className="mb-6 text-gray-600 text-justify">Mariana Velázquez</p>
                   <div className="flex gap-6">
                     <Link href="/pdf/dossier-1" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-50 text-blue-800 hover:bg-blue-100 transition-colors">
                       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -112,7 +112,7 @@ export default function Home() {
                 </div>
                 <div className="rounded-xl border bg-white p-8 shadow-lg hover:shadow-xl transition-all duration-300">
                   <h4 className="mb-3 text-lg font-semibold text-blue-800">La formación docente ante los desafíos de la inteligencia artificial</h4>
-                  <p className="mb-6 text-gray-600 text-justify">Prof. Tomás Benítez</p>
+                  <p className="mb-6 text-gray-600 text-justify">Tomás Benítez</p>
                   <div className="flex gap-6">
                     <Link href="/pdf/dossier-2" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-50 text-blue-800 hover:bg-blue-100 transition-colors">
                       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -139,7 +139,7 @@ export default function Home() {
               <div className="grid gap-8 sm:grid-cols-2">
                 <div className="rounded-xl border bg-white p-8 shadow-lg hover:shadow-xl transition-all duration-300">
                   <h4 className="mb-3 text-lg font-semibold text-blue-800">La enseñanza de la biología en entornos rurales: estudio de caso en Tolhuin</h4>
-                  <p className="mb-6 text-gray-600 text-justify">Dr. Gustavo Ilari</p>
+                  <p className="mb-6 text-gray-600 text-justify">Gustavo Ilari</p>
                   <div className="flex gap-6">
                     <Link href="/pdf/articulo-1" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-50 text-blue-800 hover:bg-blue-100 transition-colors">
                       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -157,7 +157,7 @@ export default function Home() {
                 </div>
                 <div className="rounded-xl border bg-white p-8 shadow-lg hover:shadow-xl transition-all duration-300">
                   <h4 className="mb-3 text-lg font-semibold text-blue-800">Procesos de alfabetización científica en la escuela secundaria fueguina</h4>
-                  <p className="mb-6 text-gray-600 text-justify">Mg. Paula Sosa</p>
+                  <p className="mb-6 text-gray-600 text-justify">Paula Sosa</p>
                   <div className="flex gap-6">
                     <Link href="/pdf/articulo-2" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-50 text-blue-800 hover:bg-blue-100 transition-colors">
                       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -184,7 +184,7 @@ export default function Home() {
               <div className="grid gap-8 sm:grid-cols-2">
                 <div className="rounded-xl border bg-white p-8 shadow-lg hover:shadow-xl transition-all duration-300">
                   <h4 className="mb-3 text-lg font-semibold text-blue-800">Docencia y subjetividad: el rol de la emocionalidad en el aula</h4>
-                  <p className="mb-6 text-gray-600 text-justify">Prof. Malena Figueroa</p>
+                  <p className="mb-6 text-gray-600 text-justify">Malena Figueroa</p>
                   <div className="flex gap-6">
                     <Link href="/pdf/ensayo-1" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-50 text-blue-800 hover:bg-blue-100 transition-colors">
                       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -202,7 +202,7 @@ export default function Home() {
                 </div>
                 <div className="rounded-xl border bg-white p-8 shadow-lg hover:shadow-xl transition-all duration-300">
                   <h4 className="mb-3 text-lg font-semibold text-blue-800">Descolonizar el currículo: una mirada desde el sur</h4>
-                  <p className="mb-6 text-gray-600 text-justify">Lic. Julián Cáceres</p>
+                  <p className="mb-6 text-gray-600 text-justify">Julián Cáceres</p>
                   <div className="flex gap-6">
                     <Link href="/pdf/ensayo-2" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-50 text-blue-800 hover:bg-blue-100 transition-colors">
                       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
