@@ -28,7 +28,7 @@ export function Header() {
   }, [scrolled])
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-white shadow-sm">
+    <header className="sticky top-0 z-50 w-full bg-blue-800 shadow-sm">
       {/* Upper section with logos and navigation */}
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between py-4">
@@ -45,13 +45,13 @@ export function Header() {
           <nav className="hidden md:flex items-center space-x-8">
             <Link 
               href="/actual" 
-              className="text-sm font-medium text-gray-700 hover:text-blue-800 transition-colors tracking-wide relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-800 after:transition-all hover:after:w-full"
+              className="text-sm font-medium text-white hover:text-blue-200 transition-colors tracking-wide relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-white after:transition-all hover:after:w-full"
             >
               Actual
             </Link>
             <Link 
               href="/archivos" 
-              className="text-sm font-medium text-gray-700 hover:text-blue-800 transition-colors tracking-wide relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-800 after:transition-all hover:after:w-full"
+              className="text-sm font-medium text-white hover:text-blue-200 transition-colors tracking-wide relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-white after:transition-all hover:after:w-full"
             >
               Archivos
             </Link>
@@ -59,33 +59,33 @@ export function Header() {
               <DropdownMenuTrigger asChild>
                 <Button 
                   variant="ghost" 
-                  className="flex items-center gap-1 px-2 text-sm font-medium text-gray-700 hover:text-blue-800 transition-colors tracking-wide relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-800 after:transition-all hover:after:w-full focus-visible:outline-none"
+                  className="flex items-center gap-1 px-2 text-sm font-medium text-white hover:text-blue-200 transition-colors tracking-wide bg-transparent hover:bg-transparent border-none outline-none focus:outline-none focus-visible:outline-none shadow-none ring-0 focus:ring-0 data-[state=open]:outline-none data-[state=open]:ring-0 data-[state=open]:shadow-none"
                 >
                   <span>Acerca de</span>
-                  <ChevronDown className="h-4 w-4 text-gray-700" />
+                  <ChevronDown className="h-4 w-4 text-white" />
                 </Button>
               </DropdownMenuTrigger>
-              <DropdownMenuContent align="end" className="w-56">
+              <DropdownMenuContent align="end" className="w-56 bg-blue-800 border-blue-900 outline-none ring-0 shadow-none border-none focus:outline-none focus-visible:outline-none data-[state=open]:outline-none data-[state=open]:ring-0 data-[state=open]:shadow-none">
                 <DropdownMenuItem asChild>
-                  <Link href="/acerca-de" className="text-sm font-medium tracking-wide">Sobre la revista</Link>
+                  <Link href="/acerca-de" className="text-sm font-medium tracking-wide text-white hover:text-blue-200">Sobre la revista</Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
-                  <Link href="/acerca-de?tab=equipo-editorial" className="text-sm font-medium tracking-wide">Equipo editorial</Link>
+                  <Link href="/acerca-de?tab=equipo-editorial" className="text-sm font-medium tracking-wide text-white hover:text-blue-200">Equipo editorial</Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
-                  <Link href="/acerca-de?tab=politicas-de-secciones" className="text-sm font-medium tracking-wide">Políticas de secciones</Link>
+                  <Link href="/acerca-de?tab=politicas-de-secciones" className="text-sm font-medium tracking-wide text-white hover:text-blue-200">Políticas de secciones</Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
-                  <Link href="/acerca-de?tab=directrices-para-autores" className="text-sm font-medium tracking-wide">Directrices para autores</Link>
+                  <Link href="/acerca-de?tab=directrices-para-autores" className="text-sm font-medium tracking-wide text-white hover:text-blue-200">Directrices para autores</Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
-                  <Link href="/acerca-de?tab=contacto" className="text-sm font-medium tracking-wide">Contacto</Link>
+                  <Link href="/acerca-de?tab=contacto" className="text-sm font-medium tracking-wide text-white hover:text-blue-200">Contacto</Link>
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
             <Link
               href="/convocatoria"
-              className="text-sm font-medium text-gray-700 hover:text-blue-800 transition-colors tracking-wide relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-800 after:transition-all hover:after:w-full"
+              className="text-sm font-medium text-white hover:text-blue-200 transition-colors tracking-wide relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-white after:transition-all hover:after:w-full"
             >
               Convocatoria
             </Link>
@@ -99,84 +99,7 @@ export function Header() {
       </div>
 
       {/* Blue strip with title and journal cover - only shows on homepage */}
-      {isHomePage && (
-        <div
-          className={`bg-blue-800 transition-all duration-300 ease-in-out relative ${
-            scrolled ? "h-0 opacity-0 overflow-hidden" : "h-auto opacity-100 py-3"
-          }`}
-        >
-          <div className="container mx-auto px-4">
-            <div className="flex flex-col md:flex-row items-center gap-4">
-              {/* Journal Cover Image - perfectly centered in the blue strip */}
-              <div className="flex items-center justify-center h-[160px] flex-shrink-0">
-                <div className="relative w-[100px] h-[140px]">
-                  <Image
-                    src="/portada1.png"
-                    alt="Portada de la revista Koulana"
-                    width={100}
-                    height={140}
-                    className="object-contain shadow-md"
-                  />
-                </div>
-              </div>
-
-              {/* Journal Title */}
-              <div className="flex-grow">
-                <h1 className="text-2xl md:text-3xl lg:text-4xl font-sans font-normal text-white leading-tight">
-                  FA revista
-                </h1>
-                <p className="text-sm md:text-base text-white/90 mt-1">
-                  Revista académica del IPES Florentino Ameghino
-                </p>
-
-                {/* Submit Article Link - Desktop */}
-                <div className="hidden md:block mt-2">
-                  <Link href="/convocatoria" className="inline-flex items-center text-sm text-white hover:underline">
-                    Enviar artículo
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className="ml-1 h-4 w-4"
-                    >
-                      <path d="M7 7h10v10" />
-                      <path d="M7 17 17 7" />
-                    </svg>
-                  </Link>
-                </div>
-              </div>
-
-              {/* Submit Article Link - Mobile */}
-              <div className="md:hidden w-full">
-                <Link href="/convocatoria" className="inline-flex items-center text-sm text-white hover:underline">
-                  Enviar artículo
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="ml-1 h-4 w-4"
-                  >
-                    <path d="M7 7h10v10" />
-                    <path d="M7 17 17 7" />
-                  </svg>
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
+      {/* Removed as per instructions */}
     </header>
   )
 }
@@ -185,35 +108,35 @@ function MobileMenu() {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="ghost" size="icon" className="h-9 w-9">
-          <Menu className="h-5 w-5" />
+        <Button variant="ghost" size="icon" className="h-9 w-9 text-white">
+          <Menu className="h-5 w-5 text-white" />
           <span className="sr-only">Abrir menú</span>
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent align="end" className="w-[200px]">
+      <DropdownMenuContent align="end" className="w-[200px] bg-blue-800 border-blue-900">
         <DropdownMenuItem asChild>
-          <Link href="/actual" className="text-sm font-medium tracking-wide">Actual</Link>
+          <Link href="/actual" className="text-sm font-medium tracking-wide text-white hover:text-blue-200">Actual</Link>
         </DropdownMenuItem>
         <DropdownMenuItem asChild>
-          <Link href="/archivos" className="text-sm font-medium tracking-wide">Archivos</Link>
+          <Link href="/archivos" className="text-sm font-medium tracking-wide text-white hover:text-blue-200">Archivos</Link>
         </DropdownMenuItem>
         <DropdownMenuItem asChild>
-          <Link href="/acerca-de" className="text-sm font-medium tracking-wide">Sobre la revista</Link>
+          <Link href="/acerca-de" className="text-sm font-medium tracking-wide text-white hover:text-blue-200">Sobre la revista</Link>
         </DropdownMenuItem>
         <DropdownMenuItem asChild>
-          <Link href="/acerca-de?tab=equipo-editorial" className="text-sm font-medium tracking-wide">Equipo editorial</Link>
+          <Link href="/acerca-de?tab=equipo-editorial" className="text-sm font-medium tracking-wide text-white hover:text-blue-200">Equipo editorial</Link>
         </DropdownMenuItem>
         <DropdownMenuItem asChild>
-          <Link href="/acerca-de?tab=politicas-de-secciones" className="text-sm font-medium tracking-wide">Políticas de secciones</Link>
+          <Link href="/acerca-de?tab=politicas-de-secciones" className="text-sm font-medium tracking-wide text-white hover:text-blue-200">Políticas de secciones</Link>
         </DropdownMenuItem>
         <DropdownMenuItem asChild>
-          <Link href="/acerca-de?tab=directrices-para-autores" className="text-sm font-medium tracking-wide">Directrices para autores</Link>
+          <Link href="/acerca-de?tab=directrices-para-autores" className="text-sm font-medium tracking-wide text-white hover:text-blue-200">Directrices para autores</Link>
         </DropdownMenuItem>
         <DropdownMenuItem asChild>
-          <Link href="/acerca-de?tab=contacto" className="text-sm font-medium tracking-wide">Contacto</Link>
+          <Link href="/acerca-de?tab=contacto" className="text-sm font-medium tracking-wide text-white hover:text-blue-200">Contacto</Link>
         </DropdownMenuItem>
         <DropdownMenuItem asChild>
-          <Link href="/convocatoria" className="text-sm font-medium tracking-wide">Convocatoria</Link>
+          <Link href="/convocatoria" className="text-sm font-medium tracking-wide text-white hover:text-blue-200">Convocatoria</Link>
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
