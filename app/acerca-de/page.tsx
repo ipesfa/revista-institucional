@@ -53,22 +53,16 @@ export default function AcercaDePage() {
       bio: "Profesor en Historia, graduado de la Universidad Nacional de la Patagonia San Juan Bosco (UNPSJB) en 2001. Se ha desempeñado como docente en el nivel secundario  y en cargos de coordinación del Área de Ciencias Sociales en colegios de la ciudad de Ushuaia. A cargo de diversos espacios curriculares en el IPES \"Florentino Ameghino\" desde 2012 (Historia Social Argentina y Latinoamericana, Historia y Política Educacional, Sociología de la Educación, CIencias Sociales, Ciencias Sociales y su Enseñanza) en cinco de los nueve profesorados de la Institución, forma parte también, del plantel docente de la Certificación Docente para Profesionales (Posgrado ofrecido por el IPESFA desde 2012) Su novela \"Usurpas,insospechados migrantes\" fue la segunda obra que publicó la Editora Cultural Tierra del Fuego en 2010. En 2019, atravesando la intervención política del IPESFA, publicó \"La Educación Robada\", un ensayo analizando la coyuntura.",
     },
     {
-      name: "Luciano Loupias",
+      name: "Luciano Lautaro Loupias",
       role: "Artículos científicos",
       image: "/placeholder.svg?height=200&width=200",
-      bio: "Licenciado en Filosofía (UNR) y Especialista en Políticas Públicas y Derechos Humanos (CLACSO). Se desempeña como docente en el Instituto \"Florentino Ameghino\" y como asesor pedagógico en proyectos de educación popular. Publicó artículos en revistas como Nómadas y Pensamiento Crítico Latinoamericano. Investiga temas vinculados al pensamiento decolonial y la filosofía política contemporánea.",
+      bio: "Licenciado en Antropología (FFyH- UNC) y doctorando en Arqueología (FacSo- UNCPBA). Se ha desempeñado como docente en el nivel secundario y superior, actualmente en el Profesorado de Historia del IPES \"Florentino Ameghino\" y como arqueólogo en el Museo del Fin del Mundo. Los intereses de investigación están relacionados a los modos de vida de comunidades originarias de Tierra del Fuego y en el marco del doctorado, a la distribución de isótopos estables en poblaciones humanas de Argentina con fines forenses.",
     },
     {
-      name: "Paola Vega",
+      name: "Noelia Soledad Lobo",
       role: "Ensayos académicos",
       image: "/placeholder.svg?height=200&width=200",
-      bio: "Doctora en Educación (UBA) y Magíster en Políticas Educativas (UNIPE). Actualmente es docente e investigadora del Instituto \"Florentino Ameghino\" y coordina proyectos de formación docente continua. Ha publicado trabajos sobre formación docente inicial y evaluación educativa. Su último artículo apareció en la revista Educación y Sociedad (UNER, 2024).",
-    },
-    {
-      name: "Noelia Lobo",
-      role: "Ensayos académicos",
-      image: "/placeholder.svg?height=200&width=200",
-      bio: "Licenciada en Letras (UNMdP) y Diplomada en Escritura Académica (UNGS). Se desempeña como docente en el nivel superior y secundario en Tierra del Fuego. Sus líneas de interés se centran en la enseñanza de la lengua y la literatura en contextos de diversidad. Participa en proyectos de lectura y escritura crítica con jóvenes. Colabora con publicaciones educativas y culturales de la región.",
+      bio: "Profesora Universitaria en Filosofía (UNGS), doctoranda en el Doctorado Interinstitucional en Ciencias Económicas (UNLPam-UNCOMA-UNRN-UNPSJB-UNPA-UNTDF). Se ha desempeñado como docente en el nivel medio y superior. Actualmente su labor de docente-investigadora acontece en el IPES \"Florentino Ameghino\" y en la UNTDF. Por muchos años ha trabajado en temas que relacionan la filosofía intercultural y la filosofía de la liberación latinoamericana con trabajos de campo con pueblos originarios. Además, en los últimos años comenzó a trabajar temas vinculados a la epistemología de la economía y a su enseñanza.",
     },
     {
       name: "Laura Buedo",
