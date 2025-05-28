@@ -76,39 +76,29 @@ export default function Home() {
       </section>
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="bg-blue-50 py-12 md:py-16 lg:py-20">
+        <section className="bg-white py-20">
           <div className="container mx-auto px-4 md:px-6">
-            <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
-              <div className="flex flex-col justify-center space-y-4">
-                <div className="space-y-2">
-                  <h1 className="text-4xl font-bold tracking-tighter text-blue-800 sm:text-5xl md:text-6xl">Año 1 Volumen 1</h1>
-                  <h2 className="text-xl font-medium text-gray-600 sm:text-2xl">Revista Académica del IPES FA</h2>
-                  <p className="max-w-[600px] text-gray-500 md:text-xl text-justify">
-                    Publicación semestral de temas de educación y cultura.
-                  </p>
-                </div>
-                <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                  <Link
-                    href="/actual"
-                    className="inline-flex h-10 items-center justify-center rounded-md bg-blue-800 px-8 text-sm font-medium text-white shadow transition-colors hover:bg-blue-700 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-blue-700"
-                  >
-                    Último número
-                  </Link>
-                  <Link
-                    href="/convocatoria"
-                    className="inline-flex h-10 items-center justify-center rounded-md border border-gray-300 bg-white px-8 text-sm font-medium text-gray-700 shadow-sm transition-colors hover:bg-gray-50 hover:text-blue-800 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-300"
-                  >
-                    Enviar artículo
-                  </Link>
-                </div>
+            <div className="flex flex-col md:flex-row items-center md:justify-between gap-12 max-w-4xl mx-auto">
+              {/* Texto */}
+              <div className="flex-1 w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left gap-5">
+                <h1 className="text-3xl md:text-5xl font-semibold text-blue-900 leading-tight">Volumen actual</h1>
+                <p className="text-base md:text-lg text-gray-500">Año 1 · Volumen 1</p>
+                <p className="text-base md:text-lg text-gray-600 max-w-md text-justify">Descubre los artículos, ensayos y experiencias educativas más recientes publicados en nuestra revista académica semestral del IPES Florentino Ameghino.</p>
+                <Link
+                  href="/actual"
+                  className="inline-flex items-center justify-center rounded-lg bg-blue-800 px-8 py-3 text-base font-medium text-white hover:bg-blue-800 transition-all duration-300 ease-in-out shadow-md mt-2"
+                >
+                  Ver volumen actual
+                </Link>
               </div>
-              <div className="flex items-center justify-center">
-                <div className="relative w-full h-[400px] md:h-[500px]">
+              {/* Imagen */}
+              <div className="flex-1 w-full md:w-1/2 flex justify-center items-center mb-8 md:mb-0">
+                <div className="relative w-40 h-56 md:w-52 md:h-72">
                   <Image
                     src="/portada1.png"
                     alt="Portada de la revista Koulana"
                     fill
-                    className="object-contain"
+                    className="object-contain rounded-xl shadow-sm"
                     priority
                   />
                 </div>
