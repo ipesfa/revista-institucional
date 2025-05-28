@@ -76,6 +76,12 @@ export default function AcercaDePage() {
       image: "/placeholder.svg?height=200&width=200",
       bio: "Licenciada en Antropología Social (UNSa) y Maestranda en Estudios Culturales (UNGS). Es docente-investigadora en el nivel superior y participa en proyectos sobre interculturalidad, género y derechos indígenas. Ha realizado trabajos de campo en comunidades originarias del norte argentino y Tierra del Fuego. Su artículo más reciente fue publicado en Revista Argumentos (IDES, 2023).",
     },
+    {
+      name: "Paola Noelia Vega",
+      role: "Ensayos académicos",
+      image: "/placeholder.svg?height=200&width=200",
+      bio: "Profesora en Psicología (IFD \"Domingo F. Sarmiento\") Licenciada en Gestión Educativa (UNTDF). Maestranda en Educación (UNLP). Se ha desempeñado en el Sistema Educativo Fueguino en Gabinete de Psicopedagogía y Asistencia al Escolar (Nivel Inicial, primario y modalidades) y en el Nivel Secundario y Superior (Formación Docente-IPES FA). Actualmente se desarrolla como Docente Investigadora del Instituto de la Educación y el Conocimiento (UNTDF) en las carreras: Licenciatura en Gestión Educativa y Licenciatura en Educación Primaria. Investiga en el campo de las ciencias sociales en general y de las ciencias de la educación en particular. Mis áreas de interés se vinculan con las trayectorias estudiantiles, los vínculos entre estudiantes y profesores en el ámbito de la educación superior junto con la problemática de las políticas de retención estudiantil y la formación docente y su complejidad.",
+    },
   ]
 
   // Datos de las secciones temáticas
@@ -316,7 +322,7 @@ export default function AcercaDePage() {
                       <div className="p-4">
                         <h3 className="font-bold text-gray-900">{member.name}</h3>
                         <p className="text-sm font-medium text-blue-800 mb-2">{member.role}</p>
-                        <p className="text-sm text-gray-600">{member.bio}</p>
+                        <p className="text-sm text-gray-600 text-justify">{member.bio}</p>
                       </div>
                     </div>
                   ))}
