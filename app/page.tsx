@@ -81,14 +81,14 @@ export default function Home() {
             <div className="flex flex-col md:flex-row items-center md:justify-between gap-12 max-w-4xl mx-auto">
               {/* Texto */}
               <div className="flex-1 w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left gap-5">
-                <h1 className="text-3xl md:text-5xl font-semibold text-blue-900 leading-tight">Volumen actual</h1>
+                <h1 className="text-2xl md:text-4xl font-semibold text-blue-900 leading-tight">Publicación reciente</h1>
                 <p className="text-base md:text-lg text-gray-500">Año 1 · Volumen 1</p>
                 <p className="text-base md:text-lg text-gray-600 max-w-md text-justify">Descubre los artículos, ensayos y experiencias educativas más recientes publicados en nuestra revista académica semestral del IPES Florentino Ameghino.</p>
                 <Link
                   href="/actual"
                   className="inline-flex items-center justify-center rounded-lg bg-blue-800 px-8 py-3 text-base font-medium text-white hover:bg-blue-800 transition-all duration-300 ease-in-out shadow-md mt-2"
                 >
-                  Ver volumen actual
+                  Explorar artículos
                 </Link>
               </div>
               {/* Imagen */}
