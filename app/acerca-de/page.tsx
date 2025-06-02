@@ -62,7 +62,7 @@ export default function AcercaDePage() {
       name: "Noelia Soledad Lobo",
       role: "Ensayos académicos",
       image: "/placeholder.svg?height=200&width=200",
-      bio: "Profesora Universitaria en Filosofía (UNGS), doctoranda en el Doctorado Interinstitucional en Ciencias Económicas (UNLPam-UNCOMA-UNRN-UNPSJB-UNPA-UNTDF). Se ha desempeñado como docente en el nivel medio y superior. Actualmente su labor de docente-investigadora acontece en el IPES \"Florentino Ameghino\" y en la UNTDF. Por muchos años ha trabajado en temas que relacionan la filosofía intercultural y la filosofía de la liberación latinoamericana con trabajos de campo con pueblos originarios. Además, en los últimos años comenzó a trabajar temas vinculados a la epistemología de la economía y a su enseñanza.",
+      bio: "Profesora Universitaria en Filosofía (UNGS), doctoranda en el Doctorado Interinstitucional en Ciencias Económicas (UNLPam-UNCOMA-UNRN-UNPSJB-UNPA-UNTDF). Se ha desempeñado como docente en el nivel medio y superior. Por muchos años ha trabajado en temas que relacionan la filosofía intercultural y la filosofía de la liberación latinoamericana con trabajos de campo con pueblos originarios. Además, en los últimos años comenzó a trabajar temas vinculados a la epistemología de la economía y su enseñanza. Actualmente trabaja como docente-investigadora en el IPES \"Florentino Ameghino\" y en la UNTDF.",
     },
     {
       name: "Laura Buedo",
@@ -71,10 +71,10 @@ export default function AcercaDePage() {
       bio: "Licenciada en Ciencias de la Educación (UNQ) y Especialista en Gestión Educativa. Es profesora titular en el Instituto \"Florentino Ameghino\" y capacitadora en programas de formación continua. Desarrolla investigaciones sobre inclusión, currículum y enfoques pedagógicos alternativos. Coautora del libro Prácticas docentes en territorios extremos (Ediciones Sur, 2023).",
     },
     {
-      name: "Shion Cenatiempo",
+      name: "Shion-en Cenatiempo",
       role: "Recepción y distribución interna",
       image: "/placeholder.svg?height=200&width=200",
-      bio: "Licenciada en Antropología Social (UNSa) y Maestranda en Estudios Culturales (UNGS). Es docente-investigadora en el nivel superior y participa en proyectos sobre interculturalidad, género y derechos indígenas. Ha realizado trabajos de campo en comunidades originarias del norte argentino y Tierra del Fuego. Su artículo más reciente fue publicado en Revista Argumentos (IDES, 2023).",
+      bio: "Docente en formación de Historia en el IPES de la ciudad de Ushuaia, Tierra del Fuego. Actualmente se desempeña como profesora en instituciones de educación media. Sus prácticas educativas y de investigación se orientan a elaborar formas de contribuir a mejorar la práctica docente, al crecimiento y desarrollo de los trayectos formativos. Los interrogantes académicos que trabaja se sitúan en los cruces entre lo educativo y lo social, con el objetivo de fomentar actitudes críticas sobre la práctica docente y sobre la teoría de la educación.",
     },
     {
       name: "Paola Noelia Vega",
