@@ -152,34 +152,44 @@ export default function AcercaDePage() {
   // Datos de las directrices para autores
   const authorGuidelines = [
     {
-      title: "Tipos de contribuciones",
+      title: "Dossier temático",
       content:
-        "Revista FA acepta artículos de investigación originales (6000-8000 palabras), ensayos teóricos (4000-6000 palabras), reseñas de libros (1500-2000 palabras) y entrevistas (3000-4000 palabras). Todos los trabajos deben ser inéditos y no estar sometidos simultáneamente a evaluación en otras revistas.",
+        "La revista recibe propuestas para dossier temático, que estructurarán cada número de la publicación. Las propuestas serán evaluadas por el Comité Editorial para su aceptación. Se priorizarán aquellas propuestas que tengan un alcance multiescalar sobre temas vinculados a los nudos problemáticos entre la educación y la cultura territorios. Para las presentaciones, se debe presentar una propuesta fundamentada del tópico (entre 500 palabras y 750), los nombres de las personas a cargo de la coordinación y una mininibio que sintetice su trayectoria curricular (hasta 10 líneas). Estas propuestas se remitirán al correo electrónico de la publicación, dirigida a Mariano Malizia, responsable de la organización del dossier.",
     },
     {
-      title: "Formato de presentación",
+      title: "Prácticas y experiencias educativas",
       content:
-        "Los manuscritos deben enviarse en formato Word (.docx), con márgenes de 2,5 cm, interlineado 1,5, fuente Times New Roman 12 pt. Las páginas deben estar numeradas consecutivamente. El título debe ser conciso y descriptivo (máximo 15 palabras). Se debe incluir un resumen (250 palabras) y 5-7 palabras clave en español e inglés.",
+        "Son trabajos originales e inéditos que procuran recuperar de manera crítica y reflexiva las situaciones y experiencias que resultan de la práctica docente. Tendrán una extensión de entre 10 y 15 páginas (incluidas referencias, notas, tablas y figuras). Estas colaboraciones son evaluadas por el Comité Editorial. Estas propuestas se remitirán al correo electrónico de la publicación, dirigida a Luciana Larrondo, Paola Vega y Laura Boedo, responsables de la sección.",
     },
     {
-      title: "Sistema de citación",
+      title: "Artículos científicos",
       content:
-        "La revista utiliza el sistema APA (7ª edición) para citas y referencias bibliográficas. Las citas textuales de menos de 40 palabras deben incorporarse en el texto entre comillas. Las citas de más de 40 palabras deben presentarse en párrafo aparte, con sangría de 1,25 cm, sin comillas y con interlineado sencillo.",
+        "Tendrán una extensión de entre 12 y 20 páginas (incluidas referencias, notas, tablas y figuras). Estas colaboraciones son evaluadas por pares en sistema de doble ciego. Estas propuestas se remitirán al correo electrónico de la publicación, dirigida a Julian Ghisio y Luciano Loupia, responsables de la sección.",
     },
     {
-      title: "Tablas y figuras",
+      title: "Ensayos académicos",
       content:
-        "Las tablas y figuras deben estar numeradas consecutivamente y tener un título descriptivo. Deben ser enviadas en archivos separados en formato editable (.xlsx para tablas, .jpg o .png para figuras con resolución mínima de 300 dpi). En el texto debe indicarse claramente su ubicación.",
+        "Tendrán una extensión de entre 10 y 20 páginas (incluidas referencias, notas, tablas y figuras). Estas colaboraciones son evaluadas por pares en sistema de doble ciego. Estas propuestas se remitirán al correo electrónico de la publicación, dirigida a Noelia Lobo y Shion-en Cenatiempo, responsables de la sección.",
     },
     {
-      title: "Proceso de evaluación",
+      title: "Dilemas y coyunturas",
       content:
-        "Todos los artículos son sometidos a un proceso de evaluación por pares de doble ciego. Los criterios de evaluación incluyen: originalidad y relevancia del tema, rigor metodológico, claridad expositiva, actualidad de la bibliografía y adecuación a las normas de la revista.",
+        "Tendrán una extensión máxima entre 8 y 15 páginas (incluidas referencias, notas, tablas y figuras). Estas colaboraciones son evaluadas por el Comité Editorial. Estas propuestas se remitirán al correo electrónico de la publicación, dirigida a Mario Hernández, responsable de la sección.",
     },
     {
-      title: "Envío de manuscritos",
+      title: "Reseñas bibliográficas",
       content:
-        "Los manuscritos deben enviarse a través del formulario disponible en la sección 'Convocatoria' de nuestra página web. El autor debe garantizar que cuenta con los derechos necesarios sobre todo el material incluido en su trabajo.",
+        "Tendrán una extensión de entre 4 y 7 páginas. Estas colaboraciones son evaluadas por el Consejo Editorial. Estas propuestas se remitirán al correo electrónico de la publicación, dirigida a Miguel Fanchovich, responsable de la sección.",
+    },
+    {
+      title: "Entrevistas",
+      content:
+        "Tendrán una extensión de entre 6 y 11 páginas. Estas colaboraciones son evaluadas por el Consejo Editorial. Estas propuestas se remitirán al correo electrónico de la publicación indicando la sección donde pretende ser publicada.",
+    },
+    {
+      title: "Consideraciones generales",
+      content:
+        "En todos los casos, el Consejo Editorial de Fa revista decide si los trabajos recibidos son acordes con el campo temático de la revista, el estilo editorial de la publicación y en qué volumen se publican.",
     },
   ]
 
@@ -240,30 +250,26 @@ export default function AcercaDePage() {
                 <div className="grid md:grid-cols-2 gap-8 items-start">
                   <div className="space-y-4">
                     <p className="text-gray-700 text-justify">
-                      El proyecto de "reactivar" una publicación periódica en el IPES FA, se inscribe en una larga tradición de la institución que ha publicado revistas a lo largo de varios años de manera discontinua y atravesando múltiples dificultades tanto presupuestarias como técnicas. Retomando ese espíritu y vocación por generar las condiciones de abrir canales de participación a la producción de conocimientos, es que comenzamos a pensar en este boceto que aquí compartimos.
+                      FA revista, es una publicación digital de acceso abierto, arbitrada del Instituto Provincial de Formación Docente Florentino Ameghino. Publica ensayos reflexivos sobre la práctica educativa, artículos académicos y de investigación originales e inéditos en español. Se ocupa de problematizar la relación entre educación y cultura en la práctica docente de nivel superior desde una perspectiva que articula múltiples disciplinas como las Humanidades y las Ciencias Sociales, las Artes y las Ciencias Biológicas y Exactas, con un estilo editorial que promueve una lectura dinámica de trabajos rigurosos.
                     </p>
                     <p className="text-gray-700 text-justify">
-                      Las revistas académico-científicas son espacios estratégicos de visibilización de la producción de conocimientos especializado y es, al mismo tiempo, una plataforma desde la cual lxs docentes, estudiantes e investigadorxs intervienen en los debates teóricos, culturales, epistemológicos y metodológicos de los campos generales en los cuales se inscriben.
-                    </p>
-                    <p className="text-gray-700 text-justify">
-                      Al mismo tiempo, dado el carácter online de las revistas académicas, se convierten en un agente clave de las instituciones para establecer vínculos con espacios análogos, fomentar procesos de desarrollo e intercambio de conocimientos, producciones conjuntas, proyectos de investigación y expansión de las áreas de conocimiento a las que cada una de las instituciones está habitualmente a responder.
-                    </p>
-                    <p className="text-gray-700 text-justify">
-                      En términos teóricos y desde una mirada histórica, François Dosse sostiene que las revistas constituyen "uno de los soportes esenciales del campo intelectual" y pueden ser consideradas como una estructura elemental de sociabilidad, como espacios que indican la evolución de las ideas en tanto lugares de fermentación intelectual y de relaciones afectivas (Dosse, 2007, p. 51). Las revistas culturales son espacios privilegiados para elaborar diálogos con los movimientos culturales, intelectuales y políticos de la región. Al igual que Dosse, Altamirano (2010, pp. 19-20) entiende a las revistas como espacios que permiten inscribirse en "las direcciones y las batallas del pensamiento en las sociedades modernas". Además —sigue Altamirano— las revistas pueden comprenderse como "una forma de agrupamiento y de organización de la intelligentzia" que, por lo general, incorporan la actividad cooperativa de una serie de personas para un fin colectivo.
-                    </p>
-                    <p className="text-gray-700 text-justify">
-                      La investigadora Fernanda Beigel (2003) plantea que las publicaciones periódicas nos conectan de modo ejemplar no sólo con las principales discusiones del campo intelectual de una época, sino también con los modos de legitimación de nuevas prácticas políticas y culturales. Las revistas, en este sentido, son espacios claves para la actualización teórica, la producción de recursos educativos y la formación permanente.
+                      FA revista es una publicación dirigida a docentes e instituciones interesadas en los estudios en cultura y educación y disciplinas afines.
                     </p>
                     <h3 className="text-xl font-semibold text-gray-900 mt-6">Acerca de la organización de la revista y la periodicidad de la publicación</h3>
                     <p className="text-gray-700 text-justify">
-                      El proyecto de la revista académica contempla organizar una política de publicación semestral, es decir, dos números por año, con fechas aproximadas de enero y junio. Dada la pluralidad de Profesorados que se articulan al interior del IPES FA, se propone que cada número sea coordinado por cada uno de los profesorados a modo de dossier temático. Ello garantizaría una participación democrática y equitativa de cada uno de los equipos de trabajo de cada profesorado, garantizando, al mismo tiempo, la decisión de considerar qué problemática académica entienden que es más pertinente tratar en el número que les corresponda coordinar.
+                      La modalidad de publicación de Fa revista es semestral. Se editan dos números por año que se publican en diciembre y en junio.
                     </p>
-                    <p className="text-gray-700 text-justify">
-                      Al mismo tiempo, dependiendo de la temática específica que se proponga, siempre es oportuno generar convocatorias abiertas, invitar a referentes no solo locales sino también nacionales o internacionales en las temáticas que puedan estar interesados en participar del proyecto. Ello le daría potencia de circulación al número y validación académica entre la comunidad educativa y académica en general.
-                    </p>
-                    <p className="text-gray-700 text-justify">
-                      Dado el carácter semestral y la cantidad de Profesorados, la carga de trabajo de coordinación de cada número se haría cada un tiempo prudencial, que le permitiría a cada equipo pensar con tiempo distintos temas, invitados y posibles ejes que estructuren el dossier.
-                    </p>
+                    <div className="bg-blue-50 p-6 rounded-lg mt-6">
+                      <h3 className="text-lg font-semibold text-gray-900 mb-3">Publicación de acceso libre y sin costo</h3>
+                      <div className="space-y-3">
+                        <p className="text-gray-700 text-justify">
+                          Fa revista es una publicación de acceso libre. La revista no tiene ningún costo para las personas que decidan publicar en ella. Para acceder a los materiales publicados o para publicar no tiene ningún costo.
+                        </p>
+                        <p className="text-gray-700 text-justify">
+                          Si el material enviado a la revista es aceptado por el Consejo Editorial y aprobado en proceso de arbitraje, sus autores se comprometen a cumplir con las pautas editoriales de la versión final del texto.
+                        </p>
+                      </div>
+                    </div>
                   </div>
                   <div className="space-y-6">
                     <div className="relative h-[400px] w-full overflow-hidden rounded-lg">
