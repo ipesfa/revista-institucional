@@ -26,7 +26,7 @@ export default function AcercaDePage() {
       name: "Julián Ghisio",
       role: "Dirección general",
       image: "/placeholder.svg?height=200&width=200",
-      bio: "Magíster en Ciencias Sociales (FLACSO) y Licenciado en Sociología (UBA). Docente del Instituto Superior de Formación Docente \"Florentino Ameghino\" y profesor invitado en la Universidad Nacional de Quilmes. Ha investigado sobre juventudes, políticas educativas y tecnologías digitales. Compilador del libro Educación, desigualdad y pandemia en el sur global (CLACSO, 2022). Participó en congresos internacionales en Argentina, Uruguay y Colombia.",
+      bio: "Profesor de Historia (UNLPam). Docente e investigador en el Instituto Provincial de Enseñanza Superior \"Florentino Ameghino\" y en la Universidad Nacional de Tierra del Fuego. Participó en proyectos de investigación sobre la enseñanza de la historia y la conciencia histórica y política en jóvenes. Publicó trabajos sobre la historia de Cuba en la enseñanza de las ciencias sociales y sobre experiencias de Educación Sexual Integral en escuelas secundarias. En el ámbito de la extensión universitaria, integró proyectos vinculados a la divulgación científica y a la construcción de la memoria histórica a través del cine. Actualmente se desempeña como docente en los niveles medio y superior, con un enfoque centrado en la formación docente y la didáctica de las ciencias sociales.",
     },
     {
       name: "Mariano Malizia",
@@ -81,6 +81,12 @@ export default function AcercaDePage() {
       role: "Ensayos académicos",
       image: "/placeholder.svg?height=200&width=200",
       bio: "Profesora en Psicología (IFD \"Domingo F. Sarmiento\") Licenciada en Gestión Educativa (UNTDF). Maestranda en Educación (UNLP). Se ha desempeñado en el Sistema Educativo Fueguino en Gabinete de Psicopedagogía y Asistencia al Escolar (Nivel Inicial, primario y modalidades) y en el Nivel Secundario y Superior (Formación Docente-IPES FA). Actualmente se desarrolla como Docente Investigadora del Instituto de la Educación y el Conocimiento (UNTDF) en las carreras: Licenciatura en Gestión Educativa y Licenciatura en Educación Primaria. Investiga en el campo de las ciencias sociales en general y de las ciencias de la educación en particular. Mis áreas de interés se vinculan con las trayectorias estudiantiles, los vínculos entre estudiantes y profesores en el ámbito de la educación superior junto con la problemática de las políticas de retención estudiantil y la formación docente y su complejidad.",
+    },
+    {
+      name: "Vanina Carla Perazzo",
+      role: "Prácticas y experiencias educativas",
+      image: "/placeholder.svg?height=200&width=200",
+      bio: "Especialización docente de Nivel Superior en Educación en Contextos de Encierro – (I.P.E.S. FA). Profesora de Historia (I.P.E.S. FA). Diploma Superior en Intervenciones Pedagógicas en Contextos de Encierro (E.H UNSAM). En formación de la licenciatura en educación (UNQ) y en la diplomatura Superior en Gestión Educativa (FLACSO). Se ha desempeñado como docente de nivel secundario en distintas instituciones públicas y privadas de la ciudad de Ushuaia, y en la Modalidad de Educación en Contextos de Privación de la Libertad. Siendo de esta última Referente Provincial en dos oportunidades. Actualmente se desempeña como Coordinadora de Ciclo en el C.E.N.S. N° 302 de la Modalidad de Educación Permanente de Jóvenes y Adultos y como docente en I.P.E.S. \"Florentino Ameghino\".",
     },
   ]
 
