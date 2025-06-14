@@ -43,7 +43,7 @@ export default function AcercaDePage() {
     {
       name: "Miguel Fanchovich",
       role: "Reseñas",
-      image: "/placeholder.svg?height=200&width=200",
+      image: "/fanchovich.png",
       bio: "Profesor de Lengua, Literatura y Latín (ISFDyT N° 122 \"Pte. Arturo Illia\"). Docente del IPES \"Florentino Ameghino\", a cargo de las cátedras de Gramática, Semiótica, Análisis del Discurso, Literatura Dramática, entre otras. Escribió las obras de teatro Fuera de juego (2009), estrenada en el teatro IFT (CABA); y Dos (2011), Teatro La Tertulia (CABA), la Tabla Rasca Teatro. Publicó ensayos en  Desafíos en las Escuelas III, \"escuelas all-inclusive, ¿todo incluido?\" Proyecto Alojar, Ediciones Grama (2018), en la edición N° 15 de  la revista digital de literatura Visor (2019) y en la revista digital mensual La Banquina  (2021/ 22). Publicó los libros Versiones, Editora Cultural Tierra del Fuego (2014) y  Los trabajos de Hansen, Editora Cultural Tierra del Fuego (2021).",
     },
     {
@@ -79,7 +79,7 @@ export default function AcercaDePage() {
     {
       name: "Paola Noelia Vega",
       role: "Ensayos académicos",
-      image: "/placeholder.svg?height=200&width=200",
+      image: "/vega.png",
       bio: "Profesora en Psicología (IFD \"Domingo F. Sarmiento\") Licenciada en Gestión Educativa (UNTDF). Maestranda en Educación (UNLP). Se ha desempeñado en el Sistema Educativo Fueguino en Gabinete de Psicopedagogía y Asistencia al Escolar (Nivel Inicial, primario y modalidades) y en el Nivel Secundario y Superior (Formación Docente-IPES FA). Actualmente se desarrolla como Docente Investigadora del Instituto de la Educación y el Conocimiento (UNTDF) en las carreras: Licenciatura en Gestión Educativa y Licenciatura en Educación Primaria. Investiga en el campo de las ciencias sociales en general y de las ciencias de la educación en particular. Mis áreas de interés se vinculan con las trayectorias estudiantiles, los vínculos entre estudiantes y profesores en el ámbito de la educación superior junto con la problemática de las políticas de retención estudiantil y la formación docente y su complejidad.",
     },
     {
