@@ -19,7 +19,7 @@ export default function AcercaDePage() {
     {
       name: "Emiliano Sánchez Narvarte",
       role: "Dirección general",
-      image: "/placeholder.svg?height=200&width=200",
+      image: "/sanchez.png",
       bio: "Doctor en Comunicación (UNLP) y Maestrando en Historia del Arte Argentino y Latinoamericano (UNSAM). Docente e investigador del Instituto Provincial de Enseñanza Superior \"Florentino Ameghino\" y de la Universidad Nacional de Tierra del Fuego. Coordinó y compiló el libro de Néstor García Canclini Innovaciones artísticas y rebeliones sociales (EDULP, Argentina, 2023), del cual escribió el estudio introductorio. Entre otros libros, publicó Antonio Pasquali, un itinerario intelectual transnacional (UCAB, Caracas, 2022) e Intelectuales y políticas de comunicación en América Latina (UNLP, Argentina, 2020). Realizó estancias de investigación en Venezuela, Bolivia, Brasil y México.",
     },
     {
@@ -49,7 +49,7 @@ export default function AcercaDePage() {
     {
       name: "Mario Hernández",
       role: "Dilemas y coyunturas",
-      image: "/placeholder.svg?height=200&width=200",
+      image: "/hernandez.png",
       bio: "Profesor en Historia, graduado de la Universidad Nacional de la Patagonia San Juan Bosco (UNPSJB) en 2001. Se ha desempeñado como docente en el nivel secundario  y en cargos de coordinación del Área de Ciencias Sociales en colegios de la ciudad de Ushuaia. A cargo de diversos espacios curriculares en el IPES \"Florentino Ameghino\" desde 2012 (Historia Social Argentina y Latinoamericana, Historia y Política Educacional, Sociología de la Educación, CIencias Sociales, Ciencias Sociales y su Enseñanza) en cinco de los nueve profesorados de la Institución, forma parte también, del plantel docente de la Certificación Docente para Profesionales (Posgrado ofrecido por el IPESFA desde 2012) Su novela \"Usurpas,insospechados migrantes\" fue la segunda obra que publicó la Editora Cultural Tierra del Fuego en 2010. En 2019, atravesando la intervención política del IPESFA, publicó \"La Educación Robada\", un ensayo analizando la coyuntura.",
     },
     {
@@ -85,8 +85,14 @@ export default function AcercaDePage() {
     {
       name: "Vanina Carla Perazzo",
       role: "Prácticas y experiencias educativas",
-      image: "/placeholder.svg?height=200&width=200",
+      image: "/perazzo.png",
       bio: "Especialización docente de Nivel Superior en Educación en Contextos de Encierro – (I.P.E.S. FA). Profesora de Historia (I.P.E.S. FA). Diploma Superior en Intervenciones Pedagógicas en Contextos de Encierro (E.H UNSAM). En formación de la licenciatura en educación (UNQ) y en la diplomatura Superior en Gestión Educativa (FLACSO). Se ha desempeñado como docente de nivel secundario en distintas instituciones públicas y privadas de la ciudad de Ushuaia, y en la Modalidad de Educación en Contextos de Privación de la Libertad. Siendo de esta última Referente Provincial en dos oportunidades. Actualmente se desempeña como Coordinadora de Ciclo en el C.E.N.S. N° 302 de la Modalidad de Educación Permanente de Jóvenes y Adultos y como docente en I.P.E.S. \"Florentino Ameghino\".",
+    },
+    {
+      name: "Leonardo Nausan",
+      role: "Diseño y programación",
+      image: "/nausan.png",
+      bio: "Profesor de Biología (IPESFA, Ushuaia). Maestrando en Procesos Educativos Mediados por Tecnología (UNC) y cursante de la Tecnicatura en Desarrollo Full-Stack e Mobile (PUCRS). Coordinador de Proyectos Educativos y responsable de los entornos multimediales en el IPESFA. Docente y capacitador en Tecnología Educativa en los niveles primario y secundario. Desarrollador Full-Stack (Next.js, Supabase, IA) e investigador sobre la integración de Web3 e IA generativa en entornos de aprendizaje híbridos. Diseña propuestas didácticas en salud y ciencias naturales orientadas a hábitos saludables y alfabetización científica.",
     },
   ]
 
