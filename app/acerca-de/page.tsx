@@ -92,7 +92,7 @@ export default function AcercaDePage() {
       name: "Leonardo Nausan",
       role: "Diseño y programación",
       image: "/nausan.png",
-      bio: "Profesor de Biología (IPESFA, Ushuaia). Maestrando en Procesos Educativos Mediados por Tecnología (UNC) y cursante de la Tecnicatura en Desarrollo Full-Stack e Mobile (PUCRS). Coordinador de Proyectos Educativos y responsable de los entornos multimediales en el IPESFA. Docente y capacitador en Tecnología Educativa en los niveles primario y secundario. Desarrollador Full-Stack (Next.js, Supabase, IA) e investigador sobre la integración de Web3 e IA generativa en entornos de aprendizaje híbridos. Diseña propuestas didácticas en salud y ciencias naturales orientadas a hábitos saludables y alfabetización científica.",
+      bio: "Profesor de Biología (IPESFA, Ushuaia). Maestrando en Procesos Educativos Mediados por Tecnología (UNC) y cursante de la Tecnicatura en Desarrollo Full-Stack e Mobile (PUCRS). Coordinador de Proyectos Educativos y responsable de los entornos multimediales en el IPESFA. Docente y capacitador en Tecnología Educativa en los niveles primario y secundario. Desarrollador Full-Stack e investigador sobre la integración de Web3 e IA generativa en entornos de aprendizaje híbridos. Diseña propuestas didácticas en salud y ciencias naturales orientadas a hábitos saludables y alfabetización científica.",
     },
   ]
 
