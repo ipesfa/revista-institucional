@@ -37,7 +37,7 @@ export default function AcercaDePage() {
     {
       name: "Luciana Helena Larrondo",
       role: "Prácticas y experiencias educativas",
-      image: "/placeholder.svg?height=200&width=200",
+      image: "/Larrondo.png",
       bio: "Licenciada en Educación Secundaria (UNTREF), Profesora Universitaria en Historia (UADER) y Maestranda en Docencia en el campo de la Formación en Practicas Profesionales (UNR). Docente investigadora en la Universidad Nacional de Tierra del Fuego (UNTDF); Investigadora en el área de la Historia Reciente en la Provincia de Tierra del Fuego. Docente e investigadora del Instituto Provincial de Enseñanza Superior \"Florentino Ameghino\" (IPESFA); en el campo de las Prácticas docentes Profesionales.",
     },
     {
@@ -86,7 +86,7 @@ export default function AcercaDePage() {
       name: "Vanina Carla Perazzo",
       role: "Prácticas y experiencias educativas",
       image: "/perazzo.png",
-      bio: "Especialización docente de Nivel Superior en Educación en Contextos de Encierro – (I.P.E.S. FA). Profesora de Historia (I.P.E.S. FA). Diploma Superior en Intervenciones Pedagógicas en Contextos de Encierro (E.H UNSAM). En formación de la licenciatura en educación (UNQ) y en la diplomatura Superior en Gestión Educativa (FLACSO). Se ha desempeñado como docente de nivel secundario en distintas instituciones públicas y privadas de la ciudad de Ushuaia, y en la Modalidad de Educación en Contextos de Privación de la Libertad. Siendo de esta última Referente Provincial en dos oportunidades. Actualmente se desempeña como Coordinadora de Ciclo en el C.E.N.S. N° 302 de la Modalidad de Educación Permanente de Jóvenes y Adultos y como docente en I.P.E.S. \"Florentino Ameghino\".",
+      bio: "Profesora de Historia (I.P.E.S. F.A.). Diploma Superior en Intervenciones Pedagógicas en Contextos de Encierro (UNSAM). Especialización de Nivel Superior en Educación en Contextos de Encierro (I.P.E.S. F.A.). Docente de nivel secundario, docente en la Modalidad de Educación Permanente de Jóvenes y Adultos, y en la Modalidad de Educación en Contextos de Privación de la Libertad. Referente Provincial de la Modalidad de Educación en Contextos de Privación de la Libertad en dos oportunidades. Cursante de la diplomatura superior en gestión educativa (FLACSO) y de la licenciatura en educación (UNQ). Actualmente se desempeña como coordinadora de ciclo en el C.E.N.S. 302 (Modalidad de Educación Permanente de Jóvenes y Adultos), y como docente en el Instituto Provincial de Educación Superior I.P.E.S. F.A.",
     },
     {
       name: "Leonardo Nausan",
