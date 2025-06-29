@@ -113,15 +113,17 @@ export default function Home() {
         {/* Call to Action */}
         <section className="bg-blue-50 py-10 md:py-14">
           <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-2 text-center">
+            <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <h2 className="text-2xl font-semibold text-blue-900">Convocatoria abierta</h2>
               <p className="max-w-xl text-blue-900/80 text-base">Envía tu artículo para el próximo número de FA revista.</p>
-              <Link
-                href="/convocatoria"
-                className="inline-flex h-9 items-center justify-center rounded-md bg-blue-800 px-6 text-sm font-medium text-white transition-colors hover:bg-blue-700 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-blue-800 mt-2"
-              >
-                Conocer más
-              </Link>
+              <div className="flex justify-center pt-2">
+                <Link
+                  href="/convocatoria"
+                  className="flex h-9 items-center justify-center rounded-md bg-blue-800 px-6 text-sm font-medium text-white transition-colors hover:bg-blue-700 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-blue-800"
+                >
+                  Conocer más
+                </Link>
+              </div>
             </div>
           </div>
         </section>

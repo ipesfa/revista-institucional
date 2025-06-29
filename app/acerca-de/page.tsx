@@ -195,7 +195,7 @@ export default function AcercaDePage() {
     {
       title: "Consideraciones generales",
       content:
-        "En todos los casos, el Consejo Editorial de Fa revista decide si los trabajos recibidos son acordes con el campo temático de la revista, el estilo editorial de la publicación y en qué volumen se publican.",
+        "En todos los casos, el Consejo Editorial de FA revista decide si los trabajos recibidos son acordes con el campo temático de la revista, el estilo editorial de la publicación y en qué volumen se publican.",
     },
   ]
 
@@ -263,13 +263,13 @@ export default function AcercaDePage() {
                     </p>
                     <h3 className="text-xl font-semibold text-gray-900 mt-6">Acerca de la organización de la revista y la periodicidad de la publicación</h3>
                     <p className="text-gray-700 text-justify">
-                      La modalidad de publicación de Fa revista es semestral. Se editan dos números por año que se publican en diciembre y en junio.
+                      La modalidad de publicación de FA revista es semestral. Se editan dos números por año que se publican en diciembre y en junio.
                     </p>
                     <div className="bg-blue-50 p-6 rounded-lg mt-6">
                       <h3 className="text-lg font-semibold text-gray-900 mb-3">Publicación de acceso libre y sin costo</h3>
                       <div className="space-y-3">
                         <p className="text-gray-700 text-justify">
-                          Fa revista es una publicación de acceso libre. La revista no tiene ningún costo para las personas que decidan publicar en ella. Para acceder a los materiales publicados o para publicar no tiene ningún costo.
+                          FA revista es una publicación de acceso libre. La revista no tiene ningún costo para las personas que decidan publicar en ella. Para acceder a los materiales publicados o para publicar no tiene ningún costo.
                         </p>
                         <p className="text-gray-700 text-justify">
                           Si el material enviado a la revista es aceptado por el Consejo Editorial y aprobado en proceso de arbitraje, sus autores se comprometen a cumplir con las pautas editoriales de la versión final del texto.
@@ -357,7 +357,7 @@ export default function AcercaDePage() {
               <div className="space-y-6">
                 <h2 className="text-2xl font-bold text-gray-900">Políticas de secciones</h2>
                 <p className="text-gray-700 text-justify">
-                  La revista FA organiza su contenido en secciones temáticas que reflejan las principales áreas de
+                  La FA revista organiza su contenido en secciones temáticas que reflejan las principales áreas de
                   interés en el campo de la educación y la cultura. Cada sección cuenta con criterios específicos para
                   la evaluación y selección de trabajos.
                 </p>
@@ -403,7 +403,7 @@ export default function AcercaDePage() {
                 <h2 className="text-2xl font-bold text-gray-900">Directrices para autores</h2>
                 <p className="text-gray-700 text-justify">
                   A continuación se presentan las normas y directrices que deben seguir los autores interesados en
-                  publicar en la revista FA. El cumplimiento de estas normas es indispensable para iniciar el
+                  publicar en la FA revista. El cumplimiento de estas normas es indispensable para iniciar el
                   proceso de evaluación.
                 </p>
 
@@ -455,7 +455,7 @@ export default function AcercaDePage() {
               <div className="space-y-6">
                 <h2 className="text-2xl font-bold text-gray-900">Contacto</h2>
                 <p className="text-gray-700 text-justify">
-                  Para cualquier consulta relacionada con la revista FA, no dude en ponerse en contacto con nuestro
+                  Para cualquier consulta relacionada con FA revista, no dude en ponerse en contacto con nuestro
                   equipo editorial a través de los siguientes medios:
                 </p>
 
@@ -468,15 +468,6 @@ export default function AcercaDePage() {
                           <h3 className="font-medium text-gray-900">Correo electrónico</h3>
                           <p className="text-gray-700">farevista@ipesfa-ushuaia.edu.ar</p>
                           <p className="text-sm text-gray-500 mt-1">Tiempo de respuesta: 2-3 días hábiles</p>
-                        </div>
-                      </div>
-
-                      <div className="flex items-start">
-                        <Phone className="h-5 w-5 text-blue-800 mr-3 mt-0.5" />
-                        <div>
-                          <h3 className="font-medium text-gray-900">Teléfono</h3>
-                          <p className="text-gray-700">+54 2345 6789</p>
-                          <p className="text-sm text-gray-500 mt-1">Lunes a viernes de 9:00 a 17:00 horas</p>
                         </div>
                       </div>
 
@@ -499,13 +490,7 @@ export default function AcercaDePage() {
                       <h3 className="text-lg font-semibold text-gray-900 mb-3">Consultas específicas</h3>
                       <div className="space-y-2">
                         <p className="text-sm text-gray-700">
-                          <span className="font-medium">Envío de artículos:</span> revistafa@ipesfa-ushuaia.edu.ar
-                        </p>
-                        <p className="text-sm text-gray-700">
-                          <span className="font-medium">Suscripciones:</span> revistafa@ipesfa-ushuaia.edu.ar
-                        </p>
-                        <p className="text-sm text-gray-700">
-                          <span className="font-medium">Dirección editorial:</span> revistafa@ipesfa-ushuaia.edu.ar
+                          <span className="font-medium">Correo electrónico:</span> farevista@ipesfa-ushuaia.edu.ar
                         </p>
                       </div>
                     </div>

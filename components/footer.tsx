@@ -45,7 +45,7 @@ export function Footer() {
             </Link>
           </nav>
           <p className="text-center text-xs text-gray-400 md:text-right">
-            © {new Date().getFullYear()} Revista FA. Todos los derechos reservados.
+            © {new Date().getFullYear()} FA revista. Todos los derechos reservados.
           </p>
         </div>
       </div>
