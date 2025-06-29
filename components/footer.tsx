@@ -1,5 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
+import { FaInstagram } from "react-icons/fa"
 
 export function Footer() {
   return (
@@ -14,14 +15,25 @@ export function Footer() {
 
         {/* Center: Logo */}
         <div className="flex items-center justify-center">
-          <div className="relative h-16 w-16">
-            <Image src="/logo-ipesfa.png" alt="Logo IPES FA" fill className="object-contain" />
-          </div>
+          <a href="https://ipesfa-ushuaia.edu.ar/" target="_blank" rel="noopener noreferrer">
+            <div className="relative h-16 w-16">
+              <Image src="/logo-ipesfa.png" alt="Logo IPES FA" fill className="object-contain" />
+            </div>
+          </a>
         </div>
 
         {/* Right: Navigation and Copyright */}
         <div className="flex-1 flex flex-col items-center gap-4 md:items-end">
-          <nav className="flex gap-6">
+          <nav className="flex gap-6 items-center">
+            <a
+              href="https://instagram.com/tu_instagram"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+              className="text-blue-800 hover:text-blue-600 transition-colors text-2xl"
+            >
+              <FaInstagram />
+            </a>
             <Link href="/acerca-de" className="text-sm text-gray-500 hover:text-blue-800 transition-colors">
               Sobre la revista
             </Link>

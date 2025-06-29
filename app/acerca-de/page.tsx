@@ -84,7 +84,7 @@ export default function AcercaDePage() {
     },
     {
       name: "Vanina Carla Perazzo",
-      role: "Prácticas y experiencias educativas",
+      role: "Dilemas y coyunturas",
       image: "/perazzo.png",
       bio: "Profesora de Historia (I.P.E.S. F.A.). Diploma Superior en Intervenciones Pedagógicas en Contextos de Encierro (UNSAM). Especialización de Nivel Superior en Educación en Contextos de Encierro (I.P.E.S. F.A.). Docente de nivel secundario, docente en la Modalidad de Educación Permanente de Jóvenes y Adultos, y en la Modalidad de Educación en Contextos de Privación de la Libertad. Referente Provincial de la Modalidad de Educación en Contextos de Privación de la Libertad en dos oportunidades. Cursante de la diplomatura superior en gestión educativa (FLACSO) y de la licenciatura en educación (UNQ). Actualmente se desempeña como coordinadora de ciclo en el C.E.N.S. 302 (Modalidad de Educación Permanente de Jóvenes y Adultos), y como docente en el Instituto Provincial de Educación Superior I.P.E.S. F.A.",
     },
@@ -126,7 +126,7 @@ export default function AcercaDePage() {
     {
       title: "Dilemas y coyunturas",
       description: "Promover el debate y el pensamiento crítico en torno a distintos problemas sociales. Específicamente, busca recibir trabajos de interpretación y de intervención en las polémicas vinculadas a la relación entre Estado, cultura, partidos y políticas educativas. Estos dilemas pueden estar localizados a escala local, como también a escala provincial y nacional.",
-      types: ["Coordinador: Mario Hernández"],
+      types: ["Coordinadores: Mario Hernández y Vanina Carla Perazzo"],
     },
     {
       title: "Reseñas",
@@ -326,21 +326,12 @@ export default function AcercaDePage() {
                   {editorialTeam.map((member, index) => (
                     <div
                       key={index}
-                      className="bg-white border rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow"
+                      className="bg-white border rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow p-6"
                     >
-                      <div className="aspect-square w-full overflow-hidden bg-gray-100">
-                        <Image
-                          src={member.image || "/placeholder.svg"}
-                          alt={member.name}
-                          width={200}
-                          height={200}
-                          className="h-full w-full object-cover"
-                        />
-                      </div>
-                      <div className="p-4">
-                        <h3 className="font-bold text-gray-900">{member.name}</h3>
-                        <p className="text-sm font-medium text-blue-800 mb-2">{member.role}</p>
-                        <p className="text-sm text-gray-600 text-justify">{member.bio}</p>
+                      <div className="space-y-3">
+                        <h3 className="font-bold text-gray-900 text-lg border-b border-gray-200 pb-2">{member.name}</h3>
+                        <p className="text-sm font-medium text-blue-800">{member.role}</p>
+                        <p className="text-sm text-gray-600 text-justify leading-relaxed">{member.bio}</p>
                       </div>
                     </div>
                   ))}
