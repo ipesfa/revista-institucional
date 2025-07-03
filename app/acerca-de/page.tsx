@@ -99,103 +99,263 @@ export default function AcercaDePage() {
   // Datos de las secciones temáticas
   const thematicSections = [
     {
-      title: "Dirección general",
-      description: "Seguimiento y acompañamiento integral del conjunto de las acciones referentes a la organización de la revista",
-      types: ["Coordinadores: Emiliano Sánchez Narvarte y Julián Ghisio"],
+      title: "PRÁCTICAS Y EXPERIENCIAS EDUCATIVAS",
+      description: (
+        <div>
+          <p className="mb-4 text-justify">
+            Hablar de práctica educativa docente, remite a desarrollar una actividad dinámica y reflexiva, donde los sucesos que acontecen en la interrelación entre estudiantes y docentes, incluyen la mediación didáctica ocurrida antes, durante y después de la práctica en el aula. Planear, interactuar y reflexionar son momentos de un tiempo mayor, en el que se inscribe la gestión de la enseñanza como una práctica situada en contextos que la definen como tal. Conocer para planificar; articular para interactuar; revisar para reflexionar, son instancias que ofrecen campo fértil donde las miradas personales se cruzan con las teorías, las expectativas, los logros, pero también los fracasos. Analizar sobre las prácticas educativas en general permite, al tomar distancia de lo cotidiano, transformarla y, en dicho proceso, transformarnos. Hacer de la práctica un objeto de estudio y de producción de conocimiento es un desafío necesario y enriquecedor.
+          </p>
+          <p className="mb-4 text-justify">
+            Al describir los relatos sobre experiencias educativas, Liliana Ochoa sostiene que los "buenos relatos son claros, entretenidos, fáciles de leer, memorables y no demasiado extenso"1. Consideramos importante incentivar en docentes y estudiantes el registro (escrito, audiovisual, fotográfico) desde el momento de inicio de la planificación del proyecto pedagógico, su desarrollo y en las instancias finales. Ese registro puede derivar en un escrito final de la experiencia. Se sugiere recrear contextos de aula y enriquecerlos con entrevistas a los participantes. Dichas experiencias proporcionan un recurso crítico, teórico y conceptual. Lo importante es transmitir lo que sucedió y el valor pedagógico de la experiencia. Tanto la planificación del proyecto, las actividades, los recursos utilizados y las producciones de los alumnos pueden ser insumos para publicar. Las experiencias a publicar serán decididas por el Comité Editorial de FA Revista, por lo que no estarán sujetas a evaluaciones por jurados, pero sí de recomendaciones del citado Comité.
+          </p>
+          <p className="mb-2 text-justify">
+            En el relato de la experiencia educativa a publicar, deberá mencionarse claramente:
+          </p>
+          <ol className="list-decimal list-inside mb-4 space-y-1 text-justify">
+            <li className="text-justify">Los objetivos y las acciones de la experiencia.</li>
+            <li className="text-justify">Los aspectos positivos y las dificultades con las que se encontraron.</li>
+            <li className="text-justify">Las características de la institución en la que se llevó a cabo.</li>
+            <li className="text-justify">Los cambios en el aula (actitudinales, pedagógicos, materiales, simbólicos, etc.) o en la escuela (normativas, curricular, relacional, etc.) que produjo la experiencia.</li>
+            <li className="text-justify">Anécdotas (de los relatores, de los observados, de los directivos, etc.).</li>
+            <li className="text-justify">Una conclusión final con una necesaria reflexión sobre la práctica.</li>
+          </ol>
+          <div className="text-xs text-gray-500 mt-6 border-t pt-2">
+            <sup>1</sup> Ochoa, L. (2003). Módulo 2: La documentación narrativa de experiencias escolares. En Manual de capacitación sobre registro y sistematización de experiencias pedagógicas, Ministerio de Educación, Ciencia y Tecnología.
+          </div>
+        </div>
+      ),
+      types: [],
     },
     {
-      title: "Organización del dossier",
-      description: "Establecer diálogos entre las propuestas recibidas por los distintos profesorados en relación con el perfil general de la revista. Colaborar, guiar y establecer un nexo entre el equipo de la revista y las propuestas de dossier",
-      types: ["Coordinador: Mariano Malizia"],
+      title: "ARTÍCULOS CIENTÍFICOS",
+      description: (
+        <div>
+          <p className="text-justify mb-4">
+            Se recibirán trabajos vinculados a investigaciones científicas (como anteproyectos de investigación, investigaciones en su fase final o en curso) en temas referidos a los siguientes campos: Historia, Geografía, Enseñanza del Inglés, Educación Primaria, Educación Inicial, Biología, Matemáticas, Lengua & Literatura, Educación Especial, educación en general etc. La estructura del artículo científico enviado debe responder a lo establecido por el Comité Editorial de FA Revista. Los artículos científicos serán evaluados por el sistema doble/ciego y debe contener como mínimo los siguientes acápites propuestos por la misma:
+          </p>
+          <ol className="list-decimal list-inside text-justify mb-4 space-y-2">
+            <li>
+              <span className="font-bold">Título y subtítulo:</span> Debe ser claro y corto y de poseer un subtítulo, éste debe tener entre 15 y 20 palabras.
+            </li>
+            <li>
+              <span className="font-bold">Nombre de o los autores:</span> Pueden ser acompañados del nombre de la Institución que representan y/o trabajan. La posibilidad de agregar un correo electrónico (personal o de la Institución) es opcional.
+            </li>
+            <li>
+              <span className="font-bold">Resumen:</span> El mismo deberá tener una extensión entre 200 y 300 palabras; tendrá una breve descripción de cada parte del artículo (tema, objetivo, perspectiva teórica, metodología y/o conceptos importantes y resultados significativos o conclusiones relevantes); Abstract: el mismo resumen escrito en inglés.
+            </li>
+            <li>
+              <span className="font-bold">Palabras clave:</span> Son un grupo de palabras fundamentales dentro del texto que permiten una fácil identificación de los conceptos abordados en el artículo. Usualmente pueden utilizarse 4 r términos claves.
+            </li>
+          </ol>
+          <p className="text-justify">
+            El artículo en sí mismo deberá responder a la siguiente estructura: Una <span className="font-bold">introducción</span> que contemple el propósito del mismo, los antecedentes, al menos una perspectiva teórica y una justificación. Un <span className="font-bold">desarrollo</span> dónde se estipule metodología, definiciones fundamentales y resultados (si los hubiere). Finalizará con un apartado con sus <span className="font-bold">conclusiones</span> y/o aproximaciones y por último la bibliografía que sustente el trabajo.
+          </p>
+        </div>
+      ),
+      types: [],
     },
     {
-      title: "Artículos científicos",
-      description: "Trabajos vinculados a investigaciones en curso o ya finalizadas pero inéditas, a partir de estudios de caso, trabajo de campo, estrategias teóricas y metodológicas definidas, análisis y conclusiones. (Evaluados por el sistema de dobles ciegos.)",
-      types: ["Coordinadores: Julián Ghisio y Luciano Loupias"],
+      title: "ENSAYOS ACADÉMICOS",
+      description: (
+        <div>
+          <p className="text-justify mb-4">
+            Por su tradición histórica e importancia en el devenir del mundo intelectual, el ensayo es imprescindible en el mundo académico. Se busca interpelar a la inventiva de sus productores (estudiantes, docentes, investigadores, etc.) y elaborar reflexiones críticas a partir de experiencias o investigaciones personales. Un ensayo implica la exploración sobre un tema determinado, donde el/la autor/a comprueba, explica, polemiza y expone su pensamiento y/u opinión con algún tipo de fundamento. En ocasiones propone una hipótesis, que explica, fundamenta, compara y discute frente a argumentos contrarios a lo que él propone (Argudín y Luna, 2005). Los ensayos académicos presentados serán evaluados por el sistema doble/ciego y deben ser realizados teniendo en cuenta las recomendaciones propuestas por el Comité Editorial de <span className="italic font-semibold">FA Revista</span>:
+          </p>
+          <p className="font-semibold italic text-justify mb-2">Recomendaciones a tener en cuenta para elaborar un ensayo académico:</p>
+          <div className="space-y-3">
+            <div>
+              <span className="font-bold">Impacto de la problemática en el estado actual del campo de conocimiento:</span> <span className="text-justify">El tema que se aborde en el ensayo debe responder a una cuestión actual, o que sea de interés para sectores vinculados a la Historia, la Geografía, la enseñanza del inglés, la Educación Primaria, la Educación Inicial, la Biología, la Matemáticas, la Lengua & Literatura, la Educación Especial. En general temas asociados al universo de la educación en cualquiera de sus campos.</span>
+            </div>
+            <div>
+              <span className="font-bold">Objetivo:</span> <span className="text-justify">El ensayo no busca ahondar en todas las posibilidades de un tema, sino que se concentra en algún apartado, una dimensión, un problema determinado. Al tener, a diferencia de un artículo académico, una carga subjetiva y personal del/la autor/a permite cierta libertad creativa al presentar la opinión. Pero se sugiere contar con un mínimo marco interpretativo que fundamente las posiciones teóricas, incluso si se utiliza el parafraseo en la redacción. Al final del trabajo se presentará la bibliografía de referencia.</span>
+            </div>
+            <div>
+              <span className="font-bold">Carácter dialógico:</span> <span className="text-justify">Para lograr una comunicación efectiva, se debe intentar que el lector se mantenga interesado a lo largo de todo el trabajo, por lo cual se propone que a la estructura mínima del mismo (presentación, desarrollo, conclusiones) se organicen mediante apartados o subtítulos inviten a la reflexión y la indagación que abran nuevos caminos interpretativos, preguntas o formulaciones.</span>
+            </div>
+          </div>
+        </div>
+      ),
+      types: [],
     },
     {
-      title: "Ensayos académicos",
-      description: "Un ensayo académico procura abordar un tema de manera más amplia que un artículo científica, en la que quien lo presenta, elabora su propio punto de vista, aportando una visión novedosa y original –en tensión y discusión con otros puntos de vista- por lo que se pretende que se trate de un trabajo propositivo. A través del ensayo, quien lo produce podría elaborar un aspecto específico de su campo de conocimiento o formular una reflexión crítica sobre la realidad. (Evaluados por el sistema de dobles ciego).",
-      types: ["Coordinadoras: Paola Vega y Noelia Lobo"],
+      title: "RESEÑAS BIBLIOGRÁFICAS",
+      description: (
+        <div>
+          <p className="text-justify mb-4">
+            La reseña bibliográfica es un breve estudio crítico que da cuenta de una publicación determinada con la intención de evaluarla y describirla. En otras palabras, la reseña permite la opinión reflexiva sobre una obra en particular. En ella se ofrece una mirada breve pero justificada sobre el libro, señalando sus fortalezas y debilidades. El Comité Editorial de <span className="italic font-semibold">FA Revista</span> propone publicar reseñas originales e inéditas de obras de no más de 2 años desde su publicación. Dado que suele ser un texto argumentativo-expositivo, es frecuente que se rija por una estructura como la siguiente:
+          </p>
+          <div className="space-y-3">
+            <div>
+              <span className="font-bold">Título:</span> <span className="text-justify">Es una frase que resume el espíritu del texto, muchas veces mencionando la obra a reseñar. Puede ir acompañado de un subtítulo o una aclaración. La importancia de este título es que funciona como disparador del deseo de abordarlo.</span>
+            </div>
+            <div>
+              <span className="font-bold">Introducción:</span> <span className="text-justify">Es el primer apartado de la reseña, donde se brinda al lector una perspectiva general o la información previa que servirá para adentrarse en el cuerpo del texto. Dicho de otro modo, es una pequeña cartografía de la obra que invita a recorrer ese territorio.</span>
+            </div>
+            <div>
+              <span className="font-bold">Desarrollo:</span> <span className="text-justify">Es el apartado central de la reseña, donde se expone el grueso del texto: argumentos, citas, reflexiones, opiniones, entre otros. En esta parte el redactor sin alejarse del fondo de la obra se permite la crítica, la comparación, la deconstrucción del texto y donde empieza a perfilar su mirada personal sobre la obra. Es la parte más creativa del texto.</span>
+            </div>
+            <div>
+              <span className="font-bold">Conclusiones:</span> <span className="text-justify">Es el apartado final de la reseña, donde se ofrece un cierre, una sensación general respecto de lo reseñado y, en ocasiones, información accesoria tal como dónde conseguir la obra reseñada, información editorial, etc.</span>
+            </div>
+          </div>
+        </div>
+      ),
+      types: [],
     },
     {
-      title: "Prácticas y experiencias educativas",
-      description: "Busca ser una sección analítica y reflexiva de la práctica del equipo docente del IPES FA como también puede convertirse en un espacio en el cual lxs estudiantes de los distintos profesorados presenten avances de sus reflexiones en torno a la práctica docente que llevan a cabo. Puede ser de utilidad para el inicio en el ejercicio de la práctica académica de lxs estudiantes como también un espacio para difundir los análisis de sus propias experiencias.",
-      types: ["Coordinadoras: Luciana Larrondo y Laura Buedo"],
+      title: "ENTREVISTAS",
+      description: (
+        <div>
+          <p className="text-justify mb-4">
+            En general se asocia la entrevista con el periodismo, y en una segunda instancia con el oficio del investigador social. También se suele creer que basta contar con una grabadora y preguntarle a la gente sobre lo que interesa o se cree de interés para la sociedad. No obstante, la entrevista es una técnica que demanda gran preparación y que sólo es útil si se realiza correctamente. Con las precauciones metodológicas pertinentes, el Comité Editorial de <span className="font-bold">FA Revista</span> invita a docentes, investigadores, estudiantes a presentar para su publicación, entrevistas que consideren relevantes en el marco de sus trayectorias (investigaciones en curso o finalizadas; trayectorias de formación, experiencias educativas, etc.) de carácter inédito o no publicadas en otros soportes de divulgación. Atento a lo establecido anteriormente, el Comité Editorial de <span className="font-bold">FA Revista</span> se atribuye la potestad de publicar entrevistas que considere relevantes para la comunidad académica en particular y a la sociedad en general, poniendo especial énfasis en aquellos trabajos que comulguen en mayor medida con ciertos requerimientos editoriales:
+          </p>
+          <ul className="list-disc list-inside space-y-3">
+            <li className="text-justify">
+              Se priorizará la entrevista a un personaje destacado (de la cultura en general o del ámbito de la educación en particular) antes que la que se desarrolla como parte del cubrimiento de un hecho noticioso (sin que esto presuponga su descarte definitivo)
+            </li>
+            <li className="text-justify">
+              Aunque la entrevista supone un diseño previo del diálogo (un diálogo formal no improvisado), podrán ser excepcionalmente publicadas, registros de charlas informales o espontáneas en las que se advierta de un aporte relevante y donde el Comité Editorial de <span className="font-bold">FA Revista</span> considere existe una riqueza conceptual/testimonial que aporte a la construcción de futuros objetos de estudio.
+            </li>
+            <li className="text-justify">
+              Asociado al punto anterior el Comité Editorial de <span className="font-bold">FA Revista</span>, priorizará las entrevistas realizadas a aquellas personas (o grupos de personas) que, debido a su posición social, trayectoria académica, conocimientos aportados, trabajos realizados o logros destacados en algún ámbito de la sociedad, recabar sus testimonios y experiencias existenciales se consideren relevantes para enriquecer el acervo cultural de la institución y la sociedad toda.
+            </li>
+          </ul>
+        </div>
+      ),
+      types: [],
     },
     {
-      title: "Dilemas y coyunturas",
-      description: "Promover el debate y el pensamiento crítico en torno a distintos problemas sociales. Específicamente, busca recibir trabajos de interpretación y de intervención en las polémicas vinculadas a la relación entre Estado, cultura, partidos y políticas educativas. Estos dilemas pueden estar localizados a escala local, como también a escala provincial y nacional.",
-      types: ["Coordinadores: Mario Hernández y Vanina Carla Perazzo"],
-    },
-    {
-      title: "Reseñas",
-      description: "Esta sección procura publicar reseñas originales e inéditas de libros publicados en los últimos dos o tres años. Puede ser un espacio no sólo de presentación descriptiva del contenido de una obra sino una instancia para docentes como estudiantes de escribir reseñas que incorporen un análisis crítico de la obra.",
-      types: ["Coordinador: Miguel Fanchovich"],
-    },
-    {
-      title: "Entrevistas",
-      description: "Esta sección reúne entrevistas o semblanzas originales e inéditas de autorxs, teóricxs y/o referentes de las culturas destacadxs.",
-      types: ["Decisión colectiva"],
-    },
-    {
-      title: "Maquetación y revisión editorial",
-      description: "Coordinación de la maquetación y revisión editorial de todos los contenidos de la revista.",
-      types: ["Coordinación: Emiliano Sánchez Narvarte"],
-    },
-    {
-      title: "Recepción y distribución interna",
-      description: "Gestión de la recepción y distribución interna de los envíos a la revista.",
-      types: ["Coordinación: Shion Cenatiempo"],
-    },
-    {
-      title: "Diseño y programación",
-      description: "Desarrollo y mantenimiento del diseño y la programación de la revista.",
-      types: ["Coordinación: Leonardo Nausan"],
+      title: "DILEMAS Y COYUNTURAS",
+      description: (
+        <div>
+          <p className="text-justify mb-4">
+            Esta sección invita a poner en consideración de la comunidad, problemáticas que afecten a la sociedad en general y muy particularmente al ámbito de la educación en todos sus niveles y modalidades. Consideramos al dilema desde el punto filosófico, como la posibilidad de elección frente a dos opciones, o alternativas difíciles o conflictivas, ambas con implicaciones negativas o desafiantes.<sup>1</sup> Siendo que este tipo de elecciones están presentes cotidianamente, proponemos este espacio que posibilite el debate, amplíe la participación de diversos actores sociales, enriquezca el abordaje de particularidades complejas, posibilite la confrontación de ideas, percepciones y marcos teóricos; un espacio que pretende ser un escenario posible cuando, en muchas ocasiones, el encuentro de marcos de interpretación muchas veces controversiales o incontrastables, se tornan difíciles de establecer.
+          </p>
+          <p className="text-justify mb-4">
+            El Comité Editorial de <span className="italic font-semibold">FA Revista</span> invita a la comunidad educativa a apropiarse de este espacio, en la convicción de que la coyuntura lo amerita, y el debate, como confrontación respetuosa de puntos de vista o esquemas de interpretación, puede presentarse como andamiaje y motor de futuras investigaciones, tribuna de investigaciones en curso o por concluir, o simplemente, establecer algunos parámetros, conceptualizaciones o señales del curso de ciertas discusiones que atraviesan a la sociedad.
+          </p>
+          <p className="text-justify mb-4">
+            El debate es constitutivo de toda instancia democrática desde los albores de esta práctica relacional de la especie humana. En el debate se plantean ideas, se confrontan realidades disímiles, se aborda la diferencia como marco de existencia. La valoración final del mismo no remite a la competencia en sí misma, sino en el recorrido que valida la confrontación y desnuda posturas políticas, implicancias ideológicas o marcos filosóficos. De allí que el debate, se muestre como una brisa fresca que intenta esclarecer el camino a recorrer o recorrido con respecto a ciertos temas sensibles para la comunidad.
+          </p>
+          <div className="text-xs text-gray-500 mt-6 border-t pt-2">
+            <sup>1</sup> <span className="font-bold">DILEMA</span> (lat. <span className="italic">dilemma</span>): Forma compleja de la argumentación disyuntiva en la que, partiendo de una disyunción, se muestra, a través de las premisas menores, que todos los términos de la disyunción conducen a una misma consecuencia. Cuaderno de materiales. Glosario de conceptos filosóficos:<br/>
+            Extraído el 29/06/2025 de: <a href="https://www.filosofia.net/materiales/rec/glosario.htm#d" className="text-blue-700 underline" target="_blank" rel="noopener noreferrer">https://www.filosofia.net/materiales/rec/glosario.htm#d</a>
+          </div>
+        </div>
+      ),
+      types: [],
     },
   ]
 
   // Datos de las directrices para autores
   const authorGuidelines = [
     {
-      title: "Dossier temático",
-      content:
-        "La revista recibe propuestas para dossier temático, que estructurarán cada número de la publicación. Las propuestas serán evaluadas por el Comité Editorial para su aceptación. Se priorizarán aquellas propuestas que tengan un alcance multiescalar sobre temas vinculados a los nudos problemáticos entre la educación y la cultura territorios. Para las presentaciones, se debe presentar una propuesta fundamentada del tópico (entre 500 palabras y 750), los nombres de las personas a cargo de la coordinación y una mininibio que sintetice su trayectoria curricular (hasta 10 líneas). Estas propuestas se remitirán al correo electrónico de la publicación, dirigida a Mariano Malizia, responsable de la organización del dossier.",
+      title: "Generales",
+      content: `Las contribuciones enviadas a la revista tienen que ser originales. En caso de que se envíen textos ya publicados, los autores deben responsabilizarse de obtener los permisos para reproducir el trabajo.
+
+Los artículos enviados deben ajustarse a la política de secciones de la revista:
+• Prácticas y experiencias educativas
+• Ensayos académicos
+• Artículos científicos
+• Dilemas y coyunturas
+• Relatos breves
+• Reseñas bibliográficas
+• Entrevistas
+
+Cada número de FA Revista cuenta con un dossier que define la temática para cada convocatoria.
+Se pueden enviar contribuciones a la sección Artículos libres.
+Solo se recibirán archivos en formato OpenOffice o Microsoft Word.
+Los trabajos que no respeten todas las normas de publicación de FA Revista serán devueltos para su adecuación.`,
     },
     {
-      title: "Prácticas y experiencias educativas",
-      content:
-        "Son trabajos originales e inéditos que procuran recuperar de manera crítica y reflexiva las situaciones y experiencias que resultan de la práctica docente. Tendrán una extensión de entre 10 y 15 páginas (incluidas referencias, notas, tablas y figuras). Estas colaboraciones son evaluadas por el Comité Editorial. Estas propuestas se remitirán al correo electrónico de la publicación, dirigida a Luciana Larrondo, Paola Vega y Laura Boedo, responsables de la sección.",
+      title: "Aspectos éticos",
+      content: `Tanto en lo que respecta a los aspectos éticos, como a la resolución de conflicto de interés tanto internos como externos, FA Revista se adhiere a las políticas del Consejo Nacional de Investigaciones Científicas y Técnicas respecto a los "Lineamientos para el comportamiento ético en las Ciencias Sociales y Humanidades". Los autores deben presentar sus resultados con claridad, honestidad y sin falsificación, o manipulación inadecuada de los datos.
+
+Al mismo tiempo, las contribuciones deben asumir el respeto por la libertad, los derechos humanos, el intercambio abierto de las interpretaciones científicas de la vida democrática. Y mantener y promover, de este modo, la dignidad, la honestidad, el espíritu crítico, la objetividad y la transparencia en la difusión de los trabajos.
+
+Los autores deben asegurar que los datos y resultados expuestos en el trabajo son originales y no han sido copiados, inventados, distorsionados o manipulados.
+Los autores se comprometen a enviar textos originales sin incurrir en prácticas ilegítimas de plagio.`,
     },
     {
-      title: "Artículos científicos",
-      content:
-        "Tendrán una extensión de entre 12 y 20 páginas (incluidas referencias, notas, tablas y figuras). Estas colaboraciones son evaluadas por pares en sistema de doble ciego. Estas propuestas se remitirán al correo electrónico de la publicación, dirigida a Julian Ghisio y Luciano Loupia, responsables de la sección.",
+      title: "Garantizar una evaluación anónima",
+      content: `Una evaluación por pares doble ciego significa que tanto el autor como el evaluador de un artículo desconocen mutuamente la identidad de las personas que se encuentran en el otro extremo del proceso de arbitraje.
+
+Para favorecer este proceso es imprescindible que los autores envíen sus artículos con su anonimato garantizado. Para ello proponemos seguir los siguientes pasos:
+• Anonimizar el archivo en el software utilizado.
+• Modificar todas las referencias a los autores (nombre, institución, referencias a escritos y trabajos propios, etc.) por la fórmula "[Autor/a]"`,
     },
     {
-      title: "Ensayos académicos",
-      content:
-        "Tendrán una extensión de entre 10 y 20 páginas (incluidas referencias, notas, tablas y figuras). Estas colaboraciones son evaluadas por pares en sistema de doble ciego. Estas propuestas se remitirán al correo electrónico de la publicación, dirigida a Noelia Lobo y Shion-en Cenatiempo, responsables de la sección.",
+      title: "Estructura interna de las contribuciones",
+      content: `La información que sigue es indicativa de los componentes que deberán tener los manuscritos en su cuerpo principal. Ello no implica que necesariamente deba nombrarse de esa misma forma cualquier ordenamiento interno del texto.`,
+    },
+    {
+      title: "Prácticas y experiencias educativas (Extensión: entre 4500 y 10 mil palabras)",
+      content: `• Título (español e inglés)
+• Palabras clave (español e inglés)
+• Introducción (despliegue de la ficha curricular: nivel, institución, área curricular, líneas de investigación)
+• Contextualización (propósitos, estrategias, metodologías, actividades, etc.)
+• Descripción y análisis de la experiencia
+• Conclusiones o reflexiones a modo de cierre
+• Referencias bibliográficas`,
+    },
+    {
+      title: "Ensayos académicos (Extensión: entre 6 mil y 10 mil palabras)",
+      content: `• Título (español, inglés)
+• Resumen (español, inglés)
+• Palabras clave (español, inglés)
+• Introducción (presentación del problema sobre el cual se elaborará la reflexión)
+• Desarrollo
+• Conclusiones
+• Referencias bibliográficas`,
+    },
+    {
+      title: "Artículos científicos (Extensión: entre 6 mil y 10 mil palabras)",
+      content: `• Título (español, inglés)
+• Resumen (español, inglés)
+• Palabras clave (español, inglés)
+• Introducción (propósito, antecedentes, justificación)
+• Apartado teórico-metodológico (construcción del problema y estrategia analítica)
+• Desarrollo (análisis, resultados -si los hubiese-)
+• Conclusiones
+• Referencias bibliográficas`,
     },
     {
       title: "Dilemas y coyunturas",
-      content:
-        "Tendrán una extensión máxima entre 8 y 15 páginas (incluidas referencias, notas, tablas y figuras). Estas colaboraciones son evaluadas por el Comité Editorial. Estas propuestas se remitirán al correo electrónico de la publicación, dirigida a Mario Hernández, responsable de la sección.",
+      content: `Promover el debate y el pensamiento crítico en torno a distintos problemas sociales. Específicamente, busca recibir trabajos de interpretación y de intervención en las polémicas vinculadas a la relación entre Estado, cultura, partidos y políticas educativas. Estos dilemas pueden estar localizados a escala local, como también a escala provincial y nacional.`,
     },
     {
-      title: "Reseñas bibliográficas",
-      content:
-        "Tendrán una extensión de entre 4 y 7 páginas. Estas colaboraciones son evaluadas por el Consejo Editorial. Estas propuestas se remitirán al correo electrónico de la publicación, dirigida a Miguel Fanchovich, responsable de la sección.",
+      title: "Literaturas breves (1500 palabras)",
+      content: `Promover y divulgar escritos ficcionales y no ficcionales originales e inéditos de estudiantes y docentes, además de escritoras y escritores locales invitadas/os. Publicaremos textos incluidos en cualquiera de los géneros literarios: cuentos, poemas, dramas breves, ensayos, crónicas y otros, con una extensión máxima de 1.500 palabras.`,
+    },
+    {
+      title: "Comentarios bibliográficos",
+      content: `• Título (español, inglés)
+• Información del autor de la reseña
+• Nombre del autor de la publicación presentada
+• Referencia bibliográfica detallada sobre la publicación
+• Texto de la reseña
+• Antecedentes
+• Presentación del texto
+• Discusión / Análisis`,
     },
     {
       title: "Entrevistas",
-      content:
-        "Tendrán una extensión de entre 6 y 11 páginas. Estas colaboraciones son evaluadas por el Consejo Editorial. Estas propuestas se remitirán al correo electrónico de la publicación indicando la sección donde pretende ser publicada.",
+      content: `• Título (español, inglés)
+• Datos del/los entrevistadores
+• Información del entrevistado
+• Entrevista inédita
+• Autorización del entrevistado para su publicación
+• Puede incluir fotografías siempre y cuando hayan sido tomadas por los autores de la entrevista o cedidas por el entrevistado`,
     },
     {
-      title: "Consideraciones generales",
-      content:
-        "En todos los casos, el Consejo Editorial de FA revista decide si los trabajos recibidos son acordes con el campo temático de la revista, el estilo editorial de la publicación y en qué volumen se publican.",
+      title: "Envío de propuestas de Dossier",
+      content: `Para coordinar un Dossier es necesario realizar una propuesta al Consejo editorial de la revista con una antelación de al menos un año.
+
+La misma debe ser remitida a los correos de contacto: farevista@ipesfa-ushuaia.edu.ar. Dicha propuesta, a cargo del o los coordinadores del dossier, debe contener:
+a) la presentación del tema,
+b) un breve CV del o los coordinadores (hasta tres páginas).
+
+Si la propuesta es aprobada por el Consejo editorial de Fa Revista, se organizará un esquema de trabajo conjunto.`,
     },
   ]
 
@@ -364,15 +524,19 @@ export default function AcercaDePage() {
 
                 <div className="space-y-8 mt-6">
                   {thematicSections.map((section, index) => (
-                    <div key={index} className="bg-white border rounded-lg p-6">
-                      <h3 className="text-xl font-semibold text-gray-900 mb-3">{section.title}</h3>
-                      <p className="text-gray-700 mb-4 text-justify">{section.description}</p>
-                      <h4 className="text-base font-medium text-gray-900 mb-2">Tipos de trabajos aceptados:</h4>
-                      <ul className="list-disc pl-5 space-y-1 text-gray-700">
-                        {section.types.map((type, idx) => (
-                          <li key={idx} className="text-justify">{type}</li>
-                        ))}
-                      </ul>
+                    <div
+                      key={index}
+                      className="bg-white border border-gray-200 rounded-lg shadow-md p-6 transition-shadow hover:shadow-lg"
+                    >
+                      <h3 className="text-xl font-semibold text-gray-900 mb-4 border-b border-gray-100 pb-2 uppercase tracking-wide">
+                        {section.title}
+                      </h3>
+                      {/* Si la sección es la primera (PRÁCTICAS Y EXPERIENCIAS EDUCATIVAS), renderiza el contenido como JSX, si no, como texto plano */}
+                      {index === 0 ? (
+                        section.description
+                      ) : (
+                        <p className="text-gray-700 text-justify whitespace-pre-line">{section.description}</p>
+                      )}
                     </div>
                   ))}
                 </div>

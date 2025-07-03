@@ -26,7 +26,7 @@ export function Footer() {
         <div className="flex-1 flex flex-col items-center gap-4 md:items-end">
           <nav className="flex gap-6 items-center">
             <a
-              href="https://instagram.com/tu_instagram"
+              href="https://www.instagram.com/fa_publicaciones/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram"
