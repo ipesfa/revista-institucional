@@ -119,6 +119,16 @@ export default function ConvocatoriaPage() {
               <p className="text-sm md:text-base text-gray-700 leading-relaxed text-justify">
                 FA Revista, es una publicación digital de acceso abierto de periodicidad semestral del Instituto Provincial de Enseñanza Superior de la Provincia de Tierra del Fuego de Argentina, dedicada a la publicación de ensayos reflexivos sobre la práctica educativa y de investigación originales e inéditos en español. Fa Revista propone problematizar la relación entre educación y cultura en la práctica docente de nivel superior desde una perspectiva que articula múltiples disciplinas como las Humanidades y Ciencias Sociales, las Artes, las Ciencias Biológicas y las Exactas, con un estilo editorial que promueve una lectura dinámica de trabajos rigurosos.
               </p>
+              <div className="flex justify-center my-6">
+                <Image
+                  src="/header_jornadas.png"
+                  alt="Jornadas Académico Culturales"
+                  width={700}
+                  height={210}
+                  className="object-contain rounded shadow"
+                  priority
+                />
+              </div>
               <p className="text-sm md:text-base text-gray-700 leading-relaxed mt-4 text-justify">
                 En esta ocasión, se invita especialmente para la publicación de textos que formarán parte del primer dossier de la revista, el que acompañará la realización de la XVIII Jornadas Académico Culturales bajo el nombre "Lo fantástico, vacilación del sentido común en cultura, ciencia y educación". Se pretenden publicaciones que propongan un espacio de reflexión interdisciplinaria, cuyo objetivo principal sea explorar cómo esta categoría estética y experiencial desafía nuestras percepciones de la realidad, define los límites de lo posible e interpela nuestras construcciones sociales de conocimiento. En esencia, se trata de observar como aquello que escapa a lo ordinario nos obliga a repensar lo que damos por sentado.
               </p>
@@ -172,7 +182,7 @@ export default function ConvocatoriaPage() {
                     <li className="text-gray-700">Complete y firme la declaración de originalidad.</li>
                     <li className="text-gray-700">
                       Envíe todos los documentos (manuscrito y declaración firmada) a través del formulario de envío o
-                      al correo electrónico: <span className="font-medium">articulos.koulana@ipes.edu</span>
+                      al correo electrónico: <span className="font-medium">farevista@ipesfa-ushuaia.edu.ar</span>
                     </li>
                     <li className="text-gray-700">Recibirá un acuse de recibo en un plazo máximo de 3 días hábiles.</li>
                   </ol>
@@ -185,32 +195,19 @@ export default function ConvocatoriaPage() {
               </TabsContent>
               <TabsContent value="evaluacion" className="p-4 border rounded-md mt-2">
                 <div className="space-y-4">
-                  <p className="text-gray-700">
-                    Todos los artículos recibidos son sometidos a un riguroso proceso de evaluación:
+                  <p className="text-gray-700 text-justify">
+                    La revisión de los artículos académicos por pares según el principio doble ciego (el evaluador no conoce a lxs autorxs y lxs autorxs no conocen a sus evaluadorxs), garantiza un abordaje imparcial del trabajo enviado a la publicación. Hoy en día, dada la complejización y jerarquización del sistema académico y científico nacional e internacional, las publicaciones que no son evaluadas prácticamente carecen de validez académica en términos de evaluación de antecedentes y gran parte de quienes se dedican al trabajo académico tienden a publicar trabajos en revistas que garanticen una evaluación segura y rigurosa, que no es lo mismo que excluyente.
                   </p>
-                  <ol className="space-y-3 list-decimal pl-5">
-                    <li className="text-gray-700">
-                      <span className="font-medium">Evaluación preliminar:</span> El Comité Editorial verifica que el
-                      artículo cumpla con las normas de la revista y sea pertinente para la temática.
-                    </li>
-                    <li className="text-gray-700">
-                      <span className="font-medium">Evaluación por pares:</span> Los artículos que superan la evaluación
-                      preliminar son sometidos a un proceso de evaluación por pares de doble ciego (dos evaluadores
-                      externos especialistas en la temática).
-                    </li>
-                    <li className="text-gray-700">
-                      <span className="font-medium">Decisión editorial:</span> Con base en los informes de los
-                      evaluadores, el Comité Editorial toma una de las siguientes decisiones: aceptación sin cambios,
-                      aceptación con cambios menores, aceptación con cambios mayores o rechazo.
-                    </li>
-                    <li className="text-gray-700">
-                      <span className="font-medium">Comunicación a los autores:</span> Los autores reciben la decisión
-                      editorial junto con los comentarios de los evaluadores.
-                    </li>
-                    <li className="text-gray-700">
-                      <span className="font-medium">Versión final:</span> Los autores de artículos aceptados con cambios
-                      deben enviar la versión revisada en el plazo establecido.
-                    </li>
+                  <p className="text-gray-700 text-justify">
+                    Para que un artículo sea evaluado, se tienden a considerar los siguientes puntos:
+                  </p>
+                  <ol className="space-y-2 list-decimal pl-5 text-gray-700">
+                    <li>La originalidad del trabajo de investigación o manuscrito;</li>
+                    <li>Relevancia para el conocimiento sobre el tema y clara presentación del problema que se pretende abordar;</li>
+                    <li>Marco de referencia: respaldo teórico adecuado. Determinación clara del objetivo del trabajo y de la(s) hipótesis. Referencias bibliográficas actualizadas y adecuadas al ámbito de investigación;</li>
+                    <li>Metodología: uso apropiado y buena descripción de materiales y métodos;</li>
+                    <li>Resultados: elaboración de conclusiones –parciales o no– que den cuenta del análisis realizado.</li>
+                    <li>Aspectos formales: corrección en el lenguaje, citación y referencias según normalización de la revista.</li>
                   </ol>
                 </div>
               </TabsContent>
@@ -225,8 +222,8 @@ export default function ConvocatoriaPage() {
             </p>
             <div className="flex items-center">
               <Mail className="h-5 w-5 text-blue-800 mr-2" />
-              <a href="mailto:articulos.koulana@ipes.edu" className="text-blue-800 hover:underline">
-                articulosrevistafa@ipesfa-ushuaia.edu.ar
+              <a href="mailto:farevista@ipesfa-ushuaia.edu.ar" className="text-blue-800 hover:underline">
+                farevista@ipesfa-ushuaia.edu.ar
               </a>
             </div>
             <div className="mt-4">
@@ -289,24 +286,19 @@ export default function ConvocatoriaPage() {
           {/* Current Issue Preview */}
           <Card>
             <CardContent className="p-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Último número</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">Dossier N° 1</h3>
               <div className="flex flex-col items-center">
                 <div className="relative h-[200px] w-[150px] overflow-hidden rounded-lg shadow-md mb-4">
                   <Image
-                    src="/placeholder.svg?height=400&width=300"
-                    alt="Último número de Koulana"
+                    src="/convoca.png"
+                    alt="Dossier N° 1 de FA Revista"
                     fill
                     className="object-cover"
                   />
                 </div>
                 <p className="text-center text-gray-700 mb-4">
-                  Consulte nuestro último número para conocer el estilo y enfoque de la revista.
+                  Publicación de ensayos reflexivos sobre la práctica educativa y de investigación originales e inéditos en español.
                 </p>
-                <Link href="/actual">
-                  <Button variant="outline" className="w-full">
-                    Ver último número
-                  </Button>
-                </Link>
               </div>
             </CardContent>
           </Card>

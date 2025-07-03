@@ -96,9 +96,9 @@ export default function Home() {
               </div>
               {/* Imagen */}
               <div className="flex-1 w-full md:w-1/2 flex justify-center items-center mb-8 md:mb-0">
-                <div className="relative w-40 h-56 md:w-52 md:h-72">
+                <div className="relative w-56 h-80 md:w-72 md:h-[420px]">
                   <Image
-                    src="/portada1.png"
+                    src="/presenta.png"
                     alt="Portada de la revista Koulana"
                     fill
                     className="object-contain rounded-xl shadow-sm"
