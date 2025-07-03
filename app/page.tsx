@@ -78,17 +78,20 @@ export default function Home() {
         {/* Hero Section */}
         <section className="bg-white py-20">
           <div className="container mx-auto px-4 md:px-6">
-            <div className="flex flex-col md:flex-row items-center md:justify-between gap-12 max-w-4xl mx-auto">
+            <div className="flex flex-col md:flex-row items-center md:justify-between gap-12 max-w-6xl mx-auto">
               {/* Texto */}
-              <div className="flex-1 w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left gap-5">
-                <h1 className="text-2xl md:text-4xl font-semibold text-blue-900 leading-tight">Número actual</h1>
-                <p className="text-base md:text-lg text-gray-500">Año 1 · Volumen 1</p>
-                <p className="text-base md:text-lg text-gray-600 max-w-md text-justify">Descubre los artículos, ensayos y experiencias educativas más recientes publicados en nuestra revista académica semestral del IPES Florentino Ameghino.</p>
+              <div className="flex-1 w-full md:w-full flex flex-col items-center md:items-start text-center md:text-left gap-5">
+                <h1 className="text-2xl md:text-4xl font-semibold text-blue-900 leading-tight">Presentación</h1>
+                <p className="text-sm md:text-base text-gray-600 text-justify">
+                  La publicación periódica FA Revista pertenece al Instituto Provincial de Educación Superior Florentino Ameghino (IPES FA) de Ushuaia. El proyecto se inscribe en una larga tradición del IPES FA vinculada a la publicación de revistas culturales que, a lo largo de los años, se realizó de manera discontinua y atravesando dificultades presupuestarias y técnicas.<br />
+                  En el actual contexto, retomamos ese espíritu y vocación por generar las condiciones de abrir espacios de participación en la producción de conocimientos.<br />
+                  FA Revista es una publicación de carácter académico sobre problemáticas vinculadas a la educación y a la cultura. Se caracteriza por la rigurosidad, la promoción de la práctica escritural de lxs docentes de múltiples niveles y de estudiantes que deseen poner en común sus reflexiones, análisis e investigaciones.
+                </p>
                 <Link
-                  href="/actual"
+                  href="/acerca-de"
                   className="inline-flex items-center justify-center rounded-lg bg-blue-800 px-8 py-3 text-base font-medium text-white hover:bg-blue-800 transition-all duration-300 ease-in-out shadow-md mt-2"
                 >
-                  Explorar artículos
+                  Conoce más
                 </Link>
               </div>
               {/* Imagen */}
@@ -114,14 +117,16 @@ export default function Home() {
         <section className="bg-blue-50 py-10 md:py-14">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
-              <h2 className="text-2xl font-semibold text-blue-900">Convocatoria abierta</h2>
-              <p className="max-w-xl text-blue-900/80 text-base">Envía tu artículo para el próximo número de FA revista.</p>
+              <h2 className="text-2xl font-semibold text-blue-900">¿Listo para enviar su artículo?</h2>
+              <p className="max-w-xl text-blue-900/80 text-base">Contribuya al conocimiento académico compartiendo sus investigaciones y reflexiones<br />en el campo de la educación y la cultura.</p>
               <div className="flex justify-center pt-2">
                 <Link
-                  href="/convocatoria"
-                  className="flex h-9 items-center justify-center rounded-md bg-blue-800 px-6 text-sm font-medium text-white transition-colors hover:bg-blue-700 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-blue-800"
+                  href="https://forms.gle/zMfzgPX2g4FBjyEZ8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex h-9 items-center justify-center rounded-md bg-white px-6 text-sm font-medium text-blue-800 border border-blue-800 transition-colors hover:bg-blue-50 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-blue-800"
                 >
-                  Conocer más
+                  Enviar artículo ahora
                 </Link>
               </div>
             </div>
