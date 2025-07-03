@@ -251,111 +251,177 @@ export default function AcercaDePage() {
   const authorGuidelines = [
     {
       title: "Generales",
-      content: `Las contribuciones enviadas a la revista tienen que ser originales. En caso de que se envíen textos ya publicados, los autores deben responsabilizarse de obtener los permisos para reproducir el trabajo.
-
-Los artículos enviados deben ajustarse a la política de secciones de la revista:
-• Prácticas y experiencias educativas
-• Ensayos académicos
-• Artículos científicos
-• Dilemas y coyunturas
-• Relatos breves
-• Reseñas bibliográficas
-• Entrevistas
-
-Cada número de FA Revista cuenta con un dossier que define la temática para cada convocatoria.
-Se pueden enviar contribuciones a la sección Artículos libres.
-Solo se recibirán archivos en formato OpenOffice o Microsoft Word.
-Los trabajos que no respeten todas las normas de publicación de FA Revista serán devueltos para su adecuación.`,
+      content: (
+        <div className="space-y-4">
+          <p className="text-justify">
+            Las contribuciones enviadas a la revista tienen que ser originales. En caso de que se envíen textos ya publicados, los autores deben responsabilizarse de obtener los permisos para reproducir el trabajo.
+          </p>
+          <p className="text-justify">
+            Los artículos enviados deben ajustarse a la política de secciones de la revista:
+          </p>
+          <ul className="list-disc list-inside space-y-1 text-justify">
+            <li>Prácticas y experiencias educativas</li>
+            <li>Ensayos académicos</li>
+            <li>Artículos científicos</li>
+            <li>Dilemas y coyunturas</li>
+            <li>Relatos breves</li>
+            <li>Reseñas bibliográficas</li>
+            <li>Entrevistas</li>
+          </ul>
+          <p className="text-justify">
+            Cada número de FA Revista cuenta con un dossier que define la temática para cada convocatoria.
+            Se pueden enviar contribuciones a la sección Artículos libres.
+            Solo se recibirán archivos en formato OpenOffice o Microsoft Word.
+            Los trabajos que no respeten todas las normas de publicación de FA Revista serán devueltos para su adecuación.
+          </p>
+        </div>
+      ),
     },
     {
       title: "Aspectos éticos",
-      content: `Tanto en lo que respecta a los aspectos éticos, como a la resolución de conflicto de interés tanto internos como externos, FA Revista se adhiere a las políticas del Consejo Nacional de Investigaciones Científicas y Técnicas respecto a los "Lineamientos para el comportamiento ético en las Ciencias Sociales y Humanidades". Los autores deben presentar sus resultados con claridad, honestidad y sin falsificación, o manipulación inadecuada de los datos.
-
-Al mismo tiempo, las contribuciones deben asumir el respeto por la libertad, los derechos humanos, el intercambio abierto de las interpretaciones científicas de la vida democrática. Y mantener y promover, de este modo, la dignidad, la honestidad, el espíritu crítico, la objetividad y la transparencia en la difusión de los trabajos.
-
-Los autores deben asegurar que los datos y resultados expuestos en el trabajo son originales y no han sido copiados, inventados, distorsionados o manipulados.
-Los autores se comprometen a enviar textos originales sin incurrir en prácticas ilegítimas de plagio.`,
+      content: (
+        <div className="space-y-4">
+          <p className="text-justify">
+            Tanto en lo que respecta a los aspectos éticos, como a la resolución de conflicto de interés tanto internos como externos, FA Revista se adhiere a las políticas del Consejo Nacional de Investigaciones Científicas y Técnicas respecto a los "Lineamientos para el comportamiento ético en las Ciencias Sociales y Humanidades". Los autores deben presentar sus resultados con claridad, honestidad y sin falsificación, o manipulación inadecuada de los datos.
+          </p>
+          <p className="text-justify">
+            Al mismo tiempo, las contribuciones deben asumir el respeto por la libertad, los derechos humanos, el intercambio abierto de las interpretaciones científicas de la vida democrática. Y mantener y promover, de este modo, la dignidad, la honestidad, el espíritu crítico, la objetividad y la transparencia en la difusión de los trabajos.
+          </p>
+          <p className="text-justify">
+            Los autores deben asegurar que los datos y resultados expuestos en el trabajo son originales y no han sido copiados, inventados, distorsionados o manipulados.
+            Los autores se comprometen a enviar textos originales sin incurrir en prácticas ilegítimas de plagio.
+          </p>
+        </div>
+      ),
     },
     {
       title: "Garantizar una evaluación anónima",
-      content: `Una evaluación por pares doble ciego significa que tanto el autor como el evaluador de un artículo desconocen mutuamente la identidad de las personas que se encuentran en el otro extremo del proceso de arbitraje.
-
-Para favorecer este proceso es imprescindible que los autores envíen sus artículos con su anonimato garantizado. Para ello proponemos seguir los siguientes pasos:
-• Anonimizar el archivo en el software utilizado.
-• Modificar todas las referencias a los autores (nombre, institución, referencias a escritos y trabajos propios, etc.) por la fórmula "[Autor/a]"`,
+      content: (
+        <div className="space-y-4">
+          <p className="text-justify">
+            Una evaluación por pares doble ciego significa que tanto el autor como el evaluador de un artículo desconocen mutuamente la identidad de las personas que se encuentran en el otro extremo del proceso de arbitraje.
+          </p>
+          <p className="text-justify">
+            Para favorecer este proceso es imprescindible que los autores envíen sus artículos con su anonimato garantizado. Para ello proponemos seguir los siguientes pasos:
+          </p>
+          <ul className="list-disc list-inside space-y-1 text-justify">
+            <li>Anonimizar el archivo en el software utilizado.</li>
+            <li>Modificar todas las referencias a los autores (nombre, institución, referencias a escritos y trabajos propios, etc.) por la fórmula "[Autor/a]"</li>
+          </ul>
+        </div>
+      ),
     },
     {
       title: "Estructura interna de las contribuciones",
-      content: `La información que sigue es indicativa de los componentes que deberán tener los manuscritos en su cuerpo principal. Ello no implica que necesariamente deba nombrarse de esa misma forma cualquier ordenamiento interno del texto.`,
-    },
-    {
-      title: "Prácticas y experiencias educativas (Extensión: entre 4500 y 10 mil palabras)",
-      content: `• Título (español e inglés)
-• Palabras clave (español e inglés)
-• Introducción (despliegue de la ficha curricular: nivel, institución, área curricular, líneas de investigación)
-• Contextualización (propósitos, estrategias, metodologías, actividades, etc.)
-• Descripción y análisis de la experiencia
-• Conclusiones o reflexiones a modo de cierre
-• Referencias bibliográficas`,
-    },
-    {
-      title: "Ensayos académicos (Extensión: entre 6 mil y 10 mil palabras)",
-      content: `• Título (español, inglés)
-• Resumen (español, inglés)
-• Palabras clave (español, inglés)
-• Introducción (presentación del problema sobre el cual se elaborará la reflexión)
-• Desarrollo
-• Conclusiones
-• Referencias bibliográficas`,
-    },
-    {
-      title: "Artículos científicos (Extensión: entre 6 mil y 10 mil palabras)",
-      content: `• Título (español, inglés)
-• Resumen (español, inglés)
-• Palabras clave (español, inglés)
-• Introducción (propósito, antecedentes, justificación)
-• Apartado teórico-metodológico (construcción del problema y estrategia analítica)
-• Desarrollo (análisis, resultados -si los hubiese-)
-• Conclusiones
-• Referencias bibliográficas`,
-    },
-    {
-      title: "Dilemas y coyunturas",
-      content: `Promover el debate y el pensamiento crítico en torno a distintos problemas sociales. Específicamente, busca recibir trabajos de interpretación y de intervención en las polémicas vinculadas a la relación entre Estado, cultura, partidos y políticas educativas. Estos dilemas pueden estar localizados a escala local, como también a escala provincial y nacional.`,
-    },
-    {
-      title: "Literaturas breves (1500 palabras)",
-      content: `Promover y divulgar escritos ficcionales y no ficcionales originales e inéditos de estudiantes y docentes, además de escritoras y escritores locales invitadas/os. Publicaremos textos incluidos en cualquiera de los géneros literarios: cuentos, poemas, dramas breves, ensayos, crónicas y otros, con una extensión máxima de 1.500 palabras.`,
-    },
-    {
-      title: "Comentarios bibliográficos",
-      content: `• Título (español, inglés)
-• Información del autor de la reseña
-• Nombre del autor de la publicación presentada
-• Referencia bibliográfica detallada sobre la publicación
-• Texto de la reseña
-• Antecedentes
-• Presentación del texto
-• Discusión / Análisis`,
-    },
-    {
-      title: "Entrevistas",
-      content: `• Título (español, inglés)
-• Datos del/los entrevistadores
-• Información del entrevistado
-• Entrevista inédita
-• Autorización del entrevistado para su publicación
-• Puede incluir fotografías siempre y cuando hayan sido tomadas por los autores de la entrevista o cedidas por el entrevistado`,
+      content: (
+        <div className="space-y-6">
+          <p className="text-justify">
+            La información que sigue es indicativa de los componentes que deberán tener los manuscritos en su cuerpo principal. Ello no implica que necesariamente deba nombrarse de esa misma forma cualquier ordenamiento interno del texto.
+          </p>
+          
+          <div className="space-y-4">
+            <div>
+              <h4 className="font-semibold text-gray-900 mb-2">Prácticas y experiencias educativas (Extensión: entre 4500 y 10 mil palabras)</h4>
+              <ul className="list-disc list-inside space-y-1 text-justify ml-4">
+                <li>Título (español e inglés)</li>
+                <li>Palabras clave (español e inglés)</li>
+                <li>Introducción (despliegue de la ficha curricular: nivel, institución, área curricular, líneas de investigación)</li>
+                <li>Contextualización (propósitos, estrategias, metodologías, actividades, etc.)</li>
+                <li>Descripción y análisis de la experiencia</li>
+                <li>Conclusiones o reflexiones a modo de cierre</li>
+                <li>Referencias bibliográficas</li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 className="font-semibold text-gray-900 mb-2">Ensayos académicos (Extensión: entre 6 mil y 10 mil palabras)</h4>
+              <ul className="list-disc list-inside space-y-1 text-justify ml-4">
+                <li>Título (español, inglés)</li>
+                <li>Resumen (español, inglés)</li>
+                <li>Palabras clave (español, inglés)</li>
+                <li>Introducción (presentación del problema sobre el cual se elaborará la reflexión)</li>
+                <li>Desarrollo</li>
+                <li>Conclusiones</li>
+                <li>Referencias bibliográficas</li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 className="font-semibold text-gray-900 mb-2">Artículos científicos (Extensión: entre 6 mil y 10 mil palabras)</h4>
+              <ul className="list-disc list-inside space-y-1 text-justify ml-4">
+                <li>Título (español, inglés)</li>
+                <li>Resumen (español, inglés)</li>
+                <li>Palabras clave (español, inglés)</li>
+                <li>Introducción (propósito, antecedentes, justificación)</li>
+                <li>Apartado teórico-metodológico (construcción del problema y estrategia analítica)</li>
+                <li>Desarrollo (análisis, resultados -si los hubiese-)</li>
+                <li>Conclusiones</li>
+                <li>Referencias bibliográficas</li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 className="font-semibold text-gray-900 mb-2">Dilemas y coyunturas</h4>
+              <p className="text-justify ml-4">
+                Promover el debate y el pensamiento crítico en torno a distintos problemas sociales. Específicamente, busca recibir trabajos de interpretación y de intervención en las polémicas vinculadas a la relación entre Estado, cultura, partidos y políticas educativas. Estos dilemas pueden estar localizados a escala local, como también a escala provincial y nacional.
+              </p>
+            </div>
+
+            <div>
+              <h4 className="font-semibold text-gray-900 mb-2">Literaturas breves (1500 palabras)</h4>
+              <p className="text-justify ml-4">
+                Promover y divulgar escritos ficcionales y no ficcionales originales e inéditos de estudiantes y docentes, además de escritoras y escritores locales invitadas/os. Publicaremos textos incluidos en cualquiera de los géneros literarios: cuentos, poemas, dramas breves, ensayos, crónicas y otros, con una extensión máxima de 1.500 palabras.
+              </p>
+            </div>
+
+            <div>
+              <h4 className="font-semibold text-gray-900 mb-2">Comentarios bibliográficos</h4>
+              <ul className="list-disc list-inside space-y-1 text-justify ml-4">
+                <li>Título (español, inglés)</li>
+                <li>Información del autor de la reseña</li>
+                <li>Nombre del autor de la publicación presentada</li>
+                <li>Referencia bibliográfica detallada sobre la publicación</li>
+                <li>Texto de la reseña</li>
+                <li>Antecedentes</li>
+                <li>Presentación del texto</li>
+                <li>Discusión / Análisis</li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 className="font-semibold text-gray-900 mb-2">Entrevistas</h4>
+              <ul className="list-disc list-inside space-y-1 text-justify ml-4">
+                <li>Título (español, inglés)</li>
+                <li>Datos del/los entrevistadores</li>
+                <li>Información del entrevistado</li>
+                <li>Entrevista inédita</li>
+                <li>Autorización del entrevistado para su publicación</li>
+                <li>Puede incluir fotografías siempre y cuando hayan sido tomadas por los autores de la entrevista o cedidas por el entrevistado</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      ),
     },
     {
       title: "Envío de propuestas de Dossier",
-      content: `Para coordinar un Dossier es necesario realizar una propuesta al Consejo editorial de la revista con una antelación de al menos un año.
-
-La misma debe ser remitida a los correos de contacto: farevista@ipesfa-ushuaia.edu.ar. Dicha propuesta, a cargo del o los coordinadores del dossier, debe contener:
-a) la presentación del tema,
-b) un breve CV del o los coordinadores (hasta tres páginas).
-
-Si la propuesta es aprobada por el Consejo editorial de Fa Revista, se organizará un esquema de trabajo conjunto.`,
+      content: (
+        <div className="space-y-4">
+          <p className="text-justify">
+            Para coordinar un Dossier es necesario realizar una propuesta al Consejo editorial de la revista con una antelación de al menos un año.
+          </p>
+          <p className="text-justify">
+            La misma debe ser remitida a los correos de contacto: farevista@ipesfa-ushuaia.edu.ar. Dicha propuesta, a cargo del o los coordinadores del dossier, debe contener:
+          </p>
+          <ul className="list-disc list-inside space-y-1 text-justify">
+            <li>a) la presentación del tema,</li>
+            <li>b) un breve CV del o los coordinadores (hasta tres páginas).</li>
+          </ul>
+          <p className="text-justify">
+            Si la propuesta es aprobada por el Consejo editorial de Fa Revista, se organizará un esquema de trabajo conjunto.
+          </p>
+        </div>
+      ),
     },
   ]
 
@@ -531,12 +597,7 @@ Si la propuesta es aprobada por el Consejo editorial de Fa Revista, se organizar
                       <h3 className="text-xl font-semibold text-gray-900 mb-4 border-b border-gray-100 pb-2 uppercase tracking-wide">
                         {section.title}
                       </h3>
-                      {/* Si la sección es la primera (PRÁCTICAS Y EXPERIENCIAS EDUCATIVAS), renderiza el contenido como JSX, si no, como texto plano */}
-                      {index === 0 ? (
-                        section.description
-                      ) : (
-                        <p className="text-gray-700 text-justify whitespace-pre-line">{section.description}</p>
-                      )}
+                      {section.description}
                     </div>
                   ))}
                 </div>
