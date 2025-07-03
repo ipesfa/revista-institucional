@@ -177,7 +177,9 @@ export default function ConvocatoriaPage() {
                     <li className="text-gray-700">Recibirá un acuse de recibo en un plazo máximo de 3 días hábiles.</li>
                   </ol>
                   <div className="flex justify-center mt-6">
-                    <Button className="bg-blue-800 hover:bg-blue-700">Formulario de envío</Button>
+                    <Button className="bg-blue-800 hover:bg-blue-700">
+                      <a href="https://forms.gle/w4r3ysMwzbv85ryd6" target="_blank" rel="noopener noreferrer">Formulario de envío</a>
+                    </Button>
                   </div>
                 </div>
               </TabsContent>
@@ -270,18 +272,16 @@ export default function ConvocatoriaPage() {
                 Documentos
               </h3>
               <div className="space-y-4">
-                {convocatoria.documentos.map((doc, index) => (
-                  <div key={index} className="border-b pb-4 last:border-0 last:pb-0">
-                    <h4 className="font-medium text-gray-900">{doc.nombre}</h4>
-                    <p className="text-sm text-gray-600 mb-2">{doc.descripcion}</p>
-                    <Link href={doc.url}>
-                      <Button variant="outline" size="sm" className="w-full flex items-center justify-center">
-                        <Download className="h-4 w-4 mr-2" />
-                        Descargar
-                      </Button>
-                    </Link>
-                  </div>
-                ))}
+                <div className="border-b pb-4 last:border-0 last:pb-0">
+                  <h4 className="font-medium text-gray-900">Normas APA</h4>
+                  <p className="text-sm text-gray-600 mb-2">Guía para la presentación y formato de trabajos según normas APA.</p>
+                  <a href="https://drive.google.com/file/d/1vZgIT5QYhIHgSfP5RHbW_4ftIZKpYkJX/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                    <Button variant="outline" size="sm" className="w-full flex items-center justify-center">
+                      <Download className="h-4 w-4 mr-2" />
+                      Descargar
+                    </Button>
+                  </a>
+                </div>
               </div>
             </CardContent>
           </Card>
@@ -338,9 +338,11 @@ export default function ConvocatoriaPage() {
           Contribuya al conocimiento académico compartiendo sus investigaciones y reflexiones en el campo de la
           educación y la cultura.
         </p>
-        <Button size="lg" className="bg-white text-blue-800 hover:bg-gray-100">
-          Enviar artículo ahora
-        </Button>
+        <a href="https://forms.gle/w4r3ysMwzbv85ryd6" target="_blank" rel="noopener noreferrer">
+          <Button size="lg" className="bg-white text-blue-800 hover:bg-gray-100">
+            Enviar artículo ahora
+          </Button>
+        </a>
       </div>
     </div>
   )

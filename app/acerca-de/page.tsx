@@ -648,20 +648,8 @@ export default function AcercaDePage() {
                   <div className="space-y-3">
                     <div className="flex items-center">
                       <ExternalLink className="h-4 w-4 text-blue-800 mr-2" />
-                      <Link href="/documentos/plantilla-articulo.docx" className="text-blue-800 hover:underline">
-                        Plantilla para artículos
-                      </Link>
-                    </div>
-                    <div className="flex items-center">
-                      <ExternalLink className="h-4 w-4 text-blue-800 mr-2" />
-                      <Link href="/documentos/guia-autores.pdf" className="text-blue-800 hover:underline">
-                        Guía completa para autores
-                      </Link>
-                    </div>
-                    <div className="flex items-center">
-                      <ExternalLink className="h-4 w-4 text-blue-800 mr-2" />
-                      <Link href="/documentos/politica-etica.pdf" className="text-blue-800 hover:underline">
-                        Política ética y de buenas prácticas
+                      <Link href="https://drive.google.com/file/d/1vZgIT5QYhIHgSfP5RHbW_4ftIZKpYkJX/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="text-blue-800 hover:underline">
+                        Normas APA
                       </Link>
                     </div>
                   </div>
@@ -669,7 +657,7 @@ export default function AcercaDePage() {
 
                 <div className="mt-6">
                   <Button className="bg-blue-800 hover:bg-blue-700">
-                    <Link href="/convocatoria">Enviar un artículo</Link>
+                    <Link href="https://forms.gle/w4r3ysMwzbv85ryd6" target="_blank" rel="noopener noreferrer">Enviar un artículo</Link>
                   </Button>
                 </div>
               </div>

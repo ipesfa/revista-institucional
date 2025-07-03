@@ -121,7 +121,7 @@ export default function Home() {
               <p className="max-w-xl text-blue-900/80 text-base">Contribuya al conocimiento académico compartiendo sus investigaciones y reflexiones<br />en el campo de la educación y la cultura.</p>
               <div className="flex justify-center pt-2">
                 <Link
-                  href="https://forms.gle/zMfzgPX2g4FBjyEZ8"
+                  href="https://forms.gle/w4r3ysMwzbv85ryd6"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex h-9 items-center justify-center rounded-md bg-white px-6 text-sm font-medium text-blue-800 border border-blue-800 transition-colors hover:bg-blue-50 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-blue-800"
