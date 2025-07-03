@@ -12,35 +12,19 @@ export default function ConvocatoriaPage() {
   // Datos de la convocatoria actual
   const convocatoria = {
     titulo: "Convocatoria Abierta",
-    subtitulo: "Volumen 8, Número 1 - Enero 2026",
+    subtitulo: "Dossier  N° 1 / Año 1",
     descripcion:
       "La revista académica FA invita a investigadores, docentes y especialistas a enviar sus contribuciones para el próximo número. Buscamos artículos originales e inéditos que aborden temas relevantes en el ámbito de la educación y la cultura, con especial énfasis en innovaciones pedagógicas, transformaciones educativas y análisis culturales contemporáneos.",
     tematica: "Innovación educativa y transformaciones culturales en la era digital",
-    fechaLimite: "30 de septiembre de 2025",
+    fechaLimite: "20 de octubre de 2025",
     fechaPublicacion: "Enero 2026",
     fechasImportantes: [
       {
-        fecha: "1 de junio de 2025",
-        evento: "Apertura de la convocatoria",
-      },
-      {
-        fecha: "30 de septiembre de 2025",
+        fecha: "20 de octubre de 2025",
         evento: "Fecha límite para envío de artículos",
       },
       {
-        fecha: "1 al 31 de octubre de 2025",
-        evento: "Proceso de evaluación por pares",
-      },
-      {
-        fecha: "15 de noviembre de 2025",
-        evento: "Notificación de resultados a autores",
-      },
-      {
-        fecha: "15 de diciembre de 2025",
-        evento: "Fecha límite para envío de versiones finales",
-      },
-      {
-        fecha: "Enero 2026",
+        fecha: "Noviembre 2025",
         evento: "Publicación del número",
       },
     ],
@@ -132,10 +116,25 @@ export default function ConvocatoriaPage() {
           {/* Introduction Section */}
           <section>
             <div className="prose max-w-none">
-              <p className="text-lg text-gray-700 leading-relaxed">{convocatoria.descripcion}</p>
-              <div className="mt-4 p-4 bg-blue-50 rounded-lg">
-                <h3 className="text-lg font-semibold text-gray-900">Temática del número:</h3>
-                <p className="text-gray-700">{convocatoria.tematica}</p>
+              <p className="text-sm md:text-base text-gray-700 leading-relaxed text-justify">
+                FA Revista, es una publicación digital de acceso abierto de periodicidad semestral del Instituto Provincial de Enseñanza Superior de la Provincia de Tierra del Fuego de Argentina, dedicada a la publicación de ensayos reflexivos sobre la práctica educativa y de investigación originales e inéditos en español. Fa Revista propone problematizar la relación entre educación y cultura en la práctica docente de nivel superior desde una perspectiva que articula múltiples disciplinas como las Humanidades y Ciencias Sociales, las Artes, las Ciencias Biológicas y las Exactas, con un estilo editorial que promueve una lectura dinámica de trabajos rigurosos.
+              </p>
+              <p className="text-sm md:text-base text-gray-700 leading-relaxed mt-4 text-justify">
+                En esta ocasión, se invita especialmente para la publicación de textos que formarán parte del primer dossier de la revista, el que acompañará la realización de la XVIII Jornadas Académico Culturales bajo el nombre "Lo fantástico, vacilación del sentido común en cultura, ciencia y educación". Se pretenden publicaciones que propongan un espacio de reflexión interdisciplinaria, cuyo objetivo principal sea explorar cómo esta categoría estética y experiencial desafía nuestras percepciones de la realidad, define los límites de lo posible e interpela nuestras construcciones sociales de conocimiento. En esencia, se trata de observar como aquello que escapa a lo ordinario nos obliga a repensar lo que damos por sentado.
+              </p>
+              <div className="mt-6">
+                <h2 className="text-xl font-bold text-gray-900 mb-2">Se podrán aportar manuscritos originales en alguna de las siguientes secciones:</h2>
+                <ul className="list-disc pl-6 space-y-1 text-gray-700">
+                  <li>Prácticas y experiencias educativas</li>
+                  <li>Artículos científicos</li>
+                  <li>Ensayos académicos</li>
+                  <li>Reseñas Bibliográficas</li>
+                  <li>Entrevistas</li>
+                  <li>Dilemas y coyunturas</li>
+                </ul>
+              </div>
+              <div className="mt-6">
+                <span className="inline-block bg-blue-50 text-blue-800 px-4 py-2 rounded font-medium text-base">Fecha límite de entrega: 20 de octubre de 2025</span>
               </div>
             </div>
           </section>
@@ -150,19 +149,6 @@ export default function ConvocatoriaPage() {
                 </Badge>
               ))}
             </div>
-          </section>
-
-          {/* Basic Requirements */}
-          <section>
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">Requisitos básicos</h2>
-            <ul className="space-y-2">
-              {convocatoria.requisitosBasicos.map((requisito, index) => (
-                <li key={index} className="flex items-start">
-                  <CheckCircle className="h-5 w-5 text-blue-800 mr-2 mt-0.5 flex-shrink-0" />
-                  <span className="text-gray-700">{requisito}</span>
-                </li>
-              ))}
-            </ul>
           </section>
 
           {/* Submission Process */}
@@ -227,19 +213,6 @@ export default function ConvocatoriaPage() {
                 </div>
               </TabsContent>
             </Tabs>
-          </section>
-
-          {/* FAQ Section */}
-          <section>
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">Preguntas frecuentes</h2>
-            <Accordion type="single" collapsible className="w-full">
-              {convocatoria.faq.map((item, index) => (
-                <AccordionItem key={index} value={`item-${index}`}>
-                  <AccordionTrigger className="text-left font-medium text-gray-900">{item.pregunta}</AccordionTrigger>
-                  <AccordionContent className="text-gray-700">{item.respuesta}</AccordionContent>
-                </AccordionItem>
-              ))}
-            </Accordion>
           </section>
 
           {/* Contact Section */}
