@@ -88,6 +88,12 @@ export function Header() {
               </DropdownMenuContent>
             </DropdownMenu>
             <Link
+              href="/acerca-de?tab=directrices-para-autores"
+              className="text-sm font-medium text-white hover:text-blue-200 transition-colors tracking-wide relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-white after:transition-all hover:after:w-full"
+            >
+              Directrices
+            </Link>
+            <Link
               href="/convocatoria"
               className="text-sm font-medium text-white hover:text-blue-200 transition-colors tracking-wide relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-white after:transition-all hover:after:w-full"
             >
@@ -138,6 +144,9 @@ function MobileMenu() {
         </DropdownMenuItem>
         <DropdownMenuItem asChild>
           <Link href="/acerca-de?tab=contacto" className="text-sm font-medium tracking-wide text-white hover:text-blue-200">Contacto</Link>
+        </DropdownMenuItem>
+        <DropdownMenuItem asChild>
+          <Link href="/acerca-de?tab=directrices-para-autores" className="text-sm font-medium tracking-wide text-white hover:text-blue-200">Directrices</Link>
         </DropdownMenuItem>
         <DropdownMenuItem asChild>
           <Link href="/convocatoria" className="text-sm font-medium tracking-wide text-white hover:text-blue-200">Convocatoria</Link>

@@ -1,6 +1,7 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
+import { useSearchParams } from "next/navigation"
 import Image from "next/image"
 import Link from "next/link"
 import { Mail, Phone, MapPin, ExternalLink, ChevronRight } from "lucide-react"
@@ -12,7 +13,15 @@ import { Separator } from "@/components/ui/separator"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 
 export default function AcercaDePage() {
+  const searchParams = useSearchParams()
   const [activeTab, setActiveTab] = useState("sobre-la-revista")
+
+  useEffect(() => {
+    const tab = searchParams.get("tab")
+    if (tab) {
+      setActiveTab(tab)
+    }
+  }, [searchParams])
 
   // Datos del equipo editorial
   const editorialTeam = [
@@ -529,9 +538,7 @@ export default function AcercaDePage() {
                           <span className="font-medium">Institución editora:</span> Instituto Provincial de Educación
                           Superior (IPES FA)
                         </p>
-                        <p className="text-sm text-gray-700">
-                          <span className="font-medium">Indexada en:</span> Latindex, DOAJ, Redalyc
-                        </p>
+
                       </div>
                     </div>
                   </div>
