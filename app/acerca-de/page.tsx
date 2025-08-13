@@ -1,7 +1,6 @@
 "use client"
 
-import { useState, useEffect, Suspense } from "react"
-import { useSearchParams } from "next/navigation"
+import { useState, useEffect } from "react"
 import Image from "next/image"
 import Link from "next/link"
 import { Mail, Phone, MapPin, ExternalLink, ChevronRight } from "lucide-react"
@@ -12,16 +11,19 @@ import { Textarea } from "@/components/ui/textarea"
 import { Separator } from "@/components/ui/separator"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 
-function AcercaDeContent() {
-  const searchParams = useSearchParams()
+export default function AcercaDePage() {
   const [activeTab, setActiveTab] = useState("sobre-la-revista")
 
   useEffect(() => {
-    const tab = searchParams.get("tab")
-    if (tab) {
-      setActiveTab(tab)
+    // Leer el parámetro tab de la URL en el cliente
+    if (typeof window !== 'undefined') {
+      const urlParams = new URLSearchParams(window.location.search)
+      const tab = urlParams.get("tab")
+      if (tab) {
+        setActiveTab(tab)
+      }
     }
-  }, [searchParams])
+  }, [])
 
   // Datos del equipo editorial
   const editorialTeam = [
@@ -755,13 +757,5 @@ function AcercaDeContent() {
         </div>
       </Tabs>
     </div>
-  )
-}
-
-export default function AcercaDePage() {
-  return (
-    <Suspense fallback={<div className="container mx-auto px-4 py-8">Cargando...</div>}>
-      <AcercaDeContent />
-    </Suspense>
   )
 }
