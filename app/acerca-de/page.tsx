@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState, useEffect, Suspense } from "react"
 import { useSearchParams } from "next/navigation"
 import Image from "next/image"
 import Link from "next/link"
@@ -12,7 +12,7 @@ import { Textarea } from "@/components/ui/textarea"
 import { Separator } from "@/components/ui/separator"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 
-export default function AcercaDePage() {
+function AcercaDeContent() {
   const searchParams = useSearchParams()
   const [activeTab, setActiveTab] = useState("sobre-la-revista")
 
@@ -755,5 +755,13 @@ export default function AcercaDePage() {
         </div>
       </Tabs>
     </div>
+  )
+}
+
+export default function AcercaDePage() {
+  return (
+    <Suspense fallback={<div className="container mx-auto px-4 py-8">Cargando...</div>}>
+      <AcercaDeContent />
+    </Suspense>
   )
 }
