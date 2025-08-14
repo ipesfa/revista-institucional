@@ -15,13 +15,48 @@ export default function AcercaDePage() {
   const [activeTab, setActiveTab] = useState("sobre-la-revista")
 
   useEffect(() => {
-    // Leer el parámetro tab de la URL en el cliente
-    if (typeof window !== 'undefined') {
-      const urlParams = new URLSearchParams(window.location.search)
-      const tab = urlParams.get("tab")
-      if (tab) {
-        setActiveTab(tab)
+    // Función para actualizar la pestaña activa
+    const updateActiveTab = () => {
+      if (typeof window !== 'undefined') {
+        const urlParams = new URLSearchParams(window.location.search)
+        const tab = urlParams.get("tab")
+        if (tab) {
+          setActiveTab(tab)
+        } else {
+          setActiveTab("sobre-la-revista")
+        }
       }
+    }
+
+    // Actualizar al montar el componente
+    updateActiveTab()
+
+    // Escuchar cambios en la navegación
+    const handlePopState = () => {
+      updateActiveTab()
+    }
+
+    // Escuchar cambios en la URL (para navegación programática)
+    const handleUrlChange = () => {
+      updateActiveTab()
+    }
+
+    window.addEventListener('popstate', handlePopState)
+    
+    // Usar un observer para detectar cambios en la URL
+    let currentUrl = window.location.href
+    const checkUrlChange = () => {
+      if (window.location.href !== currentUrl) {
+        currentUrl = window.location.href
+        handleUrlChange()
+      }
+    }
+
+    const urlCheckInterval = setInterval(checkUrlChange, 100)
+
+    return () => {
+      window.removeEventListener('popstate', handlePopState)
+      clearInterval(urlCheckInterval)
     }
   }, [])
 
