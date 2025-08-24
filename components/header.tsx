@@ -43,14 +43,12 @@ export function Header() {
 
           {/* Right: Navigation menu (desktop) */}
           <nav className="hidden md:flex items-center space-x-8">
-            {/*
             <Link 
               href="/actual" 
               className="text-sm font-medium text-white hover:text-blue-200 transition-colors tracking-wide relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-white after:transition-all hover:after:w-full"
             >
               Actual
             </Link>
-            */}
             {/*
             <Link 
               href="/archivos" 
@@ -125,7 +123,7 @@ function MobileMenu() {
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end" className="w-[200px] bg-blue-800 border-blue-900">
         <DropdownMenuItem asChild>
-          {/* <Link href="/actual" className="text-sm font-medium tracking-wide text-white hover:text-blue-200">Actual</Link> */}
+          <Link href="/actual" className="text-sm font-medium tracking-wide text-white hover:text-blue-200">Actual</Link>
         </DropdownMenuItem>
         <DropdownMenuItem asChild>
           {/* <Link href="/archivos" className="text-sm font-medium tracking-wide text-white hover:text-blue-200">Archivos</Link> */}
