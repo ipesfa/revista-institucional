@@ -155,8 +155,11 @@ export default function ActualPage() {
               Volumen 1
             </span>
           </div>
+          <h2 className="text-2xl font-semibold text-gray-800 mb-3">
+            Prácticas educativas y resistencia cultural ante la ofensiva liberal-conservadora
+          </h2>
           <p className="text-gray-600 text-lg">
-            Artículos y publicaciones de la revista FA organizados por secciones
+            Artículos y publicaciones de FA revista organizados por secciones
           </p>
         </div>
 
