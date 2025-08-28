@@ -140,6 +140,12 @@ export default function AcercaDePage() {
       image: "/nausan.png",
       bio: "Profesor de Biología (IPESFA, Ushuaia). Maestrando en Procesos Educativos Mediados por Tecnología (UNC) y cursante de la Tecnicatura en Desarrollo Full-Stack e Mobile (PUCRS). Coordinador de Proyectos Educativos y responsable de los entornos multimediales en el IPESFA. Docente y capacitador en Tecnología Educativa en los niveles primario y secundario. Desarrollador Full-Stack e investigador sobre la integración de Web3 e IA generativa en entornos de aprendizaje híbridos. Diseña propuestas didácticas en salud y ciencias naturales orientadas a hábitos saludables y alfabetización científica.",
     },
+    {
+      name: "María Elena Rodríguez",
+      role: "Traducciones",
+      image: "/placeholder.svg?height=200&width=200",
+      bio: "Profesora de Inglés (ISP \"Dr. Joaquín V. González\") y Licenciada en Traducción Técnico-Científica en Lengua Inglesa (UNLaM). Especialista en Traducción de Textos Académicos y Científicos. Docente del Instituto Provincial de Enseñanza Superior \"Florentino Ameghino\" en las cátedras de Inglés Técnico y Traducción. Ha realizado traducciones para revistas académicas y publicaciones científicas en el campo de las ciencias sociales y la educación. Miembro de la Asociación de Traductores e Intérpretes de la República Argentina (ATIRA). Su experiencia incluye la traducción de abstracts, artículos científicos y textos académicos para diversas instituciones educativas de Tierra del Fuego.",
+    },
   ]
 
   // Datos de las secciones temáticas

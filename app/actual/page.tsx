@@ -2,6 +2,7 @@
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
+import Image from "next/image"
 
 interface Article {
   id: string
@@ -161,6 +162,19 @@ export default function ActualPage() {
           <p className="text-gray-600 text-lg">
             Artículos y publicaciones de FA revista organizados por secciones
           </p>
+        </div>
+
+        {/* Imagen de la revista */}
+        <div className="flex justify-center mb-8">
+          <div className="relative w-40 h-56 md:w-48 md:h-64">
+            <Image
+              src="/portada1.png"
+              alt="Portada de FA revista - Volumen 1"
+              fill
+              className="object-contain drop-shadow-[0_6px_12px_rgba(30,64,175,0.25)]"
+              priority
+            />
+          </div>
         </div>
 
         <div className="space-y-8">
