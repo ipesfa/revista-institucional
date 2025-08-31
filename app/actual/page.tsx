@@ -38,7 +38,7 @@ const sections: Section[] = [
         title: "Las narrativas de experiencias pedagógicas: un modo de construir huellas en la formación docente poniendo en diálogo la práctica y la subjetividad",
         authors: ["María Valeria Busaniche"],
         section: "Prácticas y experiencias educativas",
-        pdfUrl: "/pdf/v1/articulo_individual_busaniche_nuevo.pdf"
+        pdfUrl: "/PDF/V1/articulo_individual_busaniche_nuevo.pdf"
       },
       {
         id: "practicas-2",
@@ -57,21 +57,21 @@ const sections: Section[] = [
         title: "Revolución y Negocios. El germen de las élites terratenientes y su papel en la etapa revolucionaria",
         authors: ["Mario Hernández"],
         section: "Ensayos académicos",
-        pdfUrl: "/pdf/v1/articulo_individual_mario_hernandez_nuevo.pdf"
+        pdfUrl: "/PDF/V1/articulo_individual_mario_hernandez_nuevo.pdf"
       },
       {
         id: "ensayos-2",
         title: "Experiencias de militancia política en la transición a la democracia en Tierra del Fuego",
         authors: ["Gabriela Fernández", "Luciana Larrondo"],
         section: "Ensayos académicos",
-        pdfUrl: "/pdf/v1/articulo_individual_fernandez_larrondo_nuevo.pdf"
+        pdfUrl: "/PDF/V1/articulo_individual_fernandez_larrondo_nuevo.pdf"
       },
       {
         id: "ensayos-3",
         title: "La Moneda Popper: Una experiencia de acuñación y circulación de moneda en Tierra del Fuego a fines del siglo XIX",
         authors: ["Mariano Malizia"],
         section: "Ensayos académicos",
-        pdfUrl: "/pdf/v1/articulo_individual_malizia_nuevo.pdf"
+        pdfUrl: "/PDF/V1/articulo_individual_malizia_nuevo.pdf"
       }
     ]
   },
@@ -109,7 +109,7 @@ const sections: Section[] = [
         title: "No es sólo ciencia lo que nos pasa con la transmisión del CONICET",
         authors: ["Rocío Arozarena"],
         section: "Dilemas y coyunturas",
-        pdfUrl: "/pdf/v1/articulo_individual_arozarena_nuevo.pdf"
+        pdfUrl: "/PDF/V1/articulo_individual_arozarena_nuevo.pdf"
       }
     ]
   },
@@ -121,14 +121,14 @@ const sections: Section[] = [
         title: "El porqué de la lluvia y otras heridas",
         authors: ["Paula Marrafini"],
         section: "Literaturas breves",
-        pdfUrl: "/pdf/v1/articulo_individual_marrafini_literatura_nuevo.pdf"
+        pdfUrl: "/PDF/V1/articulo_individual_marrafini_literatura_nuevo.pdf"
       },
       {
         id: "literatura-2",
         title: "Reina sin pueblo",
         authors: ["Mario Hernández"],
         section: "Literaturas breves",
-        pdfUrl: "/pdf/v1/articulo_individual_hernandez_literatura_nuevo.pdf"
+        pdfUrl: "/PDF/V1/articulo_individual_hernandez_literatura_nuevo.pdf"
       }
     ]
   }
