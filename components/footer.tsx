@@ -13,11 +13,16 @@ export function Footer() {
           </p>
         </div>
 
-        {/* Center: Logo */}
-        <div className="flex items-center justify-center">
+        {/* Center: Logos */}
+        <div className="flex items-center justify-center gap-6">
           <a href="https://ipesfa-ushuaia.edu.ar/" target="_blank" rel="noopener noreferrer">
             <div className="relative h-16 w-16">
               <Image src="/logo-ipesfa.png" alt="Logo IPES FA" fill className="object-contain" />
+            </div>
+          </a>
+          <a href="https://fa-editorial.vercel.app/fa-editorial" target="_blank" rel="noopener noreferrer">
+            <div className="relative h-16 w-16">
+              <Image src="/faeditorialb.png" alt="Logo FA Editorial" fill className="object-contain" />
             </div>
           </a>
         </div>
