@@ -26,7 +26,7 @@ const sections: Section[] = [
         title: "Armemos una revista",
         authors: ["Emiliano Sánchez Narvarte"],
         section: "Presentación",
-        pdfUrl: "/pdfs/presentacion-armemos-revista.pdf"
+        pdfUrl: "/PDF/V1/articulo_individual_sanchez_narvarte_nuevo.pdf"
       }
     ]
   },
@@ -40,13 +40,6 @@ const sections: Section[] = [
         section: "Prácticas y experiencias educativas",
         pdfUrl: "/PDF/V1/articulo_individual_busaniche_nuevo.pdf"
       },
-      {
-        id: "practicas-2",
-        title: "La cárcel en la escuela. Alcances de la soberanía educativa en dispositivos de encierro",
-        authors: ["Vanina Perazzo"],
-        section: "Prácticas y experiencias educativas",
-        pdfUrl: "/pdfs/carcel-escuela-soberania-educativa.pdf"
-      }
     ]
   },
   {
@@ -72,32 +65,6 @@ const sections: Section[] = [
         authors: ["Mariano Malizia"],
         section: "Ensayos académicos",
         pdfUrl: "/PDF/V1/articulo_individual_malizia_nuevo.pdf"
-      }
-    ]
-  },
-  {
-    name: "Artículos científicos",
-    articles: [
-      {
-        id: "cientificos-1",
-        title: "La enseñanza de la historia argentina como problema. Estudio de caso enfocado en la experiencia del profesorado de nivel primario del I.P.E.S. de la ciudad de Ushuaia.",
-        authors: ["Shion-en Cenatiempo"],
-        section: "Artículos científicos",
-        pdfUrl: "/pdfs/ensenanza-historia-argentina-ipes.pdf"
-      },
-      {
-        id: "cientificos-2",
-        title: "Fuentes para enseñar geografía local en Ushuaia: perspectivas docentes en la escuela secundaria",
-        authors: ["Natalia Cañete", "Daniel Paoloni", "Silvia Torre", "Mariana Damiani"],
-        section: "Artículos científicos",
-        pdfUrl: "/pdfs/fuentes-geografia-local-ushuaia.pdf"
-      },
-      {
-        id: "cientificos-3",
-        title: "Experiencias estudiantiles en contextos de crisis: el caso de la intervención ministerial en un instituto de formación docente de Ushuaia",
-        authors: ["Paola Vega"],
-        section: "Artículos científicos",
-        pdfUrl: "/pdfs/experiencias-estudiantiles-crisis-ushuaia.pdf"
       }
     ]
   },
@@ -219,8 +186,7 @@ export default function ActualPage() {
           <Card className="bg-gray-50">
             <CardContent className="pt-6">
               <p className="text-gray-600">
-                Los artículos marcados con PDF disponible pueden descargarse directamente. 
-                Los demás artículos estarán disponibles próximamente.
+                Todos los artículos están disponibles para descarga en formato PDF.
               </p>
             </CardContent>
           </Card>
