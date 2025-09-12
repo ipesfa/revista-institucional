@@ -463,7 +463,7 @@ export default function AcercaDePage() {
             Para coordinar un Dossier es necesario realizar una propuesta al Consejo editorial de la revista con una antelación de al menos un año.
           </p>
           <p className="text-justify">
-            La misma debe ser remitida a los correos de contacto: farevista@ipesfa-ushuaia.edu.ar. Dicha propuesta, a cargo del o los coordinadores del dossier, debe contener:
+            La misma debe ser remitida a los correos de contacto: <span className="text-blue-800 font-semibold">farevista@ipesfa-ushuaia.edu.ar</span>. Dicha propuesta, a cargo del o los coordinadores del dossier, debe contener:
           </p>
           <ul className="list-disc list-inside space-y-1 text-justify">
             <li>a) la presentación del tema,</li>
@@ -722,14 +722,14 @@ export default function AcercaDePage() {
                   equipo editorial a través de los siguientes medios:
                 </p>
 
-                <div className="grid md:grid-cols-2 gap-8">
+                <div className="max-w-2xl">
                   <div className="space-y-6">
                     <div className="space-y-4">
                       <div className="flex items-start">
                         <Mail className="h-5 w-5 text-blue-800 mr-3 mt-0.5" />
                         <div>
                           <h3 className="font-medium text-gray-900">Correo electrónico</h3>
-                          <p className="text-gray-700">farevista@ipesfa-ushuaia.edu.ar</p>
+                          <p className="text-blue-800 font-semibold">farevista@ipesfa-ushuaia.edu.ar</p>
                           <p className="text-sm text-gray-500 mt-1">Tiempo de respuesta: 2-3 días hábiles</p>
                         </div>
                       </div>
@@ -753,44 +753,12 @@ export default function AcercaDePage() {
                       <h3 className="text-lg font-semibold text-gray-900 mb-3">Consultas específicas</h3>
                       <div className="space-y-2">
                         <p className="text-sm text-gray-700">
-                          <span className="font-medium">Correo electrónico:</span> farevista@ipesfa-ushuaia.edu.ar
+                          <span className="font-medium">Correo electrónico:</span> <span className="text-blue-800 font-semibold">farevista@ipesfa-ushuaia.edu.ar</span>
                         </p>
                       </div>
                     </div>
                   </div>
 
-                  <div className="bg-white border rounded-lg p-6">
-                    <h3 className="text-xl font-semibold text-gray-900 mb-4">Formulario de contacto</h3>
-                    <form className="space-y-4">
-                      <div className="grid grid-cols-2 gap-4">
-                        <div className="space-y-2">
-                          <label htmlFor="name" className="text-sm font-medium text-gray-700">
-                            Nombre
-                          </label>
-                          <Input id="name" placeholder="Su nombre" />
-                        </div>
-                        <div className="space-y-2">
-                          <label htmlFor="email" className="text-sm font-medium text-gray-700">
-                            Correo electrónico
-                          </label>
-                          <Input id="email" type="email" placeholder="correo@ejemplo.com" />
-                        </div>
-                      </div>
-                      <div className="space-y-2">
-                        <label htmlFor="subject" className="text-sm font-medium text-gray-700">
-                          Asunto
-                        </label>
-                        <Input id="subject" placeholder="Asunto de su mensaje" />
-                      </div>
-                      <div className="space-y-2">
-                        <label htmlFor="message" className="text-sm font-medium text-gray-700">
-                          Mensaje
-                        </label>
-                        <Textarea id="message" placeholder="Escriba su mensaje aquí" rows={5} />
-                      </div>
-                      <Button className="w-full bg-blue-800 hover:bg-blue-700">Enviar mensaje</Button>
-                    </form>
-                  </div>
                 </div>
               </div>
             </TabsContent>
