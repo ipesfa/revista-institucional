@@ -612,19 +612,6 @@ export default function AcercaDePage() {
                     </div>
                   ))}
                 </div>
-
-                <div className="bg-gray-50 p-6 rounded-lg mt-8">
-                  <h3 className="text-lg font-semibold text-gray-900 mb-3">Comité Científico Internacional</h3>
-                  <p className="text-gray-700 mb-4">
-                    Además de nuestro equipo editorial, contamos con un Comité Científico Internacional compuesto por
-                    destacados académicos de diversas instituciones que contribuyen a garantizar la calidad y relevancia
-                    de nuestras publicaciones.
-                  </p>
-                  <Link href="/comite-cientifico" className="text-blue-800 hover:underline flex items-center">
-                    Ver integrantes del Comité Científico
-                    <ChevronRight className="h-4 w-4 ml-1" />
-                  </Link>
-                </div>
               </div>
             </TabsContent>
 

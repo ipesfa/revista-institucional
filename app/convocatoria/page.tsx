@@ -121,7 +121,7 @@ export default function ConvocatoriaPage() {
               </p>
               <div className="flex justify-center my-6">
                 <Image
-                  src="/header_jornadas.png"
+                  src="/headerfant.png"
                   alt="Jornadas Académico Culturales"
                   width={700}
                   height={210}
