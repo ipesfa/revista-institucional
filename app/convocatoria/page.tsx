@@ -130,7 +130,7 @@ export default function ConvocatoriaPage() {
                 />
               </div>
               <p className="text-sm md:text-base text-gray-700 leading-relaxed mt-4 text-justify">
-                En esta ocasión, se invita especialmente para la publicación de textos que formarán parte del primer dossier de la revista, el que acompañará la realización de la XVIII Jornadas Académico Culturales bajo el nombre "Lo fantástico, vacilación del sentido común en cultura, ciencia y educación". Se pretenden publicaciones que propongan un espacio de reflexión interdisciplinaria, cuyo objetivo principal sea explorar cómo esta categoría estética y experiencial desafía nuestras percepciones de la realidad, define los límites de lo posible e interpela nuestras construcciones sociales de conocimiento. En esencia, se trata de observar como aquello que escapa a lo ordinario nos obliga a repensar lo que damos por sentado.
+                Se pretenden publicaciones que propongan un espacio de reflexión interdisciplinaria, cuyo objetivo principal sea explorar cómo esta categoría estética y experiencial desafía nuestras percepciones de la realidad, define los límites de lo posible e interpela nuestras construcciones sociales de conocimiento. En esencia, se trata de observar como aquello que escapa a lo ordinario nos obliga a repensar lo que damos por sentado.
               </p>
               <div className="mt-6">
                 <h2 className="text-xl font-bold text-gray-900 mb-2">Se podrán aportar manuscritos originales en alguna de las siguientes secciones:</h2>
@@ -170,27 +170,10 @@ export default function ConvocatoriaPage() {
                 <TabsTrigger value="evaluacion">Proceso de evaluación</TabsTrigger>
               </TabsList>
               <TabsContent value="instrucciones" className="p-4 border rounded-md mt-2">
-                <div className="space-y-4">
-                  <p className="text-gray-700">Para enviar su artículo, siga estos pasos:</p>
-                  <ol className="space-y-3 list-decimal pl-5">
-                    <li className="text-gray-700">
-                      Descargue y lea atentamente las normas para autores y la plantilla de artículo.
-                    </li>
-                    <li className="text-gray-700">
-                      Prepare su manuscrito siguiendo estrictamente las normas y utilizando la plantilla proporcionada.
-                    </li>
-                    <li className="text-gray-700">Complete y firme la declaración de originalidad.</li>
-                    <li className="text-gray-700">
-                      Envíe todos los documentos (manuscrito y declaración firmada) a través del formulario de envío o
-                      al correo electrónico: <span className="font-medium">farevista@ipesfa-ushuaia.edu.ar</span>
-                    </li>
-                    <li className="text-gray-700">Recibirá un acuse de recibo en un plazo máximo de 3 días hábiles.</li>
-                  </ol>
-                  <div className="flex justify-center mt-6">
-                    <Button className="bg-blue-800 hover:bg-blue-700">
-                      <a href="https://forms.gle/w4r3ysMwzbv85ryd6" target="_blank" rel="noopener noreferrer">Formulario de envío</a>
-                    </Button>
-                  </div>
+                <div className="flex justify-center">
+                  <Button className="bg-blue-800 hover:bg-blue-700">
+                    <a href="https://forms.gle/w4r3ysMwzbv85ryd6" target="_blank" rel="noopener noreferrer">Formulario de envío</a>
+                  </Button>
                 </div>
               </TabsContent>
               <TabsContent value="evaluacion" className="p-4 border rounded-md mt-2">
@@ -288,12 +271,12 @@ export default function ConvocatoriaPage() {
             <CardContent className="p-6">
               <h3 className="text-xl font-bold text-gray-900 mb-4">Dossier N° 1</h3>
               <div className="flex flex-col items-center">
-                <div className="relative h-[200px] w-[150px] overflow-hidden rounded-lg shadow-md mb-4">
+                <div className="relative w-[150px] h-[225px] md:w-[180px] md:h-[270px] overflow-hidden rounded-lg shadow-md mb-4">
                   <Image
-                    src="/convoca.png"
+                    src="/portada01.png"
                     alt="Dossier N° 1 de FA Revista"
                     fill
-                    className="object-cover"
+                    className="object-contain"
                   />
                 </div>
                 <p className="text-center text-gray-700 mb-4">
