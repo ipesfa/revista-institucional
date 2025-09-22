@@ -16,11 +16,11 @@ export default function ConvocatoriaPage() {
     descripcion:
       "La revista académica FA invita a investigadores, docentes y especialistas a enviar sus contribuciones para el próximo número. Buscamos artículos originales e inéditos que aborden temas relevantes en el ámbito de la educación y la cultura, con especial énfasis en innovaciones pedagógicas, transformaciones educativas y análisis culturales contemporáneos.",
     tematica: "Innovación educativa y transformaciones culturales en la era digital",
-    fechaLimite: "20 de octubre de 2025",
+    fechaLimite: "22 de octubre de 2025",
     fechaPublicacion: "Enero 2026",
     fechasImportantes: [
       {
-        fecha: "20 de octubre de 2025",
+        fecha: "22 de octubre de 2025",
         evento: "Fecha límite para envío de artículos",
       },
       {
@@ -144,7 +144,7 @@ export default function ConvocatoriaPage() {
                 </ul>
               </div>
               <div className="mt-6">
-                <span className="inline-block bg-blue-50 text-blue-800 px-4 py-2 rounded font-medium text-base">Fecha límite de entrega: 20 de octubre de 2025</span>
+                <span className="inline-block bg-blue-50 text-blue-800 px-4 py-2 rounded font-medium text-base">Fecha límite de entrega: 22 de octubre de 2025</span>
               </div>
             </div>
           </section>
