@@ -572,10 +572,7 @@ export default function AcercaDePage() {
                           <span className="font-medium">Periodicidad:</span> Semestral (enero y julio)
                         </p>
                         <p className="text-sm text-gray-700">
-                          <span className="font-medium">ISSN:</span> 2023-XXXX (versión impresa)
-                        </p>
-                        <p className="text-sm text-gray-700">
-                          <span className="font-medium">ISSN:</span> 2023-YYYY (versión digital)
+                          <span className="font-medium">ISSN:</span> 3072-8835
                         </p>
                         <p className="text-sm text-gray-700">
                           <span className="font-medium">Institución editora:</span> Instituto Provincial de Educación
