@@ -135,7 +135,7 @@ export default function ActualPage() {
         <div className="flex justify-center mb-8">
           <div className="relative w-40 h-56 md:w-48 md:h-64">
             <Image
-              src="/portada01.png"
+              src="/portadaact.png"
               alt="Portada de FA revista - Volumen 1"
               fill
               className="object-contain drop-shadow-[0_6px_12px_rgba(30,64,175,0.25)]"

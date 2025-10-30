@@ -558,7 +558,7 @@ export default function AcercaDePage() {
                   <div className="space-y-6">
                     <div className="relative h-[400px] w-full overflow-hidden rounded-lg">
                       <Image
-                        src="/portada01.png"
+                        src="/portadaact.png"
                         alt="Portada de la revista Koulana"
                         fill
                         className="object-contain"
