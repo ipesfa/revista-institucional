@@ -576,7 +576,7 @@ export default function AcercaDePage() {
                         </p>
                         <p className="text-sm text-gray-700">
                           <span className="font-medium">Institución editora:</span> Instituto Provincial de Educación
-                          Superior (FA Revista)
+                          Superior (FA Editorial)
                         </p>
 
                       </div>
