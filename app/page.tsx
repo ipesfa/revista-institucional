@@ -12,7 +12,7 @@ export default function Home() {
             <div className="flex items-center justify-center h-[160px] flex-shrink-0">
               <div className="relative w-[100px] h-[140px]">
                 <Image
-                  src="/portadaact.png"
+                  src="/tapa_ISSN.png"
                   alt="Portada de la revista Koulana"
                   width={100}
                   height={140}
@@ -98,7 +98,7 @@ export default function Home() {
               <div className="flex-1 w-full md:w-1/2 flex justify-center items-center mb-8 md:mb-0">
                 <div className="relative w-56 h-80 md:w-72 md:h-[420px]">
                   <Image
-                    src="/portadaact.png"
+                    src="/tapa_ISSN.png"
                     alt="Portada de la revista Koulana"
                     fill
                     className="object-contain rounded-xl shadow-sm"

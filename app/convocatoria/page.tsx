@@ -273,7 +273,7 @@ export default function ConvocatoriaPage() {
               <div className="flex flex-col items-center">
                 <div className="relative w-[150px] h-[225px] md:w-[180px] md:h-[270px] overflow-hidden rounded-lg shadow-md mb-4">
                   <Image
-                    src="/portada01.png"
+                    src="/tapa_ISSN.png"
                     alt="Dossier N° 1 de FA Revista"
                     fill
                     className="object-contain"
