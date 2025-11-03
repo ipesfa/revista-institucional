@@ -11,7 +11,7 @@ export function Footer() {
           <p className="text-sm text-gray-500 max-w-md">
             Revista Académica del IPES FA. Publicación semestral de temas de educación y cultura.
           </p>
-          <p className="text-[10px] text-gray-400 mt-1 text-left">ISSN: 3072-8835</p>
+          <p className="text-[10px] text-gray-400 mt-1 text-left">ISSN 3072-8835</p>
         </div>
 
         {/* Center: Logos */}

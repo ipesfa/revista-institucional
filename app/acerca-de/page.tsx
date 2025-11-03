@@ -572,11 +572,11 @@ export default function AcercaDePage() {
                           <span className="font-medium">Periodicidad:</span> Semestral (enero y julio)
                         </p>
                         <p className="text-sm text-gray-700">
-                          <span className="font-medium">ISSN:</span> 3072-8835
+                          <span className="font-medium">ISSN</span> 3072-8835
                         </p>
                         <p className="text-sm text-gray-700">
                           <span className="font-medium">Institución editora:</span> Instituto Provincial de Educación
-                          Superior (IPES FA)
+                          Superior (FA Revista)
                         </p>
 
                       </div>
