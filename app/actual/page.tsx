@@ -20,22 +20,11 @@ interface Section {
 
 const sections: Section[] = [
   {
-    name: "Presentación",
-    articles: [
-      {
-        id: "presentacion-1",
-        title: "Presentación",
-        authors: [],
-        section: "Presentación"
-      }
-    ]
-  },
-  {
     name: "Dossier - Lo Fantástico. Vacilación del sentido común",
     articles: [
       {
         id: "dossier-1",
-        title: "Dossier - Lo Fantástico. Vacilación del sentido común",
+        title: "Presentación",
         authors: [],
         section: "Dossier - Lo Fantástico. Vacilación del sentido común"
       }
