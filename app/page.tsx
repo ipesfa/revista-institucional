@@ -87,7 +87,7 @@ export default function Home() {
                   En el actual contexto, retomamos ese espíritu y vocación por generar las condiciones de abrir espacios de participación en la producción de conocimientos.<br />
                   FA Revista es una publicación de carácter académico sobre problemáticas vinculadas a la educación y a la cultura. Se caracteriza por la rigurosidad, la promoción de la práctica escritural de lxs docentes de múltiples niveles y de estudiantes que deseen poner en común sus reflexiones, análisis e investigaciones.
                 </p>
-                <div className="flex flex-col sm:flex-row items-center justify-center gap-3 w-full">
+                <div className="flex flex-col sm:flex-row items-center justify-center gap-3 w-full mt-5">
                   <Link
                     href="/actual"
                     className="inline-flex items-center justify-center rounded-lg bg-blue-800 px-8 py-3 text-base font-medium text-white hover:bg-blue-900 transition-all duration-300 ease-in-out shadow-md w-full sm:w-auto"
