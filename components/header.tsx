@@ -49,14 +49,6 @@ export function Header() {
             >
               Actual
             </Link>
-            {/*
-            <Link 
-              href="/archivos" 
-              className="text-sm font-medium text-white hover:text-blue-200 transition-colors tracking-wide relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-white after:transition-all hover:after:w-full"
-            >
-              Archivos
-            </Link>
-            */}
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <Button 
@@ -97,6 +89,12 @@ export function Header() {
             >
               Convocatoria
             </Link>
+            <Link 
+              href="/archivos" 
+              className="text-sm font-medium text-white hover:text-blue-200 transition-colors tracking-wide relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-white after:transition-all hover:after:w-full"
+            >
+              Archivos
+            </Link>
           </nav>
 
           {/* Mobile menu button */}
@@ -126,9 +124,6 @@ function MobileMenu() {
           <Link href="/actual" className="text-sm font-medium tracking-wide text-white hover:text-blue-200">Actual</Link>
         </DropdownMenuItem>
         <DropdownMenuItem asChild>
-          {/* <Link href="/archivos" className="text-sm font-medium tracking-wide text-white hover:text-blue-200">Archivos</Link> */}
-        </DropdownMenuItem>
-        <DropdownMenuItem asChild>
           <Link href="/acerca-de" className="text-sm font-medium tracking-wide text-white hover:text-blue-200">Sobre la revista</Link>
         </DropdownMenuItem>
         <DropdownMenuItem asChild>
@@ -148,6 +143,9 @@ function MobileMenu() {
         </DropdownMenuItem>
         <DropdownMenuItem asChild>
           <Link href="/convocatoria" className="text-sm font-medium tracking-wide text-white hover:text-blue-200">Convocatoria</Link>
+        </DropdownMenuItem>
+        <DropdownMenuItem asChild>
+          <Link href="/archivos" className="text-sm font-medium tracking-wide text-white hover:text-blue-200">Archivos</Link>
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
