@@ -1,7 +1,165 @@
+"use client"
+
 import Image from "next/image"
 import Link from "next/link"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { Button } from "@/components/ui/button"
+
+interface Article {
+  id: string
+  title: string
+  authors: string[]
+  section: string
+  pdfUrl?: string
+}
+
+interface Section {
+  name: string
+  articles: Article[]
+  subsections?: Section[]
+}
+
+const sections: Section[] = [
+  {
+    name: "Dossier",
+    articles: [
+      {
+        id: "dossier-1",
+        title: "Presentación",
+        authors: [],
+        section: "Dossier - Lo Fantástico. Vacilación del sentido común"
+      }
+    ]
+  },
+  {
+    name: "Prácticas y experiencias educativas",
+    articles: [
+      {
+        id: "practicas-1",
+        title: "Avatares: la matemática como aventura fantástica. Experiencia interdisciplinaria en la formación docente",
+        authors: ["Soledad Cruz", "Vanesa De Las Vegas"],
+        section: "Prácticas y experiencias educativas"
+      }
+    ]
+  },
+  {
+    name: "Ensayos académicos",
+    articles: [
+      {
+        id: "ensayos-1",
+        title: 'De la sociedad del conocimiento a la inteligencia artificial: ¿el fin de la "historia interminable" y el triunfo de "los ladrones del tiempo"?',
+        authors: ["Ricardo Forster"],
+        section: "Ensayos académicos"
+      },
+      {
+        id: "ensayos-2",
+        title: "Mafalda vs. las sagas de fantasía: 16 notas sobre la organización de la producción literaria del continente americano y un gol de Maradona",
+        authors: ["Alfredo Lèal"],
+        section: "Ensayos académicos"
+      }
+    ]
+  },
+  {
+    name: "Literaturas Breves",
+    articles: [
+      {
+        id: "literatura-1",
+        title: "El camino de regreso",
+        authors: ["Mario Hernández"],
+        section: "Literaturas Breves"
+      }
+    ]
+  },
+  {
+    name: "Artículos libres",
+    articles: [],
+    subsections: [
+      {
+        name: "Prácticas y experiencias educativas",
+        articles: [
+          {
+            id: "libres-practicas-1",
+            title: "La enseñanza de la historia argentina como desafío. Estudio de caso enfocado en la experiencia del Profesorado para la Educación Primaria del I.P.E.S. Florentino Ameghino de la ciudad de Ushuaia",
+            authors: ["Shion-en Cenatiempo"],
+            section: "Artículos libres - Prácticas y experiencias educativas"
+          }
+        ]
+      },
+      {
+        name: "Artículos científicos",
+        articles: [
+          {
+            id: "libres-cientificos-1",
+            title: "Experiencias estudiantiles en contextos de crisis. El caso de la intervención ministerial en un instituto de formación docente de Ushuaia",
+            authors: ["Paola N. Vega"],
+            section: "Artículos libres - Artículos científicos"
+          },
+          {
+            id: "libres-cientificos-2",
+            title: "Fuentes para enseñar geografía local en Ushuaia: perspectivas docentes en la escuela secundaria",
+            authors: ["Natalia Cañete", "Daniel Paoloni", "Silvia Torre", "Mariana Damiani"],
+            section: "Artículos libres - Artículos científicos"
+          }
+        ]
+      },
+      {
+        name: "Ensayos académicos",
+        articles: [
+          {
+            id: "libres-ensayos-1",
+            title: "La Cultura Sorda argentina en clave Pachakutik: de la colonización pedagógica a la praxis de la Ley 27.710",
+            authors: ["Lucila Otero Aráoz"],
+            section: "Artículos libres - Ensayos académicos"
+          },
+          {
+            id: "libres-ensayos-2",
+            title: "La etnostalgia o la revisión de las notas guardadas en un cajón",
+            authors: ["Mariano López Rasch"],
+            section: "Artículos libres - Ensayos académicos"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    name: "Dilemas y coyunturas",
+    articles: [
+      {
+        id: "dilemas-1",
+        title: "Dina Picotti, por siempre! Un legado de pensamiento y humanidad",
+        authors: ["Sergio Barrionuevo", "Sebastián Castiñeira", "Noelia Lobo"],
+        section: "Dilemas y coyunturas"
+      }
+    ]
+  },
+  {
+    name: "Entrevistas",
+    articles: [
+      {
+        id: "entrevistas-1",
+        title: 'Ricardo Forster: "El final de un libro exquisito es, a la vez, felicidad y vacío"',
+        authors: ["Erica Garrido", "Emiliano Sánchez Narvarte"],
+        section: "Entrevistas"
+      }
+    ]
+  }
+]
 
 export default function Home() {
+  const handleDownload = (pdfUrl: string, title: string) => {
+    if (!pdfUrl) {
+      console.log('PDF no disponible aún para:', title)
+      return
+    }
+    console.log('Descargando:', title)
+    const link = document.createElement('a')
+    link.href = pdfUrl
+    link.download = `${title.replace(/[^a-z0-9]/gi, '_').toLowerCase()}.pdf`
+    document.body.appendChild(link)
+    link.click()
+    document.body.removeChild(link)
+  }
+
   return (
     <div className="flex flex-col">
       {/* Journal Title and Submit Article Link - static on main page */}
@@ -74,46 +232,137 @@ export default function Home() {
           </div>
         </div>
       </section>
+
       <main>
-        {/* Hero Section */}
-        <section className="bg-white py-20">
+        {/* Volumen Actual Section */}
+        <section className="bg-white py-12 md:py-16">
           <div className="container mx-auto px-4 md:px-6">
-            <div className="flex flex-col md:flex-row items-center md:justify-between gap-12 max-w-6xl mx-auto">
-              {/* Texto */}
-              <div className="flex-1 w-full md:w-full flex flex-col items-center md:items-start text-center md:text-left gap-5">
-                <h1 className="text-2xl md:text-4xl font-semibold text-blue-900 leading-tight">Presentación</h1>
-                <p className="text-sm md:text-base text-gray-600 text-justify">
-                  La publicación periódica FA Revista pertenece al Instituto Provincial de Educación Superior Florentino Ameghino (IPES FA) de Ushuaia. El proyecto se inscribe en una larga tradición del IPES FA vinculada a la publicación de revistas culturales que, a lo largo de los años, se realizó de manera discontinua y atravesando dificultades presupuestarias y técnicas.<br />
-                  En el actual contexto, retomamos ese espíritu y vocación por generar las condiciones de abrir espacios de participación en la producción de conocimientos.<br />
-                  FA Revista es una publicación de carácter académico sobre problemáticas vinculadas a la educación y a la cultura. Se caracteriza por la rigurosidad, la promoción de la práctica escritural de lxs docentes de múltiples niveles y de estudiantes que deseen poner en común sus reflexiones, análisis e investigaciones.
-                </p>
-                <div className="flex flex-col sm:flex-row items-center justify-center gap-3 w-full mt-5">
-                  <Link
-                    href="/actual"
-                    className="inline-flex items-center justify-center rounded-lg bg-blue-800 px-8 py-3 text-base font-medium text-white hover:bg-blue-900 transition-all duration-300 ease-in-out shadow-md w-full sm:w-auto"
-                  >
-                    Ver volumen actual
-                  </Link>
+            <div className="max-w-6xl mx-auto">
+              {/* Header del Volumen */}
+              <div className="mb-8 text-center">
+                <div className="flex flex-wrap items-center justify-center gap-3 mb-4">
+                  <h1 className="text-3xl md:text-4xl font-bold text-blue-800">Lo Fantástico. Vacilación del sentido común</h1>
+                  <span className="bg-blue-800 text-white px-4 py-2 rounded-full text-base font-semibold">
+                    Volumen 2
+                  </span>
                 </div>
+                <p className="text-gray-600 text-lg">
+                  Artículos y publicaciones de FA revista organizados por secciones
+                </p>
               </div>
-              {/* Imagen */}
-              <div className="flex-1 w-full md:w-1/2 flex flex-col items-center mb-8 md:mb-0">
+
+              {/* Imagen de la revista */}
+              <div className="flex justify-center mb-12">
                 <div className="relative w-56 h-80 md:w-72 md:h-[420px]">
                   <Image
-                    src="/tapa_ISSN.png"
-                    alt="Portada de la revista Koulana"
+                    src="/portadav2.png"
+                    alt="Portada de FA revista - Volumen 2"
                     fill
-                    className="object-contain rounded-xl shadow-sm"
+                    className="object-contain drop-shadow-[0_6px_12px_rgba(30,64,175,0.25)]"
                     priority
                   />
                 </div>
               </div>
+
+              {/* Secciones del Volumen */}
+              <div className="space-y-10">
+                {sections.map((section, sectionIndex) => (
+                  <div key={sectionIndex} className="space-y-4">
+                    <h2 className="text-2xl md:text-3xl font-semibold text-blue-800 border-b-2 border-blue-300 pb-3">
+                      {section.name}
+                    </h2>
+                    
+                    {/* Artículos principales de la sección */}
+                    {section.articles.length > 0 && (
+                      <div className="space-y-4">
+                        {section.articles.map((article) => (
+                          <Card key={article.id} className="hover:shadow-lg transition-shadow border-blue-100">
+                            <CardHeader>
+                              <div className="flex flex-col md:flex-row justify-between items-start gap-4">
+                                <div className="flex-1">
+                                  <CardTitle className="text-lg md:text-xl mb-3 text-gray-900 leading-relaxed">
+                                    {article.title}
+                                  </CardTitle>
+                                  {article.authors.length > 0 && (
+                                    <div className="text-sm text-gray-600 mb-2">
+                                      <span className="font-medium">Autores:</span> {article.authors.join(', ')}
+                                    </div>
+                                  )}
+                                  <div className="text-sm text-gray-500">
+                                    <span className="font-medium">Sección:</span> {article.section}
+                                  </div>
+                                </div>
+                                <Button
+                                  onClick={() => article.pdfUrl ? handleDownload(article.pdfUrl, article.title) : console.log('PDF no disponible aún para:', article.title)}
+                                  className="bg-blue-800 hover:bg-blue-900 text-white flex-shrink-0 w-full md:w-auto"
+                                  disabled={!article.pdfUrl}
+                                >
+                                  Descargar PDF
+                                </Button>
+                              </div>
+                            </CardHeader>
+                          </Card>
+                        ))}
+                      </div>
+                    )}
+
+                    {/* Subsecciones (para Artículos libres) */}
+                    {section.subsections && section.subsections.length > 0 && (
+                      <div className="space-y-6 ml-2 md:ml-4">
+                        {section.subsections.map((subsection, subIndex) => (
+                          <div key={subIndex} className="space-y-4">
+                            <h3 className="text-xl md:text-2xl font-semibold text-blue-700 border-b border-blue-200 pb-2">
+                              {subsection.name}
+                            </h3>
+                            <div className="space-y-4">
+                              {subsection.articles.map((article) => (
+                                <Card key={article.id} className="hover:shadow-lg transition-shadow border-blue-100">
+                                  <CardHeader>
+                                    <div className="flex flex-col md:flex-row justify-between items-start gap-4">
+                                      <div className="flex-1">
+                                        <CardTitle className="text-lg md:text-xl mb-3 text-gray-900 leading-relaxed">
+                                          {article.title}
+                                        </CardTitle>
+                                        <div className="text-sm text-gray-600 mb-2">
+                                          <span className="font-medium">Autores:</span> {article.authors.join(', ')}
+                                        </div>
+                                        <div className="text-sm text-gray-500">
+                                          <span className="font-medium">Sección:</span> {article.section}
+                                        </div>
+                                      </div>
+                                      <Button
+                                        onClick={() => article.pdfUrl ? handleDownload(article.pdfUrl, article.title) : console.log('PDF no disponible aún para:', article.title)}
+                                        className="bg-blue-800 hover:bg-blue-900 text-white flex-shrink-0 w-full md:w-auto"
+                                        disabled={!article.pdfUrl}
+                                      >
+                                        Descargar PDF
+                                      </Button>
+                                    </div>
+                                  </CardHeader>
+                                </Card>
+                              ))}
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                ))}
+              </div>
+
+              {/* Footer informativo */}
+              <div className="mt-12 text-center">
+                <Card className="bg-gray-50 border-blue-200">
+                  <CardContent className="pt-6">
+                    <p className="text-gray-600">
+                      Todos los artículos están disponibles para descarga en formato PDF.
+                    </p>
+                  </CardContent>
+                </Card>
+              </div>
             </div>
           </div>
         </section>
-
-        {/* Main Content Section */}
-        {/* (Eliminado: todo el contenido del último número, solo debe estar en /actual) */}
 
         {/* Call to Action */}
         <section className="bg-blue-50 py-10 md:py-14">
