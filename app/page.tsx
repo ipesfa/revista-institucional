@@ -234,12 +234,12 @@ export default function Home() {
       </section>
 
       <main>
-        {/* Volumen Actual Section */}
-        <section className="bg-white py-12 md:py-16">
+        {/* Sección de la Tapa - Fondo Celeste */}
+        <section className="bg-blue-50 pt-4 md:pt-6 pb-4 md:pb-6">
           <div className="container mx-auto px-4 md:px-6">
             <div className="max-w-6xl mx-auto">
               {/* Imagen de la revista - Elemento principal */}
-              <div className="relative flex justify-center items-center mb-24 py-14 md:py-18 lg:py-20">
+              <div className="relative flex justify-center items-center py-14 md:py-18 lg:py-20">
                 {/* Elementos decorativos laterales */}
                 <div className="absolute left-0 top-1/2 -translate-y-1/2 w-32 md:w-48 lg:w-64 h-full opacity-20">
                   <div className="absolute inset-0 bg-gradient-to-r from-transparent via-blue-200 to-transparent blur-3xl"></div>
@@ -253,24 +253,18 @@ export default function Home() {
                 </div>
                 
                 <div className="relative w-64 h-[480px] md:w-[360px] md:h-[600px] lg:w-[420px] lg:h-[680px] z-10">
-                  {/* Fondo decorativo con gradiente */}
-                  <div className="absolute -inset-8 bg-gradient-to-br from-blue-50 via-white to-blue-50 rounded-3xl opacity-60 blur-2xl"></div>
-                  <div className="absolute -inset-4 bg-gradient-to-tr from-blue-100/30 to-transparent rounded-2xl"></div>
-                  
-                  {/* Contenedor principal de la imagen */}
-                  <div className="relative w-full h-full z-10 transform hover:scale-[1.02] transition-transform duration-500 rounded-2xl overflow-hidden">
-                    <Image
-                      src="/portadav2.png"
-                      alt="Portada de FA revista - Volumen 2: Lo Fantástico. Vacilación del sentido común"
-                      fill
-                      className="object-contain"
-                      style={{ 
-                        filter: 'drop-shadow(0 20px 50px rgba(191, 219, 254, 0.6))',
-                        borderRadius: '1rem'
-                      }}
-                      priority
-                    />
-                  </div>
+                  {/* Imagen */}
+                  <Image
+                    src="/portadav2.png"
+                    alt="Portada de FA revista - Volumen 2: Lo Fantástico. Vacilación del sentido común"
+                    fill
+                    className="object-contain z-10 transform hover:scale-[1.02] transition-transform duration-500"
+                    style={{ 
+                      filter: 'drop-shadow(0 20px 50px rgba(191, 219, 254, 0.6))',
+                      borderRadius: '1rem'
+                    }}
+                    priority
+                  />
                   
                   {/* Badge Volumen 2 */}
                   <div className="absolute -top-5 -right-5 z-20">
@@ -287,8 +281,14 @@ export default function Home() {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </section>
 
-              {/* Secciones del Volumen */}
+        {/* Secciones del Volumen - Fondo Blanco */}
+        <section className="bg-white pt-4 md:pt-6 pb-12 md:pb-16">
+          <div className="container mx-auto px-4 md:px-6">
+            <div className="max-w-6xl mx-auto">
               <div className="space-y-10">
                 {sections.map((section, sectionIndex) => (
                   <div key={sectionIndex} className="space-y-4">
