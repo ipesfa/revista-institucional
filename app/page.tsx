@@ -269,7 +269,7 @@ export default function Home() {
                   
                   {/* Imagen */}
                   <div 
-                    className="relative z-10 transition-all duration-500 group-hover:translate-y-0 group-hover:filter-none"
+                    className="relative z-10 transition-all duration-500 md:group-hover:translate-y-0 md:group-hover:filter-none"
                     style={{
                       filter: 'drop-shadow(0 12px 32px rgba(30, 64, 175, 0.25)) drop-shadow(0 4px 12px rgba(30, 64, 175, 0.15))',
                       transform: 'translateY(6px)'
@@ -280,7 +280,7 @@ export default function Home() {
                       alt="Portada de FA revista - Volumen 2: Lo Fantástico. Vacilación del sentido común"
                       width={180}
                       height={340}
-                      className="w-[180px] h-[340px] md:w-[260px] md:h-[440px] lg:w-[320px] lg:h-[540px] transform group-hover:scale-[1.02] transition-transform duration-500 object-contain"
+                      className="w-[180px] h-[340px] md:w-[260px] md:h-[440px] lg:w-[320px] lg:h-[540px] transform md:group-hover:scale-[1.02] transition-transform duration-500 object-contain"
                       style={{ 
                         display: 'block',
                         backgroundColor: 'transparent'
