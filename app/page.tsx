@@ -309,7 +309,7 @@ export default function Home() {
         {/* Enlace para ver índice completo */}
         <div className="bg-blue-50 py-2 md:py-3">
           <div className="container mx-auto px-4 md:px-6">
-            <div className="flex justify-end">
+            <div className="flex justify-end pr-16 md:pr-20 lg:pr-24">
               <button
                 onClick={() => {
                   const articulosSection = document.getElementById('articulos-seccion')
@@ -326,7 +326,7 @@ export default function Home() {
         </div>
 
         {/* Secciones del Volumen - Fondo Blanco */}
-        <section id="articulos-seccion" className="bg-white pt-4 md:pt-6 pb-12 md:pb-16">
+        <section id="articulos-seccion" className="bg-white pt-16 md:pt-20 lg:pt-24 pb-12 md:pb-16">
           <div className="container mx-auto px-4 md:px-6">
             <div className="max-w-6xl mx-auto">
               <div className="space-y-10">
