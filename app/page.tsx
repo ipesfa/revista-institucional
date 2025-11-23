@@ -238,55 +238,95 @@ export default function Home() {
         <section className="bg-blue-50 pt-4 md:pt-6 pb-4 md:pb-6">
           <div className="container mx-auto px-4 md:px-6">
             <div className="max-w-6xl mx-auto">
-              {/* Imagen de la revista - Elemento principal */}
-              <div className="relative flex justify-center items-center py-14 md:py-18 lg:py-20">
-                {/* Elementos decorativos laterales */}
-                <div className="absolute left-0 top-1/2 -translate-y-1/2 w-32 md:w-48 lg:w-64 h-full opacity-20">
-                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-blue-200 to-transparent blur-3xl"></div>
-                  <div className="absolute left-0 top-1/4 w-24 h-24 rounded-full bg-blue-200 opacity-10 blur-2xl"></div>
-                  <div className="absolute left-8 bottom-1/4 w-16 h-16 rounded-full bg-blue-200 opacity-15 blur-xl"></div>
-                </div>
-                <div className="absolute right-0 top-1/2 -translate-y-1/2 w-32 md:w-48 lg:w-64 h-full opacity-20">
-                  <div className="absolute inset-0 bg-gradient-to-l from-transparent via-blue-200 to-transparent blur-3xl"></div>
-                  <div className="absolute right-0 top-1/3 w-20 h-20 rounded-full bg-blue-200 opacity-10 blur-2xl"></div>
-                  <div className="absolute right-8 bottom-1/3 w-14 h-14 rounded-full bg-blue-200 opacity-15 blur-xl"></div>
-                </div>
-                
-                <div className="relative w-64 h-[480px] md:w-[360px] md:h-[600px] lg:w-[420px] lg:h-[680px] z-10">
-                  {/* Imagen */}
-                  <Image
-                    src="/portadav2.png"
-                    alt="Portada de FA revista - Volumen 2: Lo Fantástico. Vacilación del sentido común"
-                    fill
-                    className="object-contain z-10 transform hover:scale-[1.02] transition-transform duration-500"
-                    style={{ 
-                      filter: 'drop-shadow(0 20px 50px rgba(191, 219, 254, 0.6))',
-                      borderRadius: '1rem'
-                    }}
-                    priority
-                  />
-                  
-                  {/* Badge Volumen 2 */}
-                  <div className="absolute -top-5 -right-5 z-20">
-                    <span 
-                      className="text-white px-6 py-3 rounded-full text-base font-bold shadow-2xl"
-                      style={{ 
-                        backgroundColor: '#69c7bb',
-                        boxShadow: '0 10px 25px rgba(105, 199, 187, 0.5), 0 0 20px rgba(105, 199, 187, 0.3)',
-                        border: '2px solid rgba(255, 255, 255, 0.3)'
-                      }}
-                    >
-                      Volumen 2
-                    </span>
+              {/* Contenedor con texto e imagen */}
+              <div className="relative flex flex-col md:flex-row items-center md:items-center justify-center gap-8 md:gap-12 py-2 md:py-4 lg:py-6">
+                {/* Imagen de la revista - Elemento principal */}
+                <div className="relative flex-shrink-0">
+                  {/* Elementos decorativos laterales */}
+                  <div className="absolute left-0 top-1/2 -translate-y-1/2 w-32 md:w-48 lg:w-64 h-full opacity-20">
+                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-blue-200 to-transparent blur-3xl"></div>
+                    <div className="absolute left-0 top-1/4 w-24 h-24 rounded-full bg-blue-200 opacity-10 blur-2xl"></div>
+                    <div className="absolute left-8 bottom-1/4 w-16 h-16 rounded-full bg-blue-200 opacity-15 blur-xl"></div>
                   </div>
+                  <div className="absolute right-0 top-1/2 -translate-y-1/2 w-32 md:w-48 lg:w-64 h-full opacity-20">
+                    <div className="absolute inset-0 bg-gradient-to-l from-transparent via-blue-200 to-transparent blur-3xl"></div>
+                    <div className="absolute right-0 top-1/3 w-20 h-20 rounded-full bg-blue-200 opacity-10 blur-2xl"></div>
+                    <div className="absolute right-8 bottom-1/3 w-14 h-14 rounded-full bg-blue-200 opacity-15 blur-xl"></div>
+                  </div>
+                  
+                  <div className="relative inline-block z-10 group">
+                  {/* Recuadro sombra detrás de la imagen - desaparece en hover */}
+                  <div 
+                    className="absolute inset-0 z-0 transition-opacity duration-500 group-hover:opacity-0"
+                    style={{
+                      width: '100%',
+                      height: '100%',
+                      backgroundColor: 'rgba(30, 64, 175, 0.4)',
+                      filter: 'blur(1px)',
+                      transform: 'translate(-22px, 10px)',
+                      borderRadius: '2px'
+                    }}
+                  ></div>
+                  
+                  {/* Imagen */}
+                  <div 
+                    className="relative z-10 transition-all duration-500 group-hover:translate-y-0 group-hover:filter-none"
+                    style={{
+                      filter: 'drop-shadow(0 12px 32px rgba(30, 64, 175, 0.25)) drop-shadow(0 4px 12px rgba(30, 64, 175, 0.15))',
+                      transform: 'translateY(6px)'
+                    }}
+                  >
+                    <Image
+                      src="/portadav2.png"
+                      alt="Portada de FA revista - Volumen 2: Lo Fantástico. Vacilación del sentido común"
+                      width={180}
+                      height={340}
+                      className="w-[180px] h-[340px] md:w-[260px] md:h-[440px] lg:w-[320px] lg:h-[540px] transform group-hover:scale-[1.02] transition-transform duration-500 object-contain"
+                      style={{ 
+                        display: 'block',
+                        backgroundColor: 'transparent'
+                      }}
+                      priority
+                    />
+                  </div>
+                </div>
+                </div>
+
+                {/* Texto centrado */}
+                <div className="flex-1 md:max-w-md text-center ml-12 md:ml-16">
+                  <h2 className="text-3xl md:text-4xl font-bold text-blue-800 mb-4">
+                    Número Actual
+                  </h2>
+                  <p className="text-lg md:text-xl text-gray-700">
+                    Noviembre de 2025  |  Año 1  |  Vol. 2
+                  </p>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
+        {/* Enlace para ver índice completo */}
+        <div className="bg-blue-50 py-2 md:py-3">
+          <div className="container mx-auto px-4 md:px-6">
+            <div className="flex justify-end">
+              <button
+                onClick={() => {
+                  const articulosSection = document.getElementById('articulos-seccion')
+                  if (articulosSection) {
+                    articulosSection.scrollIntoView({ behavior: 'smooth' })
+                  }
+                }}
+                className="text-blue-800 hover:text-blue-900 font-medium text-lg transition-colors cursor-pointer inline-flex items-center gap-2"
+              >
+                Ver el índice completo <span className="text-2xl">∨</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
         {/* Secciones del Volumen - Fondo Blanco */}
-        <section className="bg-white pt-4 md:pt-6 pb-12 md:pb-16">
+        <section id="articulos-seccion" className="bg-white pt-4 md:pt-6 pb-12 md:pb-16">
           <div className="container mx-auto px-4 md:px-6">
             <div className="max-w-6xl mx-auto">
               <div className="space-y-10">
