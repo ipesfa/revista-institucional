@@ -257,8 +257,10 @@ export default function Home() {
                   <div className="relative inline-block z-10 group">
                   {/* Recuadro sombra detrás de la imagen - desaparece en hover */}
                   <div 
-                    className="absolute z-0 transition-opacity duration-500 group-hover:opacity-0 -translate-x-3 translate-y-1.5 md:-translate-x-[22px] md:translate-y-[10px] w-[85%] h-[85%] md:w-full md:h-full top-[7.5%] left-[7.5%] md:top-0 md:left-0"
+                    className="hidden md:block absolute inset-0 z-0 transition-opacity duration-500 group-hover:opacity-0 -translate-x-[22px] translate-y-[10px]"
                     style={{
+                      width: '100%',
+                      height: '100%',
                       backgroundColor: 'rgba(30, 64, 175, 0.4)',
                       filter: 'blur(1px)',
                       borderRadius: '2px'
