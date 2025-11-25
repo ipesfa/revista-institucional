@@ -1,9 +1,16 @@
 "use client"
 
+import { useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog"
 
 interface Article {
   id: string
@@ -49,7 +56,8 @@ const sections: Section[] = [
         id: "ensayos-1",
         title: 'De la sociedad del conocimiento a la inteligencia artificial: ¿el fin de la "historia interminable" y el triunfo de "los ladrones del tiempo"?',
         authors: ["Ricardo Forster"],
-        section: "Ensayos académicos"
+        section: "Ensayos académicos",
+        pdfUrl: "/PDF/V2/articulo_individual_forster.pdf"
       },
       {
         id: "ensayos-2",
@@ -146,6 +154,8 @@ const sections: Section[] = [
 ]
 
 export default function Home() {
+  const [previewPdf, setPreviewPdf] = useState<{ url: string; title: string } | null>(null)
+
   const handleDownload = (pdfUrl: string, title: string) => {
     if (!pdfUrl) {
       console.log('PDF no disponible aún para:', title)
@@ -158,6 +168,14 @@ export default function Home() {
     document.body.appendChild(link)
     link.click()
     document.body.removeChild(link)
+  }
+
+  const handlePreview = (pdfUrl: string, title: string) => {
+    if (!pdfUrl) {
+      console.log('PDF no disponible aún para:', title)
+      return
+    }
+    setPreviewPdf({ url: pdfUrl, title })
   }
 
   return (
@@ -186,43 +204,43 @@ export default function Home() {
               <p className="text-sm md:text-base text-white/90 mt-1">
                 Revista académica del IPES Florentino Ameghino
               </p>
-              {/* Submit Article Link - Desktop */}
-              <div className="hidden md:block mt-2">
-                <Link href="/convocatoria" className="inline-flex items-center text-sm text-white hover:underline">
-                  Enviar artículo
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="ml-1 h-4 w-4"
-                  >
-                    <path d="M7 7h10v10" />
-                    <path d="M7 17 17 7" />
-                  </svg>
-                </Link>
-              </div>
             </div>
-            {/* Submit Article Link - Mobile */}
-            <div className="md:hidden w-full">
-              <Link href="/convocatoria" className="inline-flex items-center text-sm text-white hover:underline">
+            {/* Submit Article Link - Desktop */}
+            <div className="hidden md:flex items-end flex-shrink-0 pb-6">
+              <Link href="/convocatoria" className="inline-flex items-center text-base font-medium text-white hover:underline">
                 Enviar artículo
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
+                  width="18"
+                  height="18"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
                   strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  className="ml-1 h-4 w-4"
+                  className="ml-1.5 h-4.5 w-4.5"
+                >
+                  <path d="M7 7h10v10" />
+                  <path d="M7 17 17 7" />
+                </svg>
+              </Link>
+            </div>
+            {/* Submit Article Link - Mobile */}
+            <div className="md:hidden w-full">
+              <Link href="/convocatoria" className="inline-flex items-center text-base font-medium text-white hover:underline">
+                Enviar artículo
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="ml-1.5 h-4.5 w-4.5"
                 >
                   <path d="M7 7h10v10" />
                   <path d="M7 17 17 7" />
@@ -355,13 +373,23 @@ export default function Home() {
                                     <span className="font-medium">Sección:</span> {article.section}
                                   </div>
                                 </div>
-                                <Button
-                                  onClick={() => article.pdfUrl ? handleDownload(article.pdfUrl, article.title) : console.log('PDF no disponible aún para:', article.title)}
-                                  className="bg-blue-800 hover:bg-blue-900 text-white flex-shrink-0 w-full md:w-auto"
-                                  disabled={!article.pdfUrl}
-                                >
-                                  Descargar PDF
-                                </Button>
+                                <div className="flex flex-col sm:flex-row gap-2 flex-shrink-0 w-full md:w-auto">
+                                  <Button
+                                    onClick={() => article.pdfUrl ? handlePreview(article.pdfUrl, article.title) : console.log('PDF no disponible aún para:', article.title)}
+                                    variant="outline"
+                                    className="border-blue-800 text-blue-800 hover:bg-blue-50 flex-shrink-0 w-full sm:w-auto"
+                                    disabled={!article.pdfUrl}
+                                  >
+                                    Vista preliminar
+                                  </Button>
+                                  <Button
+                                    onClick={() => article.pdfUrl ? handleDownload(article.pdfUrl, article.title) : console.log('PDF no disponible aún para:', article.title)}
+                                    className="bg-blue-800 hover:bg-blue-900 text-white flex-shrink-0 w-full sm:w-auto"
+                                    disabled={!article.pdfUrl}
+                                  >
+                                    Descargar PDF
+                                  </Button>
+                                </div>
                               </div>
                             </CardHeader>
                           </Card>
@@ -393,13 +421,23 @@ export default function Home() {
                                           <span className="font-medium">Sección:</span> {article.section}
                                         </div>
                                       </div>
-                                      <Button
-                                        onClick={() => article.pdfUrl ? handleDownload(article.pdfUrl, article.title) : console.log('PDF no disponible aún para:', article.title)}
-                                        className="bg-blue-800 hover:bg-blue-900 text-white flex-shrink-0 w-full md:w-auto"
-                                        disabled={!article.pdfUrl}
-                                      >
-                                        Descargar PDF
-                                      </Button>
+                                      <div className="flex flex-col sm:flex-row gap-2 flex-shrink-0 w-full md:w-auto">
+                                        <Button
+                                          onClick={() => article.pdfUrl ? handlePreview(article.pdfUrl, article.title) : console.log('PDF no disponible aún para:', article.title)}
+                                          variant="outline"
+                                          className="border-blue-800 text-blue-800 hover:bg-blue-50 flex-shrink-0 w-full sm:w-auto"
+                                          disabled={!article.pdfUrl}
+                                        >
+                                          Vista preliminar
+                                        </Button>
+                                        <Button
+                                          onClick={() => article.pdfUrl ? handleDownload(article.pdfUrl, article.title) : console.log('PDF no disponible aún para:', article.title)}
+                                          className="bg-blue-800 hover:bg-blue-900 text-white flex-shrink-0 w-full sm:w-auto"
+                                          disabled={!article.pdfUrl}
+                                        >
+                                          Descargar PDF
+                                        </Button>
+                                      </div>
                                     </div>
                                   </CardHeader>
                                 </Card>
@@ -447,6 +485,24 @@ export default function Home() {
           </div>
         </section>
       </main>
+
+      {/* PDF Preview Dialog */}
+      <Dialog open={!!previewPdf} onOpenChange={(open) => !open && setPreviewPdf(null)}>
+        <DialogContent className="max-w-6xl w-full h-[90vh] p-0 flex flex-col">
+          <DialogHeader className="px-6 pt-6 pb-4 border-b">
+            <DialogTitle className="text-lg font-semibold">{previewPdf?.title}</DialogTitle>
+          </DialogHeader>
+          <div className="flex-1 px-6 pb-6 overflow-hidden min-h-0">
+            {previewPdf && (
+              <iframe
+                src={`${previewPdf.url}#toolbar=1&navpanes=1&scrollbar=1`}
+                className="w-full h-full border border-gray-200 rounded-lg shadow-sm"
+                title={previewPdf.title}
+              />
+            )}
+          </div>
+        </DialogContent>
+      </Dialog>
     </div>
   )
 }
