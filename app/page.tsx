@@ -33,8 +33,9 @@ const sections: Section[] = [
       {
         id: "dossier-1",
         title: "Presentación",
-        authors: [],
-        section: "Dossier - Lo Fantástico. Vacilación del sentido común"
+        authors: ["Miguel Fanchovich", "Mario Hernández"],
+        section: "Dossier - Lo Fantástico. Vacilación del sentido común",
+        pdfUrl: "/PDF/V2/articulo_individual_fanchovich_hernandez.pdf"
       }
     ]
   },
@@ -45,7 +46,8 @@ const sections: Section[] = [
         id: "practicas-1",
         title: "Avatares: la matemática como aventura fantástica. Experiencia interdisciplinaria en la formación docente",
         authors: ["Soledad Cruz", "Vanesa De Las Vegas"],
-        section: "Prácticas y experiencias educativas"
+        section: "Prácticas y experiencias educativas",
+        pdfUrl: "/PDF/V2/articulo_individual_dela_cruz_delas_vegas.pdf"
       }
     ]
   },
@@ -63,7 +65,8 @@ const sections: Section[] = [
         id: "ensayos-2",
         title: "Mafalda vs. las sagas de fantasía: 16 notas sobre la organización de la producción literaria del continente americano y un gol de Maradona",
         authors: ["Alfredo Lèal"],
-        section: "Ensayos académicos"
+        section: "Ensayos académicos",
+        pdfUrl: "/PDF/V2/articulo_individual_alfredo_leal.pdf"
       }
     ]
   },
@@ -74,7 +77,8 @@ const sections: Section[] = [
         id: "literatura-1",
         title: "El camino de regreso",
         authors: ["Mario Hernández"],
-        section: "Literaturas Breves"
+        section: "Literaturas Breves",
+        pdfUrl: "/PDF/V2/articulo_individual_mario_hernandez.pdf"
       }
     ]
   },
@@ -89,7 +93,8 @@ const sections: Section[] = [
             id: "libres-practicas-1",
             title: "La enseñanza de la historia argentina como desafío. Estudio de caso enfocado en la experiencia del Profesorado para la Educación Primaria del I.P.E.S. Florentino Ameghino de la ciudad de Ushuaia",
             authors: ["Shion-en Cenatiempo"],
-            section: "Artículos libres - Prácticas y experiencias educativas"
+            section: "Artículos libres - Prácticas y experiencias educativas",
+            pdfUrl: "/PDF/V2/articulo_individual_cenatiempo.pdf"
           }
         ]
       },
@@ -100,13 +105,15 @@ const sections: Section[] = [
             id: "libres-cientificos-1",
             title: "Experiencias estudiantiles en contextos de crisis. El caso de la intervención ministerial en un instituto de formación docente de Ushuaia",
             authors: ["Paola N. Vega"],
-            section: "Artículos libres - Artículos científicos"
+            section: "Artículos libres - Artículos científicos",
+            pdfUrl: "/PDF/V2/articulo_individual_paola_vega.pdf"
           },
           {
             id: "libres-cientificos-2",
             title: "Fuentes para enseñar geografía local en Ushuaia: perspectivas docentes en la escuela secundaria",
             authors: ["Natalia Cañete", "Daniel Paoloni", "Silvia Torre", "Mariana Damiani"],
-            section: "Artículos libres - Artículos científicos"
+            section: "Artículos libres - Artículos científicos",
+            pdfUrl: "/PDF/V2/articulo_individual_canete_et_al.pdf"
           }
         ]
       },
@@ -117,13 +124,15 @@ const sections: Section[] = [
             id: "libres-ensayos-1",
             title: "La Cultura Sorda argentina en clave Pachakutik: de la colonización pedagógica a la praxis de la Ley 27.710",
             authors: ["Lucila Otero Aráoz"],
-            section: "Artículos libres - Ensayos académicos"
+            section: "Artículos libres - Ensayos académicos",
+            pdfUrl: "/PDF/V2/articulo_individual_lucila_otero_araoz.pdf"
           },
           {
             id: "libres-ensayos-2",
             title: "La etnostalgia o la revisión de las notas guardadas en un cajón",
             authors: ["Mariano López Rasch"],
-            section: "Artículos libres - Ensayos académicos"
+            section: "Artículos libres - Ensayos académicos",
+            pdfUrl: "/PDF/V2/articulo_individual_lopez_rasch.pdf"
           }
         ]
       }
@@ -136,7 +145,8 @@ const sections: Section[] = [
         id: "dilemas-1",
         title: "Dina Picotti, por siempre! Un legado de pensamiento y humanidad",
         authors: ["Sergio Barrionuevo", "Sebastián Castiñeira", "Noelia Lobo"],
-        section: "Dilemas y coyunturas"
+        section: "Dilemas y coyunturas",
+        pdfUrl: "/PDF/V2/articulo_individual_barrionuevo_castineira_lobo.pdf"
       }
     ]
   },
@@ -147,7 +157,8 @@ const sections: Section[] = [
         id: "entrevistas-1",
         title: 'Ricardo Forster: "El final de un libro exquisito es, a la vez, felicidad y vacío"',
         authors: ["Erica Garrido", "Emiliano Sánchez Narvarte"],
-        section: "Entrevistas"
+        section: "Entrevistas",
+        pdfUrl: "/PDF/V2/articulo_individual_entrevista_forster.pdf"
       }
     ]
   }
@@ -260,30 +271,9 @@ export default function Home() {
               <div className="relative flex flex-col md:flex-row items-center md:items-center justify-center gap-8 md:gap-12 py-2 md:py-4 lg:py-6">
                 {/* Imagen de la revista - Elemento principal */}
                 <div className="relative flex-shrink-0">
-                  {/* Elementos decorativos laterales */}
-                  <div className="absolute left-0 top-1/2 -translate-y-1/2 w-32 md:w-48 lg:w-64 h-full opacity-20">
-                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-blue-200 to-transparent blur-3xl"></div>
-                    <div className="absolute left-0 top-1/4 w-24 h-24 rounded-full bg-blue-200 opacity-10 blur-2xl"></div>
-                    <div className="absolute left-8 bottom-1/4 w-16 h-16 rounded-full bg-blue-200 opacity-15 blur-xl"></div>
-                  </div>
-                  <div className="absolute right-0 top-1/2 -translate-y-1/2 w-32 md:w-48 lg:w-64 h-full opacity-20">
-                    <div className="absolute inset-0 bg-gradient-to-l from-transparent via-blue-200 to-transparent blur-3xl"></div>
-                    <div className="absolute right-0 top-1/3 w-20 h-20 rounded-full bg-blue-200 opacity-10 blur-2xl"></div>
-                    <div className="absolute right-8 bottom-1/3 w-14 h-14 rounded-full bg-blue-200 opacity-15 blur-xl"></div>
-                  </div>
-                  
                   <div className="relative inline-block z-10 group">
                   {/* Recuadro sombra detrás de la imagen - desaparece en hover */}
-                  <div 
-                    className="hidden md:block absolute inset-0 z-0 transition-opacity duration-500 group-hover:opacity-0 -translate-x-[22px] translate-y-[10px]"
-                    style={{
-                      width: '100%',
-                      height: '100%',
-                      backgroundColor: 'rgba(30, 64, 175, 0.4)',
-                      filter: 'blur(1px)',
-                      borderRadius: '2px'
-                    }}
-                  ></div>
+                  <div className="hidden md:block absolute inset-0 z-0 -translate-x-[22px] translate-y-[10px] bg-blue-800 transition-opacity duration-500 group-hover:opacity-0"></div>
                   
                   {/* Imagen */}
                   <div 
@@ -402,7 +392,7 @@ export default function Home() {
                       <div className="space-y-6 ml-2 md:ml-4">
                         {section.subsections.map((subsection, subIndex) => (
                           <div key={subIndex} className="space-y-4">
-                            <h3 className="text-xl md:text-2xl font-semibold text-blue-700 border-b border-blue-200 pb-2">
+                            <h3 className="text-xl md:text-2xl font-semibold text-blue-800 border-b border-blue-300 pb-2">
                               {subsection.name}
                             </h3>
                             <div className="space-y-4">
