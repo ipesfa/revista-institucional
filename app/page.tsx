@@ -215,6 +215,9 @@ export default function Home() {
               <p className="text-sm md:text-base text-white/90 mt-1">
                 Revista académica del IPES Florentino Ameghino
               </p>
+              <p className="text-xs md:text-sm text-white/80 mt-1">
+                ISSN 3072-8835
+              </p>
             </div>
             {/* Submit Article Link - Desktop */}
             <div className="hidden md:flex items-end flex-shrink-0 pb-6">

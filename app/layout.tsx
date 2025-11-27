@@ -11,6 +11,9 @@ export const metadata: Metadata = {
   title: "FA Revista",
   description: "Revista académica FA - Prácticas educativas y resistencia cultural",
   generator: "v0.dev",
+  icons: {
+    icon: "/fa-revista-logo.png",
+  },
 }
 
 export default function RootLayout({
