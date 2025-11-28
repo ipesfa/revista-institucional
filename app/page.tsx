@@ -18,6 +18,7 @@ interface Article {
   authors: string[]
   section: string
   pdfUrl?: string
+  dossierEditor?: string
 }
 
 interface Section {
@@ -35,7 +36,8 @@ const sections: Section[] = [
         title: "Presentación",
         authors: ["Miguel Fanchovich", "Mario Hernández"],
         section: "Dossier - Lo Fantástico. Vacilación del sentido común",
-        pdfUrl: "/PDF/V2/articulo_individual_fanchovich_hernandez.pdf"
+        pdfUrl: "/PDF/V2/articulo_individual_fanchovich_hernandez.pdf",
+        dossierEditor: "Mariano Malizia"
       }
     ]
   },
@@ -357,6 +359,11 @@ export default function Home() {
                                   <CardTitle className="text-lg md:text-xl mb-3 text-gray-900 leading-relaxed">
                                     {article.title}
                                   </CardTitle>
+                                  {article.dossierEditor && (
+                                    <div className="text-sm text-gray-600 mb-2">
+                                      <span className="font-medium">Editor del Dossier:</span> {article.dossierEditor}
+                                    </div>
+                                  )}
                                   {article.authors.length > 0 && (
                                     <div className="text-sm text-gray-600 mb-2">
                                       <span className="font-medium">Autores:</span> {article.authors.join(', ')}
@@ -407,6 +414,11 @@ export default function Home() {
                                         <CardTitle className="text-lg md:text-xl mb-3 text-gray-900 leading-relaxed">
                                           {article.title}
                                         </CardTitle>
+                                        {article.dossierEditor && (
+                                          <div className="text-sm text-gray-600 mb-2">
+                                            <span className="font-medium">Editor del Dossier:</span> {article.dossierEditor}
+                                          </div>
+                                        )}
                                         <div className="text-sm text-gray-600 mb-2">
                                           <span className="font-medium">Autores:</span> {article.authors.join(', ')}
                                         </div>
@@ -442,6 +454,19 @@ export default function Home() {
                     )}
                   </div>
                 ))}
+              </div>
+
+              {/* Diseño editorial */}
+              <div className="mt-2">
+                <Card className="hover:shadow-lg transition-shadow border-blue-100">
+                  <CardHeader>
+                    <div className="flex-1">
+                      <div className="text-sm text-gray-600">
+                        <span className="font-medium">Diseño editorial, maquetación y dirección visual:</span> Leonardo Nausan S.
+                      </div>
+                    </div>
+                  </CardHeader>
+                </Card>
               </div>
 
               {/* Footer informativo */}
