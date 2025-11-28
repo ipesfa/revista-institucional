@@ -23,6 +23,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/fav.png" type="image/png" />
+      </head>
       <body className={inter.className}>
         <div className="flex min-h-screen flex-col">
           <Header />
