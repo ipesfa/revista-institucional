@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   description: "Revista académica FA - Prácticas educativas y resistencia cultural",
   generator: "v0.dev",
   icons: {
-    icon: "/fa-revista-logo.png",
+    icon: "/fav.png",
   },
 }
 
