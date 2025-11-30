@@ -21,6 +21,15 @@ export default function ConvocatoriaPage() {
       "Historia Argentina, enfoques y problemáticas en perspectiva regional Latinoamericana.",
       "Historias olvidadas y agendas pendientes en Argentina.",
     ],
+    areasInteres: [
+      "Innovaciones pedagógicas y metodológicas",
+      "Tecnologías educativas emergentes",
+      "Políticas educativas y su impacto",
+      "Educación inclusiva y diversidad",
+      "Transformaciones culturales en contextos educativos",
+      "Formación docente y desarrollo profesional",
+      "Evaluación educativa y calidad",
+    ],
     fechaLimite: "09/03/26",
     fechaPublicacion: "Junio 2026",
     fechasImportantes: [
@@ -161,6 +170,18 @@ export default function ConvocatoriaPage() {
                     <li key={index} className="text-justify">{eje}</li>
                   ))}
                 </ul>
+              </div>
+
+              {/* Áreas de interés */}
+              <div className="mb-6">
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Áreas de interés</h3>
+                <div className="flex flex-wrap gap-2">
+                  {convocatoria.areasInteres.map((area, index) => (
+                    <Badge key={index} variant="outline" className="bg-gray-50 text-gray-800">
+                      {area}
+                    </Badge>
+                  ))}
+                </div>
               </div>
 
               {/* Fecha límite */}
