@@ -12,19 +12,25 @@ export default function ConvocatoriaPage() {
   // Datos de la convocatoria actual
   const convocatoria = {
     titulo: "Convocatoria Abierta",
-    subtitulo: "Dossier  N° 1 / Año 1",
+    subtitulo: "Año 2, Nro. 3",
+    dossierTematico: "La historia regional en debate. Aportes, desafíos y horizontes colectivos de producción",
+    coordinadoras: ["Vanina Perazzo", "Shion-en Cenatiempo"],
     descripcion:
-      "La revista académica FA invita a investigadores, docentes y especialistas a enviar sus contribuciones para el próximo número. Buscamos artículos originales e inéditos que aborden temas relevantes en el ámbito de la educación y la cultura, con especial énfasis en innovaciones pedagógicas, transformaciones educativas y análisis culturales contemporáneos.",
-    tematica: "Innovación educativa y transformaciones culturales en la era digital",
-    fechaLimite: "22 de octubre de 2025",
-    fechaPublicacion: "Enero 2026",
+      "Reflexionar sobre lo regional nos permite dimensionar las posibilidades que nacen en lo colectivo. Desde esta perspectiva, se pretende dar paso a la convocatoria para pensar lo regional desde una mirada colectiva, multidimensional, participativa e impulsora de transformaciones. Este Dossier es una invitación a mirar cómo lo propio, lo cercano y lo lejano se vuelve parte de aquello que nos identifica. De este modo cobra relevancia reflexionar sobre lo que convoca a las identificaciones regionales desde lo cultural, lo territorial, lo comunitario, las individualidades; dando lugar a la posibilidad de transformaciones y continuidades que abren puertas a la búsqueda de respuestas sobre cómo la sociedad crece y se vincula, en sus diversidades y conflictos a través de semejanzas y diferencias.",
+    ejesTematicos: [
+      "El espacio como una posibilidad de construcción identitaria.",
+      "Historia Argentina, enfoques y problemáticas en perspectiva regional Latinoamericana.",
+      "Historias olvidadas y agendas pendientes en Argentina.",
+    ],
+    fechaLimite: "09/03/26",
+    fechaPublicacion: "Junio 2026",
     fechasImportantes: [
       {
-        fecha: "22 de octubre de 2025",
+        fecha: "09/03/26",
         evento: "Fecha límite para envío de artículos",
       },
       {
-        fecha: "Noviembre 2025",
+        fecha: "Junio 2026",
         evento: "Publicación del número",
       },
     ],
@@ -34,15 +40,6 @@ export default function ConvocatoriaPage() {
       "Resumen en español e inglés (máximo 250 palabras) y 5-7 palabras clave.",
       "Formato según las normas editoriales de la revista (sistema APA 7ª edición).",
       "Archivos en formato .docx utilizando la plantilla proporcionada.",
-    ],
-    areasInteres: [
-      "Innovaciones pedagógicas y metodológicas",
-      "Tecnologías educativas emergentes",
-      "Políticas educativas y su impacto",
-      "Educación inclusiva y diversidad",
-      "Transformaciones culturales en contextos educativos",
-      "Formación docente y desarrollo profesional",
-      "Evaluación educativa y calidad",
     ],
     documentos: [
       {
@@ -116,50 +113,66 @@ export default function ConvocatoriaPage() {
           {/* Introduction Section */}
           <section>
             <div className="prose max-w-none">
-              <p className="text-sm md:text-base text-gray-700 leading-relaxed text-justify">
-                FA Revista, es una publicación digital de acceso abierto de periodicidad semestral del Instituto Provincial de Enseñanza Superior de la Provincia de Tierra del Fuego de Argentina, dedicada a la publicación de ensayos reflexivos sobre la práctica educativa y de investigación originales e inéditos en español. Fa Revista propone problematizar la relación entre educación y cultura en la práctica docente de nivel superior desde una perspectiva que articula múltiples disciplinas como las Humanidades y Ciencias Sociales, las Artes, las Ciencias Biológicas y las Exactas, con un estilo editorial que promueve una lectura dinámica de trabajos rigurosos.
-              </p>
-              <div className="flex justify-center my-6">
-                <Image
-                  src="/headerfant.png"
-                  alt="Jornadas Académico Culturales"
-                  width={700}
-                  height={210}
-                  className="object-contain rounded shadow"
-                  priority
-                />
+              {/* Dossier Temático */}
+              <div className="mb-6">
+                <h2 className="text-2xl font-bold text-gray-900 mb-3">Dossier temático</h2>
+                <p className="text-lg font-semibold text-blue-800 mb-4">
+                  {convocatoria.dossierTematico}
+                </p>
               </div>
-              <p className="text-sm md:text-base text-gray-700 leading-relaxed mt-4 text-justify">
-                Se pretenden publicaciones que propongan un espacio de reflexión interdisciplinaria, cuyo objetivo principal sea explorar cómo esta categoría estética y experiencial desafía nuestras percepciones de la realidad, define los límites de lo posible e interpela nuestras construcciones sociales de conocimiento. En esencia, se trata de observar como aquello que escapa a lo ordinario nos obliga a repensar lo que damos por sentado.
-              </p>
-              <div className="mt-6">
-                <h2 className="text-xl font-bold text-gray-900 mb-2">Se podrán aportar manuscritos originales en alguna de las siguientes secciones:</h2>
-                <ul className="list-disc pl-6 space-y-1 text-gray-700">
-                  <li>Prácticas y experiencias educativas</li>
-                  <li>Artículos científicos</li>
-                  <li>Ensayos académicos</li>
-                  <li>Reseñas Bibliográficas</li>
-                  <li>Entrevistas</li>
-                  <li>Dilemas y coyunturas</li>
+
+              {/* Imagen de convocatoria */}
+              <div className="w-full my-6">
+                <div className="relative w-full h-auto aspect-video">
+                  <Image
+                    src="/convocatoriapage.png"
+                    alt="Convocatoria FA Revista"
+                    fill
+                    className="object-contain"
+                    priority
+                  />
+                </div>
+              </div>
+
+              {/* Coordinadoras */}
+              <div className="mb-6">
+                <h3 className="text-xl font-bold text-gray-900 mb-2">Coordinadoras</h3>
+                <div className="flex flex-wrap gap-2">
+                  {convocatoria.coordinadoras.map((coordinadora, index) => (
+                    <Badge key={index} variant="outline" className="bg-blue-50 text-blue-800 border-blue-300">
+                      {coordinadora}
+                    </Badge>
+                  ))}
+                </div>
+              </div>
+
+              {/* Convocatoria */}
+              <div className="mb-6">
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Convocatoria</h3>
+                <p className="text-sm md:text-base text-gray-700 leading-relaxed text-justify">
+                  {convocatoria.descripcion}
+                </p>
+              </div>
+
+              {/* Ejes temáticos sugeridos */}
+              <div className="mb-6">
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Ejes temáticos sugeridos</h3>
+                <ul className="list-disc pl-6 space-y-2 text-gray-700">
+                  {convocatoria.ejesTematicos.map((eje, index) => (
+                    <li key={index} className="text-justify">{eje}</li>
+                  ))}
                 </ul>
               </div>
+
+              {/* Fecha límite */}
               <div className="mt-6">
-                <span className="inline-block bg-blue-50 text-blue-800 px-4 py-2 rounded font-medium text-base">Fecha límite de entrega: 22 de octubre de 2025</span>
+                <span className="inline-block bg-blue-50 text-blue-800 px-4 py-2 rounded font-medium text-base">
+                  Límite para recepción de artículos: {convocatoria.fechaLimite}
+                </span>
               </div>
             </div>
           </section>
 
-          {/* Areas of Interest */}
-          <section>
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">Áreas de interés</h2>
-            <div className="flex flex-wrap gap-2">
-              {convocatoria.areasInteres.map((area, index) => (
-                <Badge key={index} variant="outline" className="bg-gray-50 text-gray-800">
-                  {area}
-                </Badge>
-              ))}
-            </div>
-          </section>
 
           {/* Submission Process */}
           <section>
@@ -269,19 +282,21 @@ export default function ConvocatoriaPage() {
           {/* Current Issue Preview */}
           <Card>
             <CardContent className="p-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Dossier N° 1</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">{convocatoria.subtitulo}</h3>
+              <p className="text-sm text-blue-800 font-semibold mb-4">{convocatoria.dossierTematico}</p>
               <div className="flex flex-col items-center">
                 <div className="relative w-[150px] h-[225px] md:w-[180px] md:h-[270px] overflow-hidden rounded-lg shadow-md mb-4">
                   <Image
                     src="/tapa_ISSN.png"
-                    alt="Dossier N° 1 de FA Revista"
+                    alt={`${convocatoria.subtitulo} de FA Revista`}
                     fill
                     className="object-contain"
                   />
                 </div>
-                <p className="text-center text-gray-700 mb-4">
-                  Publicación de ensayos reflexivos sobre la práctica educativa y de investigación originales e inéditos en español.
-                </p>
+                <div className="text-center text-gray-700 mb-2">
+                  <p className="font-medium mb-2">Coordinadoras:</p>
+                  <p className="text-sm">{convocatoria.coordinadoras.join(' y ')}</p>
+                </div>
               </div>
             </CardContent>
           </Card>
