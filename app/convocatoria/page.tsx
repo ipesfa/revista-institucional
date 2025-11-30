@@ -5,7 +5,6 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Separator } from "@/components/ui/separator"
 import { Badge } from "@/components/ui/badge"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 
 export default function ConvocatoriaPage() {
@@ -176,38 +175,30 @@ export default function ConvocatoriaPage() {
 
           {/* Submission Process */}
           <section>
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">Proceso de envío</h2>
-            <Tabs defaultValue="instrucciones" className="w-full">
-              <TabsList className="grid w-full grid-cols-2">
-                <TabsTrigger value="instrucciones">Instrucciones</TabsTrigger>
-                <TabsTrigger value="evaluacion">Proceso de evaluación</TabsTrigger>
-              </TabsList>
-              <TabsContent value="instrucciones" className="p-4 border rounded-md mt-2">
-                <div className="flex justify-center">
-                  <Button className="bg-blue-800 hover:bg-blue-700">
-                    <a href="https://forms.gle/w4r3ysMwzbv85ryd6" target="_blank" rel="noopener noreferrer">Formulario de envío</a>
-                  </Button>
-                </div>
-              </TabsContent>
-              <TabsContent value="evaluacion" className="p-4 border rounded-md mt-2">
-                <div className="space-y-4">
-                  <p className="text-gray-700 text-justify">
-                    La revisión de los artículos académicos por pares según el principio doble ciego (el evaluador no conoce a lxs autorxs y lxs autorxs no conocen a sus evaluadorxs), garantiza un abordaje imparcial del trabajo enviado a la publicación. Hoy en día, dada la complejización y jerarquización del sistema académico y científico nacional e internacional, las publicaciones que no son evaluadas prácticamente carecen de validez académica en términos de evaluación de antecedentes y gran parte de quienes se dedican al trabajo académico tienden a publicar trabajos en revistas que garanticen una evaluación segura y rigurosa, que no es lo mismo que excluyente.
-                  </p>
-                  <p className="text-gray-700 text-justify">
-                    Para que un artículo sea evaluado, se tienden a considerar los siguientes puntos:
-                  </p>
-                  <ol className="space-y-2 list-decimal pl-5 text-gray-700">
-                    <li>La originalidad del trabajo de investigación o manuscrito;</li>
-                    <li>Relevancia para el conocimiento sobre el tema y clara presentación del problema que se pretende abordar;</li>
-                    <li>Marco de referencia: respaldo teórico adecuado. Determinación clara del objetivo del trabajo y de la(s) hipótesis. Referencias bibliográficas actualizadas y adecuadas al ámbito de investigación;</li>
-                    <li>Metodología: uso apropiado y buena descripción de materiales y métodos;</li>
-                    <li>Resultados: elaboración de conclusiones –parciales o no– que den cuenta del análisis realizado.</li>
-                    <li>Aspectos formales: corrección en el lenguaje, citación y referencias según normalización de la revista.</li>
-                  </ol>
-                </div>
-              </TabsContent>
-            </Tabs>
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">Proceso de evaluación</h2>
+            <div className="p-4 border rounded-md">
+              <div className="space-y-4">
+                <p className="text-gray-700 text-justify">
+                  La revisión de los artículos académicos por pares según el principio doble ciego (el evaluador no conoce a lxs autorxs y lxs autorxs no conocen a sus evaluadorxs), garantiza un abordaje imparcial del trabajo enviado a la publicación. Hoy en día, dada la complejización y jerarquización del sistema académico y científico nacional e internacional, las publicaciones que no son evaluadas prácticamente carecen de validez académica en términos de evaluación de antecedentes y gran parte de quienes se dedican al trabajo académico tienden a publicar trabajos en revistas que garanticen una evaluación segura y rigurosa, que no es lo mismo que excluyente.
+                </p>
+                <p className="text-gray-700 text-justify">
+                  Para que un artículo sea evaluado, se tienden a considerar los siguientes puntos:
+                </p>
+                <ol className="space-y-2 list-decimal pl-5 text-gray-700">
+                  <li>La originalidad del trabajo de investigación o manuscrito;</li>
+                  <li>Relevancia para el conocimiento sobre el tema y clara presentación del problema que se pretende abordar;</li>
+                  <li>Marco de referencia: respaldo teórico adecuado. Determinación clara del objetivo del trabajo y de la(s) hipótesis. Referencias bibliográficas actualizadas y adecuadas al ámbito de investigación;</li>
+                  <li>Metodología: uso apropiado y buena descripción de materiales y métodos;</li>
+                  <li>Resultados: elaboración de conclusiones –parciales o no– que den cuenta del análisis realizado.</li>
+                  <li>Aspectos formales: corrección en el lenguaje, citación y referencias según normalización de la revista.</li>
+                </ol>
+              </div>
+            </div>
+            <div className="flex justify-center mt-6">
+              <Button className="bg-blue-800 hover:bg-blue-700">
+                <a href="https://forms.gle/w4r3ysMwzbv85ryd6" target="_blank" rel="noopener noreferrer">Formulario de envío</a>
+              </Button>
+            </div>
           </section>
 
           {/* Contact Section */}
