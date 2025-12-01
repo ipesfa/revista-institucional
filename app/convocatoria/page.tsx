@@ -15,7 +15,7 @@ export default function ConvocatoriaPage() {
     dossierTematico: "La historia regional en debate. Aportes, desafíos y horizontes colectivos de producción",
     coordinadoras: ["Vanina Perazzo", "Shion-en Cenatiempo"],
     descripcion:
-      "Reflexionar sobre lo regional nos permite dimensionar las posibilidades que nacen en lo colectivo. Desde esta perspectiva, se pretende dar paso a la convocatoria para pensar lo regional desde una mirada colectiva, multidimensional, participativa e impulsora de transformaciones. Este Dossier es una invitación a mirar cómo lo propio, lo cercano y lo lejano se vuelve parte de aquello que nos identifica. De este modo cobra relevancia reflexionar sobre lo que convoca a las identificaciones regionales desde lo cultural, lo territorial, lo comunitario, las individualidades; dando lugar a la posibilidad de transformaciones y continuidades que abren puertas a la búsqueda de respuestas sobre cómo la sociedad crece y se vincula, en sus diversidades y conflictos a través de semejanzas y diferencias.",
+      "Reflexionar sobre lo regional nos permite dimensionar las posibilidades que nacen en lo colectivo. Desde esta perspectiva, se pretende dar paso a la convocatoria para pensar lo regional con una mirada colectiva, multidimensional, participativa e impulsora de transformaciones. Este Dossier es una invitación a mirar cómo lo propio, lo cercano y lo lejano se vuelven parte de aquello que nos identifica. De este modo cobra relevancia reflexionar sobre lo que convoca a las identificaciones regionales desde lo cultural, lo territorial, lo comunitario, las individualidades; dando lugar a la posibilidad de transformaciones y continuidades que abren puertas a la búsqueda de respuestas sobre cómo la sociedad crece y se vincula, en sus diversidades y conflictos a través de semejanzas y diferencias.",
     ejesTematicos: [
       "El espacio como una posibilidad de construcción identitaria.",
       "Historia Argentina, enfoques y problemáticas en perspectiva regional Latinoamericana.",
@@ -133,7 +133,7 @@ export default function ConvocatoriaPage() {
               <div className="w-full my-6">
                 <div className="relative w-full h-auto aspect-video">
                   <Image
-                    src="/convocatoriapage.png"
+                    src="/convocatoriapageb.png"
                     alt="Convocatoria FA Revista"
                     fill
                     className="object-contain"
