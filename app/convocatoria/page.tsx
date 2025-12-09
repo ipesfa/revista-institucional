@@ -133,7 +133,7 @@ export default function ConvocatoriaPage() {
               <div className="w-full my-6">
                 <div className="relative w-full h-auto aspect-video">
                   <Image
-                    src="/convocatoriapageb.png"
+                    src="/convoc.webp"
                     alt="Convocatoria FA Revista"
                     fill
                     className="object-contain"
