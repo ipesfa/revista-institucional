@@ -29,138 +29,65 @@ interface Section {
 
 const sections: Section[] = [
   {
-    name: "Dossier - Lo Fantástico. Vacilación del sentido común",
+    name: "Dossier — La historia regional en debate. Aportes, desafíos y horizontes colectivos de producción",
     articles: [
       {
-        id: "dossier-1",
-        title: "Presentación",
-        authors: ["Miguel Fanchovich", "Mario Hernández"],
-        section: "Dossier - Lo Fantástico. Vacilación del sentido común",
-        pdfUrl: "/PDF/V2/articulo_individual_fanchovich_hernandez.pdf",
-        dossierEditor: "Mariano Malizia"
-      }
-    ]
-  },
-  {
-    name: "Prácticas y experiencias educativas",
-    articles: [
-      {
-        id: "practicas-1",
-        title: "Avatares: la matemática como aventura fantástica. Experiencia interdisciplinaria en la formación docente",
-        authors: ["Soledad Cruz", "Vanesa De Las Vegas"],
-        section: "Prácticas y experiencias educativas",
-        pdfUrl: "/PDF/V2/articulo_individual_dela_cruz_delas_vegas.pdf"
-      }
-    ]
-  },
-  {
-    name: "Ensayos académicos",
-    articles: [
-      {
-        id: "ensayos-1",
-        title: 'De la sociedad del conocimiento a la inteligencia artificial: ¿el fin de la "historia interminable" y el triunfo de "los ladrones del tiempo"?',
-        authors: ["Ricardo Forster"],
-        section: "Ensayos académicos",
-        pdfUrl: "/PDF/V2/articulo_individual_forster.pdf"
+        id: "dossier-v3-1",
+        title: "Historia regional, una aproximación historiográfica",
+        authors: ["Darío Gutiérrez"],
+        section: "Dossier"
       },
       {
-        id: "ensayos-2",
-        title: "Mafalda vs. las sagas de fantasía: 16 notas sobre la organización de la producción literaria del continente americano y un gol de Maradona",
+        id: "dossier-v3-2",
+        title: "Haciendo memoria en el profesorado de Historia",
+        authors: ["Darío Gutiérrez", "Karin Otero"],
+        section: "Dossier"
+      },
+      {
+        id: "dossier-v3-3",
+        title: "Entrevista a Beatriz Torres Abelaira",
+        authors: ["Gabriela Fernández"],
+        section: "Dossier"
+      },
+      {
+        id: "dossier-v3-4",
+        title: "Entrevista a Federico Lorenz. Memoria Histórica e Identidad Territorial de Argentina",
+        authors: ["Vanina Carla Perazzo", "Shion-en Cenatiempo"],
+        section: "Dossier"
+      },
+      {
+        id: "dossier-v3-5",
+        title: "Reseña: Cristina Zárraga, Wata Čis. Cuento antiguo",
+        authors: ["Ana Cecilia Gerrard"],
+        section: "Dossier"
+      }
+    ]
+  },
+  {
+    name: "Prácticas y experiencias",
+    articles: [
+      {
+        id: "practicas-v3-1",
+        title: "La construcción del proyecto institucional en jardines de infantes de la ciudad de Ushuaia: una experiencia de acompañamiento interinstitucional",
+        authors: ["Gustavo Gabriel Gomez Ciavatelli", "Luis Ricardo Páez"],
+        section: "Prácticas y experiencias"
+      }
+    ]
+  },
+  {
+    name: "Ensayos",
+    articles: [
+      {
+        id: "ensayos-v3-1",
+        title: "Salvar el trabajo humano: 7 notas sobre las relaciones entre IA y creación artística",
         authors: ["Alfredo Lèal"],
-        section: "Ensayos académicos",
-        pdfUrl: "/PDF/V2/articulo_individual_alfredo_leal.pdf"
-      }
-    ]
-  },
-  {
-    name: "Literaturas Breves",
-    articles: [
-      {
-        id: "literatura-1",
-        title: "El camino de regreso",
-        authors: ["Mario Hernández"],
-        section: "Literaturas Breves",
-        pdfUrl: "/PDF/V2/articulo_individual_mario_hernandez.pdf"
-      }
-    ]
-  },
-  {
-    name: "Artículos libres",
-    articles: [],
-    subsections: [
-      {
-        name: "Prácticas y experiencias educativas",
-        articles: [
-          {
-            id: "libres-practicas-1",
-            title: "La enseñanza de la historia argentina como desafío. Estudio de caso enfocado en la experiencia del Profesorado para la Educación Primaria del I.P.E.S. Florentino Ameghino de la ciudad de Ushuaia",
-            authors: ["Shion-en Cenatiempo"],
-            section: "Artículos libres - Prácticas y experiencias educativas",
-            pdfUrl: "/PDF/V2/articulo_individual_cenatiempo.pdf"
-          }
-        ]
+        section: "Ensayos"
       },
       {
-        name: "Artículos científicos",
-        articles: [
-          {
-            id: "libres-cientificos-1",
-            title: "Experiencias estudiantiles en contextos de crisis. El caso de la intervención ministerial en un instituto de formación docente de Ushuaia",
-            authors: ["Paola N. Vega"],
-            section: "Artículos libres - Artículos científicos",
-            pdfUrl: "/PDF/V2/articulo_individual_paola_vega.pdf"
-          },
-          {
-            id: "libres-cientificos-2",
-            title: "Fuentes para enseñar geografía local en Ushuaia: perspectivas docentes en la escuela secundaria",
-            authors: ["Natalia Cañete", "Daniel Paoloni", "Silvia Torre", "Mariana Damiani"],
-            section: "Artículos libres - Artículos científicos",
-            pdfUrl: "/PDF/V2/articulo_individual_canete_et_al.pdf"
-          }
-        ]
-      },
-      {
-        name: "Ensayos académicos",
-        articles: [
-          {
-            id: "libres-ensayos-1",
-            title: "La Cultura Sorda argentina en clave Pachakutik: de la colonización pedagógica a la praxis de la Ley 27.710",
-            authors: ["Lucila Otero Aráoz"],
-            section: "Artículos libres - Ensayos académicos",
-            pdfUrl: "/PDF/V2/articulo_individual_lucila_otero_araoz.pdf"
-          },
-          {
-            id: "libres-ensayos-2",
-            title: "La etnostalgia o la revisión de las notas guardadas en un cajón",
-            authors: ["Mariano López Rasch"],
-            section: "Artículos libres - Ensayos académicos",
-            pdfUrl: "/PDF/V2/articulo_individual_lopez_rasch.pdf"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    name: "Dilemas y coyunturas",
-    articles: [
-      {
-        id: "dilemas-1",
-        title: "Dina Picotti, por siempre! Un legado de pensamiento y humanidad",
-        authors: ["Sergio Barrionuevo", "Sebastián Castiñeira", "Noelia Lobo"],
-        section: "Dilemas y coyunturas",
-        pdfUrl: "/PDF/V2/articulo_individual_barrionuevo_castineira_lobo.pdf"
-      }
-    ]
-  },
-  {
-    name: "Entrevistas",
-    articles: [
-      {
-        id: "entrevistas-1",
-        title: 'Ricardo Forster: "El final de un libro exquisito es, a la vez, felicidad y vacío"',
-        authors: ["Erica Garrido", "Emiliano Sánchez Narvarte"],
-        section: "Entrevistas",
-        pdfUrl: "/PDF/V2/articulo_individual_entrevista_forster.pdf"
+        id: "ensayos-v3-2",
+        title: "Plataformas en el fin del mundo: la oferta de ficción seriada en Tierra del Fuego",
+        authors: ["Alfredo Isasmendiz", "Valeria Car"],
+        section: "Ensayos"
       }
     ]
   }
@@ -278,7 +205,7 @@ export default function Home() {
                 <div className="relative flex-shrink-0">
                   <div className="relative inline-block z-10 group">
                   {/* Recuadro sombra detrás de la imagen - desaparece en hover */}
-                  <div className="hidden md:block absolute inset-0 z-0 -translate-x-[22px] translate-y-[10px] bg-blue-800 transition-opacity duration-500 group-hover:opacity-0"></div>
+                  <div className="hidden md:block absolute inset-0 z-0 -translate-x-[22px] translate-y-[10px] transition-opacity duration-500 group-hover:opacity-0" style={{ backgroundColor: '#bcb6a6' }}></div>
                   
                   {/* Imagen */}
                   <div 
@@ -289,8 +216,8 @@ export default function Home() {
                     }}
                   >
                     <Image
-                      src="/portadav2.png"
-                      alt="Portada de FA revista - Volumen 2: Lo Fantástico. Vacilación del sentido común"
+                      src="/3volumen26.png"
+                      alt="Portada de FA revista - Volumen 3"
                       width={180}
                       height={340}
                       className="w-[180px] h-[340px] md:w-[260px] md:h-[440px] lg:w-[320px] lg:h-[540px] transform md:group-hover:scale-[1.02] transition-transform duration-500 object-contain"
@@ -310,7 +237,10 @@ export default function Home() {
                     Número Actual
                   </h2>
                   <p className="text-lg md:text-xl text-gray-700">
-                    Noviembre de 2025  |  Año 1  |  Vol. 2
+                    2026  |  Año 2  |  Vol. 3
+                  </p>
+                  <p className="text-base md:text-lg text-gray-500 mt-2 italic">
+                    La historia regional en debate. Aportes, desafíos y horizontes colectivos de producción
                   </p>
                 </div>
               </div>
@@ -375,7 +305,7 @@ export default function Home() {
                                 </div>
                                 <div className="flex flex-col sm:flex-row gap-2 flex-shrink-0 w-full md:w-auto">
                                   <Button
-                                    onClick={() => article.pdfUrl ? handlePreview(article.pdfUrl, article.title) : console.log('PDF no disponible aún para:', article.title)}
+                                    onClick={() => article.pdfUrl ? handlePreview(article.pdfUrl, article.title) : undefined}
                                     variant="outline"
                                     className="border-blue-800 text-blue-800 hover:bg-blue-50 flex-shrink-0 w-full sm:w-auto"
                                     disabled={!article.pdfUrl}
@@ -383,7 +313,7 @@ export default function Home() {
                                     Vista preliminar
                                   </Button>
                                   <Button
-                                    onClick={() => article.pdfUrl ? handleDownload(article.pdfUrl, article.title) : console.log('PDF no disponible aún para:', article.title)}
+                                    onClick={() => article.pdfUrl ? handleDownload(article.pdfUrl, article.title) : undefined}
                                     className="bg-blue-800 hover:bg-blue-900 text-white flex-shrink-0 w-full sm:w-auto"
                                     disabled={!article.pdfUrl}
                                   >
@@ -428,7 +358,7 @@ export default function Home() {
                                       </div>
                                       <div className="flex flex-col sm:flex-row gap-2 flex-shrink-0 w-full md:w-auto">
                                         <Button
-                                          onClick={() => article.pdfUrl ? handlePreview(article.pdfUrl, article.title) : console.log('PDF no disponible aún para:', article.title)}
+                                          onClick={() => article.pdfUrl ? handlePreview(article.pdfUrl, article.title) : undefined}
                                           variant="outline"
                                           className="border-blue-800 text-blue-800 hover:bg-blue-50 flex-shrink-0 w-full sm:w-auto"
                                           disabled={!article.pdfUrl}
@@ -436,7 +366,7 @@ export default function Home() {
                                           Vista preliminar
                                         </Button>
                                         <Button
-                                          onClick={() => article.pdfUrl ? handleDownload(article.pdfUrl, article.title) : console.log('PDF no disponible aún para:', article.title)}
+                                          onClick={() => article.pdfUrl ? handleDownload(article.pdfUrl, article.title) : undefined}
                                           className="bg-blue-800 hover:bg-blue-900 text-white flex-shrink-0 w-full sm:w-auto"
                                           disabled={!article.pdfUrl}
                                         >
