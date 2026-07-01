@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   description: "Revista académica FA - Prácticas educativas y resistencia cultural",
   generator: "v0.dev",
   icons: {
-    icon: "/fav2.png",
+    icon: "/fav3.png",
   },
 }
 
@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/fav2.png" type="image/png" />
+        <link rel="icon" href="/fav3.png" type="image/png" />
       </head>
       <body className={inter.className}>
         <div className="flex min-h-screen flex-col">

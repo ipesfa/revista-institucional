@@ -232,7 +232,7 @@ export default function Home() {
                 </div>
 
                 {/* Texto centrado */}
-                <div className="flex-1 md:max-w-md text-center ml-12 md:ml-16">
+                <div className="flex-1 md:max-w-md text-center md:ml-16">
                   <h2 className="text-3xl md:text-4xl font-bold text-blue-800 mb-4">
                     Número Actual
                   </h2>
