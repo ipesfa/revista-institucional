@@ -29,37 +29,42 @@ interface Section {
 
 const sections: Section[] = [
   {
-    name: "Dossier — La historia regional en debate. Aportes, desafíos y horizontes colectivos de producción",
+    name: "Dossier - La historia regional en debate. Aportes, desafíos y horizontes colectivos de producción",
     articles: [
       {
         id: "dossier-v3-1",
         title: "Historia regional, una aproximación historiográfica",
         authors: ["Darío Gutiérrez"],
-        section: "Dossier"
+        section: "Dossier",
+        pdfUrl: "/PDF/V3/1- articulo_gutierrez_historia_regional.pdf"
       },
       {
         id: "dossier-v3-2",
         title: "Haciendo memoria en el profesorado de Historia",
         authors: ["Darío Gutiérrez", "Karin Otero"],
-        section: "Dossier"
+        section: "Dossier",
+        pdfUrl: "/PDF/V3/2- articulo_gutierrez_otero_memoria.pdf"
       },
       {
         id: "dossier-v3-3",
         title: "Entrevista a Beatriz Torres Abelaira",
         authors: ["Gabriela Fernández"],
-        section: "Dossier"
+        section: "Dossier",
+        pdfUrl: "/PDF/V3/3- articulo_fernandez_entrevista_torres.pdf"
       },
       {
         id: "dossier-v3-4",
         title: "Entrevista a Federico Lorenz. Memoria Histórica e Identidad Territorial de Argentina",
         authors: ["Vanina Carla Perazzo", "Shion-en Cenatiempo"],
-        section: "Dossier"
+        section: "Dossier",
+        pdfUrl: "/PDF/V3/4- articulo_perazzo_cenatiempo_lorenz.pdf"
       },
       {
         id: "dossier-v3-5",
         title: "Reseña: Cristina Zárraga, Wata Čis. Cuento antiguo",
         authors: ["Ana Cecilia Gerrard"],
-        section: "Dossier"
+        section: "Dossier",
+        pdfUrl: "/PDF/V3/5- articulo_gerrard_resena_zarraga.pdf"
       }
     ]
   },
@@ -70,7 +75,8 @@ const sections: Section[] = [
         id: "practicas-v3-1",
         title: "La construcción del proyecto institucional en jardines de infantes de la ciudad de Ushuaia: una experiencia de acompañamiento interinstitucional",
         authors: ["Gustavo Gabriel Gomez Ciavatelli", "Luis Ricardo Páez"],
-        section: "Prácticas y experiencias"
+        section: "Prácticas y experiencias",
+        pdfUrl: "/PDF/V3/6- articulo_gomez_paez.pdf"
       }
     ]
   },
@@ -81,13 +87,27 @@ const sections: Section[] = [
         id: "ensayos-v3-1",
         title: "Salvar el trabajo humano: 7 notas sobre las relaciones entre IA y creación artística",
         authors: ["Alfredo Lèal"],
-        section: "Ensayos"
+        section: "Ensayos",
+        pdfUrl: "/PDF/V3/7- articulo_leal_ia_trabajo.pdf"
       },
       {
         id: "ensayos-v3-2",
         title: "Plataformas en el fin del mundo: la oferta de ficción seriada en Tierra del Fuego",
         authors: ["Alfredo Isasmendiz", "Valeria Car"],
-        section: "Ensayos"
+        section: "Ensayos",
+        pdfUrl: "/PDF/V3/8- articulo_isasmendiz_car_plataformas.pdf"
+      }
+    ]
+  },
+  {
+    name: "Literaturas Breves",
+    articles: [
+      {
+        id: "literaturas-v3-1",
+        title: "La lluvia, la nieve y otros menesteres. Implicancias de la observación de la naturaleza en entornos domésticos",
+        authors: ["Mario Alejandro Hernández"],
+        section: "Literaturas Breves",
+        pdfUrl: "/PDF/V3/9- articulo_hernandez_lluvia_nieve.pdf"
       }
     ]
   }
