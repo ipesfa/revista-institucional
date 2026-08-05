@@ -31,14 +31,14 @@ export default function ConvocatoriaPage() {
       "Cartografías culturales y subjetividades territoriales",
     ],
     fechaLimite: "16 de Octubre del 2026",
-    fechaPublicacion: "2027",
+    fechaPublicacion: "Diciembre 2026",
     fechasImportantes: [
       {
         fecha: "16 de Octubre del 2026",
         evento: "Fecha límite para envío de artículos",
       },
       {
-        fecha: "2027",
+        fecha: "Diciembre 2026",
         evento: "Publicación del número",
       },
     ],
