@@ -11,34 +11,34 @@ export default function ConvocatoriaPage() {
   // Datos de la convocatoria actual
   const convocatoria = {
     titulo: "Convocatoria Abierta",
-    subtitulo: "Año 2, Nro. 3",
-    dossierTematico: "La historia regional en debate. Aportes, desafíos y horizontes colectivos de producción",
-    coordinadoras: ["Vanina Perazzo", "Shion-en Cenatiempo"],
+    subtitulo: "Año 3, Nro. 4",
+    dossierTematico: "Arraigo, paisajes, éxodos: trayectorias de las literaturas recientes del continente americano de la Columbia Británica hasta Tierra del Fuego",
+    coordinadoras: ["Alfredo Lèal (UNAM)", "Carlos Miguel Fanchovich (IPES FA)"],
     descripcion:
-      "Reflexionar sobre lo regional nos permite dimensionar las posibilidades que nacen en lo colectivo. Desde esta perspectiva, se pretende dar paso a la convocatoria para pensar lo regional con una mirada colectiva, multidimensional, participativa e impulsora de transformaciones. Este Dossier es una invitación a mirar cómo lo propio, lo cercano y lo lejano se vuelven parte de aquello que nos identifica. De este modo cobra relevancia reflexionar sobre lo que convoca a las identificaciones regionales desde lo cultural, lo territorial, lo comunitario, las individualidades; dando lugar a la posibilidad de transformaciones y continuidades que abren puertas a la búsqueda de respuestas sobre cómo la sociedad crece y se vincula, en sus diversidades y conflictos a través de semejanzas y diferencias.",
+      "Igual que aquéllas que van trazando los sujetos, las trayectorias de las producciones culturales se constituyen fundamentalmente en dos sentidos: el que marca el traslado y el que van dejando las huellas del paso. Para el presente dossier al que convocamos, nos interesa poner el acento en tres aspectos clave para la construcción de mapas presentes y futuros de la producción literaria del continente americano: la geografía, la historia y la lengua, representadas en tres categorías centrales.",
     ejesTematicos: [
-      "El espacio como una posibilidad de construcción identitaria.",
-      "Historia Argentina, enfoques y problemáticas en perspectiva regional Latinoamericana.",
-      "Historias olvidadas y agendas pendientes en Argentina.",
+      "Arraigo: la movilidad migratoria y sus reconfiguraciones del relato sobre cómo habitar el mundo y arraigarse en las comunidades de llegada, entendido el arraigo como resistencia a la aculturación.",
+      "Paisajes: el territorio, el hábitat y el clima como construcción social e ideológica; el paisaje como el lugar donde la Historia se manifiesta de un modo tangible, ligado siempre al sujeto que lo observa y lo replica.",
+      "Éxodos: retomando la etimología griega (\u201Ccamino de salida\u201D), el punto donde arraigo y paisaje se tocan y desplazan, abriendo la posibilidad de reconocer otros espacios, escenarios y futuros posibles.",
     ],
     areasInteres: [
-      "Innovaciones pedagógicas y metodológicas",
-      "Tecnologías educativas emergentes",
-      "Políticas educativas y su impacto",
-      "Educación inclusiva y diversidad",
-      "Transformaciones culturales en contextos educativos",
-      "Formación docente y desarrollo profesional",
-      "Evaluación educativa y calidad",
+      "Literaturas de la migración y el desplazamiento",
+      "Geografía, territorio y paisaje en la producción literaria",
+      "Identidades regionales y transnacionales en América",
+      "Memoria, historia y narrativa literaria",
+      "Lengua, traducción y circulación literaria continental",
+      "Estudios comparados de literaturas americanas",
+      "Cartografías culturales y subjetividades territoriales",
     ],
-    fechaLimite: "09/03/26",
-    fechaPublicacion: "Junio 2026",
+    fechaLimite: "16 de Octubre del 2026",
+    fechaPublicacion: "2027",
     fechasImportantes: [
       {
-        fecha: "09/03/26",
+        fecha: "16 de Octubre del 2026",
         evento: "Fecha límite para envío de artículos",
       },
       {
-        fecha: "Junio 2026",
+        fecha: "2027",
         evento: "Publicación del número",
       },
     ],
@@ -133,7 +133,7 @@ export default function ConvocatoriaPage() {
               <div className="w-full my-6">
                 <div className="relative w-full h-auto aspect-video">
                   <Image
-                    src="/convoc.webp"
+                    src="/dossier%2026%20Banner.png"
                     alt="Convocatoria FA Revista"
                     fill
                     className="object-contain"
@@ -144,7 +144,7 @@ export default function ConvocatoriaPage() {
 
               {/* Coordinadoras */}
               <div className="mb-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Coordinadoras</h3>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">Coordinadores</h3>
                 <div className="flex flex-wrap gap-2">
                   {convocatoria.coordinadoras.map((coordinadora, index) => (
                     <Badge key={index} variant="outline" className="bg-blue-50 text-blue-800 border-blue-300">
@@ -306,7 +306,7 @@ export default function ConvocatoriaPage() {
                   />
                 </div>
                 <div className="text-center text-gray-700 mb-2">
-                  <p className="font-medium mb-2">Coordinadoras:</p>
+                  <p className="font-medium mb-2">Coordinadores:</p>
                   <p className="text-sm">{convocatoria.coordinadoras.join(' y ')}</p>
                 </div>
               </div>
