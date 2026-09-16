@@ -63,10 +63,10 @@ export default function AcercaDePage() {
   // Datos del equipo editorial
   const editorialTeam = [
     {
-      name: "Emiliano Sánchez Narvarte",
+      name: "Ismael Alberto Ficosecco",
       role: "Dirección general",
-      image: "/sanchez.png",
-      bio: "Doctor en Comunicación (UNLP) y Maestrando en Historia del Arte Argentino y Latinoamericano (UNSAM). Docente e investigador del Instituto Provincial de Enseñanza Superior \"Florentino Ameghino\" y de la Universidad Nacional de Tierra del Fuego. Coordinó y compiló el libro de Néstor García Canclini Innovaciones artísticas y rebeliones sociales (EDULP, Argentina, 2023), del cual escribió el estudio introductorio. Entre otros libros, publicó Antonio Pasquali, un itinerario intelectual transnacional (UCAB, Caracas, 2022) e Intelectuales y políticas de comunicación en América Latina (UNLP, Argentina, 2020). Realizó estancias de investigación en Venezuela, Bolivia, Brasil y México.",
+      image: "/placeholder.svg?height=200&width=200",
+      bio: "Docente-investigador en nivel superior y docente de nivel medio. Desde el 2021 se desempeña como Jefe del Departamento de Investigación Educativa del Instituto Provincial de Enseñanza Superior \"Florentino Ameghino\" (IPES FA) y actualmente ocupa el cargo de Coordinador General de FA Publicaciones. Es Licenciado en Sociología por la Universidad del Salvador (USAL), Especialista en Problemáticas de las Ciencias Sociales y su Enseñanza por el Instituto Nacional de Formación Docente (INFD) y cuenta con certificación docente emitida por el IPES FA. Asimismo, es maestrando en Ciencias Sociales y Humanidades por la Universidad Nacional de Quilmes (UNQ). Ha integrado diversos equipos de investigación acreditados en el IPES FA y en la Universidad Nacional de Tierra del Fuego (UNTDF). Sus líneas de investigación se centran en el análisis de las prácticas de escritura científica y los procesos de construcción de la identidad profesional docente.",
     },
     {
       name: "Julián Ghisio",
