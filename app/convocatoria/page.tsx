@@ -23,9 +23,18 @@ export default function ConvocatoriaPage() {
     ejesTematicos: [
       {
         titulo: "Eje 1: Producción y circulación del conocimiento histórico en la formación docente.",
-        // TODO: el texto recibido se corta en "desde los repositorios" — completar
         texto:
-          "Los institutos de nivel superior son espacios en los que se produce y circula conocimiento histórico, y asumirlo supone revisar las relaciones entre investigación, historiografía y enseñanza, y entre conocimiento experto y divulgación. En ese marco interesa el uso pedagógico de los archivos y los nuevos entornos de acceso al pasado, desde los repositorios",
+          "Los institutos de nivel superior son espacios en los que se produce y circula conocimiento histórico, y asumirlo supone revisar las relaciones entre investigación, historiografía y enseñanza, y entre conocimiento experto y divulgación. En ese marco interesa el uso pedagógico de los archivos y los nuevos entornos de acceso al pasado, desde los repositorios digitalizados hasta la circulación de la Historia en la cultura digital. Importa también el abordaje de los documentos en su construcción como fuentes, que incluye hoy el rescate y la preservación de los archivos digitales. A ello se suman los desafíos que la IA generativa plantea a esos procesos, como la validación de la información y la construcción de explicaciones. Unos y otros reactualizan las preguntas de la didáctica de la Historia sobre las prácticas de enseñanza, la evaluación y la construcción de aprendizajes.",
+      },
+      {
+        titulo: "Eje 2: Perspectivas historiográficas, derechos y problemas del presente en la enseñanza de la Historia.",
+        texto:
+          "Nos interesa retomar los aportes de la historiografía feminista y los estudios de género, las perspectivas decoloniales, la historia indígena y las memorias silenciadas, la historia desde abajo y las experiencias de sujetos subalternizados, en tanto permiten problematizar las desigualdades históricas. Esas corrientes siguen ofreciendo herramientas para interrogar el pasado desde sujetos y temporalidades que la Historia escolar dejó al margen. La Educación Sexual Integral, la Educación Ambiental Integral, la educación digital y los derechos humanos tradujeron parte de esos interrogantes en política educativa. Interesa abordar lo que esas políticas demandan a la formación docente y qué conocimiento histórico se considera relevante para responderles. Convocamos también trabajos sobre la historia reciente y las controversias del presente, y sobre una enseñanza del tiempo histórico que abra a la construcción de futuros posibles.",
+      },
+      {
+        titulo: "Eje 3: Formación del pensamiento histórico y conciencia histórica.",
+        texto:
+          "El desarrollo del pensamiento histórico, en la formación docente y en las aulas, sigue siendo un propósito de la enseñanza de la Historia. Interesan los trabajos que indaguen cómo se enseña a problematizar, a contextualizar y a explicar con evidencia en los profesorados, y cómo se revisan allí las representaciones del pasado que cada estudiante trae de su propia escolaridad. Convocamos también a pensar una conciencia histórica que sitúe la vida práctica en el tiempo y enseñe a leer el presente como tiempo histórico. Desde allí, la relación entre enseñanza de la Historia y formación ciudadana queda planteada como problema, ya que cada modo de enseñar Historia supone un modo de ciudadanía.",
       },
     ],
     areasInteres: [] as string[],
