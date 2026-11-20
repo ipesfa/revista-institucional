@@ -132,14 +132,14 @@ export default function ConvocatoriaPage() {
               {/* Dossier Temático */}
               <div className="mb-6">
                 <h2 className="text-2xl font-bold text-gray-900 mb-3">Dossier temático</h2>
-                <p className="text-lg font-semibold text-blue-800 mb-4">
+                <p className="text-lg md:text-xl font-semibold text-blue-800 leading-snug">
                   {convocatoria.dossierTematico}
                 </p>
               </div>
 
               {/* Imagen de convocatoria */}
-              <div className="w-full my-6">
-                <div className="relative w-full h-auto aspect-video">
+              <div className="w-full mb-6">
+                <div className="relative w-full h-auto aspect-[2/1]">
                   <Image
                     src="/dossier%2027%20Banner.png"
                     alt="Convocatoria FA Revista"
