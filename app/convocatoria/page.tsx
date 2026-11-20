@@ -11,34 +11,33 @@ export default function ConvocatoriaPage() {
   // Datos de la convocatoria actual
   const convocatoria = {
     titulo: "Convocatoria Abierta",
-    subtitulo: "Año 3, Nro. 4",
-    dossierTematico: "Arraigo, paisajes, éxodos: trayectorias de las literaturas recientes del continente americano de la Columbia Británica hasta Tierra del Fuego",
-    coordinadoras: ["Alfredo Lèal (UNAM)", "Carlos Miguel Fanchovich (IPES FA)"],
-    descripcion:
-      "Igual que aquéllas que van trazando los sujetos, las trayectorias de las producciones culturales se constituyen fundamentalmente en dos sentidos: el que marca el traslado y el que van dejando las huellas del paso. Para el presente dossier al que convocamos, nos interesa poner el acento en tres aspectos clave para la construcción de mapas presentes y futuros de la producción literaria del continente americano: la geografía, la historia y la lengua, representadas en tres categorías centrales.",
+    subtitulo: "Año 3, Vol. 5",
+    dossierTematico: "¿Qué Historia enseñar y para qué? Debates historiográficos, políticos y didácticos en la formación docente",
+    coordinadoras: ["Julián Ghisio", "Noelia Vacaflor"],
+    descripcion: [
+      "La pregunta por la Historia y su enseñanza vuelve con cada época, y cada época la reformula. ¿Dónde se produce el conocimiento histórico que llega a las aulas, desde qué perspectivas se interroga el pasado y para qué se enseña Historia? Las renovaciones historiográficas de las últimas décadas, las disputas por las interpretaciones del pasado y las políticas educativas que recogieron parte de sus preguntas interpelan tanto la construcción del conocimiento histórico como sus formas de circulación y enseñanza.",
+      "En este marco, la incorporación de perspectivas de género, las revisiones de los relatos históricos tradicionales y la recuperación de las experiencias y memorias de sujetos y colectivos históricamente invisibilizados plantean nuevos interrogantes sobre la selección de contenidos, las escalas de análisis y las explicaciones que construimos sobre las sociedades en el tiempo. Asimismo, las agendas vinculadas con la Educación Sexual Integral (ESI) y la Educación Ambiental Integral (EAI), junto con las transformaciones tecnológicas y la expansión de la inteligencia artificial, abren nuevos debates sobre la producción, validación y circulación del conocimiento histórico, así como sobre sus implicancias epistemológicas y didácticas.",
+      "Estas cuestiones adquieren particular relevancia en la formación docente. Tanto los institutos de nivel superior como las universidades constituyen espacios donde el conocimiento histórico no solo se transmite y se apropia, sino que también se produce, discute y resignifica. Si bien responden a tradiciones, normativas y modos de organización diferentes, en ambos se ponen en juego perspectivas historiográficas, decisiones curriculares y posicionamientos políticos y pedagógicos que inciden en los modos de comprender el pasado y construir propuestas para su enseñanza.",
+      "Este dossier convoca a compartir investigaciones, experiencias y reflexiones que, desde diferentes perspectivas historiográficas y didácticas, contribuyan a problematizar qué Historia enseñamos, para qué y desde qué marcos interpretativos. Nos interesa especialmente recuperar trabajos que indaguen en las relaciones entre producción de conocimiento histórico, formación docente, problemas socialmente relevantes, desarrollo del pensamiento histórico y ejercicio de derechos, así como en las tensiones y posibilidades que atraviesan su enseñanza en distintos contextos.",
+    ],
     ejesTematicos: [
-      "Arraigo: la movilidad migratoria y sus reconfiguraciones del relato sobre cómo habitar el mundo y arraigarse en las comunidades de llegada, entendido el arraigo como resistencia a la aculturación.",
-      "Paisajes: el territorio, el hábitat y el clima como construcción social e ideológica; el paisaje como el lugar donde la Historia se manifiesta de un modo tangible, ligado siempre al sujeto que lo observa y lo replica.",
-      "Éxodos: retomando la etimología griega (\u201Ccamino de salida\u201D), el punto donde arraigo y paisaje se tocan y desplazan, abriendo la posibilidad de reconocer otros espacios, escenarios y futuros posibles.",
+      {
+        titulo: "Eje 1: Producción y circulación del conocimiento histórico en la formación docente.",
+        // TODO: el texto recibido se corta en "desde los repositorios" — completar
+        texto:
+          "Los institutos de nivel superior son espacios en los que se produce y circula conocimiento histórico, y asumirlo supone revisar las relaciones entre investigación, historiografía y enseñanza, y entre conocimiento experto y divulgación. En ese marco interesa el uso pedagógico de los archivos y los nuevos entornos de acceso al pasado, desde los repositorios",
+      },
     ],
-    areasInteres: [
-      "Literaturas de la migración y el desplazamiento",
-      "Geografía, territorio y paisaje en la producción literaria",
-      "Identidades regionales y transnacionales en América",
-      "Memoria, historia y narrativa literaria",
-      "Lengua, traducción y circulación literaria continental",
-      "Estudios comparados de literaturas americanas",
-      "Cartografías culturales y subjetividades territoriales",
-    ],
-    fechaLimite: "16 de Octubre del 2026",
-    fechaPublicacion: "Diciembre 2026",
+    areasInteres: [] as string[],
+    fechaLimite: "9 de Marzo del 2027",
+    fechaPublicacion: "Junio 2027",
     fechasImportantes: [
       {
-        fecha: "16 de Octubre del 2026",
+        fecha: "9 de Marzo del 2027",
         evento: "Fecha límite para envío de artículos",
       },
       {
-        fecha: "Diciembre 2026",
+        fecha: "Junio 2027",
         evento: "Publicación del número",
       },
     ],
@@ -133,7 +132,7 @@ export default function ConvocatoriaPage() {
               <div className="w-full my-6">
                 <div className="relative w-full h-auto aspect-video">
                   <Image
-                    src="/dossier%2026%20Banner.png"
+                    src="/dossier%2027%20Banner.png"
                     alt="Convocatoria FA Revista"
                     fill
                     className="object-contain"
@@ -157,22 +156,30 @@ export default function ConvocatoriaPage() {
               {/* Convocatoria */}
               <div className="mb-6">
                 <h3 className="text-xl font-bold text-gray-900 mb-3">Convocatoria</h3>
-                <p className="text-sm md:text-base text-gray-700 leading-relaxed text-justify">
-                  {convocatoria.descripcion}
-                </p>
+                <div className="space-y-4">
+                  {convocatoria.descripcion.map((parrafo, index) => (
+                    <p key={index} className="text-sm md:text-base text-gray-700 leading-relaxed text-justify">
+                      {parrafo}
+                    </p>
+                  ))}
+                </div>
               </div>
 
               {/* Ejes temáticos sugeridos */}
               <div className="mb-6">
                 <h3 className="text-xl font-bold text-gray-900 mb-3">Ejes temáticos sugeridos</h3>
-                <ul className="list-disc pl-6 space-y-2 text-gray-700">
+                <div className="space-y-4">
                   {convocatoria.ejesTematicos.map((eje, index) => (
-                    <li key={index} className="text-justify">{eje}</li>
+                    <div key={index}>
+                      <p className="italic font-semibold text-blue-800 mb-1">{eje.titulo}</p>
+                      <p className="text-sm md:text-base text-gray-700 leading-relaxed text-justify">{eje.texto}</p>
+                    </div>
                   ))}
-                </ul>
+                </div>
               </div>
 
               {/* Áreas de interés */}
+              {convocatoria.areasInteres.length > 0 && (
               <div className="mb-6">
                 <h3 className="text-xl font-bold text-gray-900 mb-3">Áreas de interés</h3>
                 <div className="flex flex-wrap gap-2">
@@ -183,6 +190,7 @@ export default function ConvocatoriaPage() {
                   ))}
                 </div>
               </div>
+              )}
 
               {/* Fecha límite */}
               <div className="mt-6">
