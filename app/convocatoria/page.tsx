@@ -141,7 +141,7 @@ export default function ConvocatoriaPage() {
               <div className="w-full mb-6">
                 <div className="relative w-full h-auto aspect-[2/1]">
                   <Image
-                    src="/dossier%2027%20Banner.png"
+                    src="/dossier%2027%20Banner.jpg"
                     alt="Convocatoria FA Revista"
                     fill
                     className="object-contain"
