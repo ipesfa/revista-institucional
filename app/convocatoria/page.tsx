@@ -38,11 +38,11 @@ export default function ConvocatoriaPage() {
       },
     ],
     areasInteres: [] as string[],
-    fechaLimite: "9 de Marzo del 2027",
+    fechaLimite: "31 de Marzo del 2027",
     fechaPublicacion: "Junio 2027",
     fechasImportantes: [
       {
-        fecha: "9 de Marzo del 2027",
+        fecha: "31 de Marzo del 2027",
         evento: "Fecha límite para envío de artículos",
       },
       {
